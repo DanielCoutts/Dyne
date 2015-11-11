@@ -82,3 +82,5 @@ proguard/
 
 ### Android Patch ###
 gen-external-apklibs
+
+app/build.gradle
