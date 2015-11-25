@@ -2,6 +2,9 @@ package com.team18.teamproject;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -10,12 +13,36 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
         setHeights();
     }
 
     private void setHeights() {
         ImageButton mostRecent = (ImageButton) findViewById(R.id.most_recent);
         int width = mostRecent.getWidth();
-        mostRecent.setMaxHeight((width/3) * 2);
+
+        ViewGroup.LayoutParams params = mostRecent.getLayoutParams();
+        params.height = (width/3)*2;
+        mostRecent.requestLayout();
+
+        squareButton( (ImageButton) findViewById(R.id.button_1a) );
+        squareButton( (ImageButton) findViewById(R.id.button_1b) );
+        squareButton( (ImageButton) findViewById(R.id.button_2a) );
+        squareButton( (ImageButton) findViewById(R.id.button_2b) );
+    }
+
+    private void squareButton(ImageButton tile) {
+        int width = tile.getWidth();
+
+        ViewGroup.LayoutParams params = tile.getLayoutParams();
+        params.height = width;
+        tile.requestLayout();
     }
 }
