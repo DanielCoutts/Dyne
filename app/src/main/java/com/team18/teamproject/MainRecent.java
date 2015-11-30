@@ -1,8 +1,10 @@
 package com.team18.teamproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
@@ -33,8 +35,8 @@ public class MainRecent extends AppCompatActivity {
 
         squareButton( (ImageButton) findViewById(R.id.button_1a) );
         squareButton( (ImageButton) findViewById(R.id.button_1b) );
-        squareButton( (ImageButton) findViewById(R.id.button_2a) );
-        squareButton( (ImageButton) findViewById(R.id.button_2b) );
+        squareButton((ImageButton) findViewById(R.id.button_2a));
+        squareButton((ImageButton) findViewById(R.id.button_2b));
     }
 
     private void squareButton(ImageButton tile) {
@@ -43,5 +45,10 @@ public class MainRecent extends AppCompatActivity {
         ViewGroup.LayoutParams params = tile.getLayoutParams();
         params.height = width;
         tile.requestLayout();
+    }
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, recipeTemplate.class);
+        startActivity(intent);
     }
 }
