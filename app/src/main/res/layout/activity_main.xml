@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent" >
-    <!--Main Toolbar-->
     <android.support.v7.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -15,7 +14,6 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-    <!--Main Content-->
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="match_parent"
@@ -95,32 +93,4 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <android.support.v7.widget.DrawerLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/drawerLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <!-- The main content view -->
-        <RelativeLayout
-            android:id="@+id/mainContent"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    <!--Navigation Drawer-->
-        <RelativeLayout
-            android:id="@+id/drawerPane"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"/>
-
-    <!-- List of Actions-->
-            <ListView
-                android:id="@+id/navList"
-                android:layout_width="280dp"
-                android:layout_height="match_parent"
-            android:choiceMode="singleChoice"
-                android:background="#ffffffff">
-            </ListView>
-    </android.support.v7.widget.DrawerLayout>
 </RelativeLayout>
