@@ -43,9 +43,14 @@ public class MainRecent extends AppCompatActivity {
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
 
-            mNavItems.add(new NavItem("Home", "Meetup destination", R.drawable.curry1));
-            mNavItems.add(new NavItem("Preferences", "Change your preferences", R.drawable.curry1));
-            mNavItems.add(new NavItem("About", "Get to know about us", R.drawable.curry1));
+            mNavItems.add(new NavItem("Home", "Home", R.drawable.ic_home_black_24xhdpi));
+            mNavItems.add(new NavItem("All Recipes", "Change your preferences", R.drawable.ic_restaurant_menu_black_24xhdpi));
+            mNavItems.add(new NavItem("Favourites", "Get to know about us", R.drawable.ic_star_rate_black_18xhdpi));
+            mNavItems.add(new NavItem("Shopping List", "Get to know about us", R.drawable.ic_shopping_cart_black_18xhdpi));
+            mNavItems.add(new NavItem("Timer", "Get to know about us", R.drawable.ic_timer_black_18xhdpi));
+            mNavItems.add(new NavItem("Essentials Guide", "Get to know about us", R.drawable.ic_move_to_inbox_black_18xhdpi));
+            mNavItems.add(new NavItem("Glossary", "Get to know about us", R.drawable.ic_local_offer_black_18xhdpi));
+            mNavItems.add(new NavItem("Settings", "Get to know about us", R.drawable.ic_settings_black_18xhdpi));
 
             // DrawerLayout
             mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
