@@ -23,7 +23,7 @@
                     android:id="@+id/profileBox"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:background="@drawable/avocado1"
+                    android:background="@color/colorPrimary"
                     android:padding="8dp" >
 
                     <ImageView
