@@ -99,7 +99,7 @@ public class MainRecent extends AppCompatActivity {
     }
 
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, recipeTemplate.class);
+        Intent intent = new Intent(this, RecipeTemplate.class);
         startActivity(intent);
     }
 

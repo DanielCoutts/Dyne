@@ -3,7 +3,7 @@ package com.team18.teamproject;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class recipeTemplate extends AppCompatActivity {
+public class RecipeTemplate extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
