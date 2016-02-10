@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- The main content view -->
+    <!-- Main Content -->
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -12,7 +12,10 @@
         <include layout="@layout/toolbar" />
 
         <!-- Main Body -->
-        <!--<include layout="@layout/content_main_recent" />-->
+        <FrameLayout
+        android:id="@+id/mainFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     </RelativeLayout>
 
