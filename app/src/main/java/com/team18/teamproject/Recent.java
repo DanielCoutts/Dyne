@@ -14,11 +14,6 @@ public class Recent extends Fragment {
 
     }
 
-    public static Recent newInstance() {
-        Recent fragment = new Recent();
-        return fragment;
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
