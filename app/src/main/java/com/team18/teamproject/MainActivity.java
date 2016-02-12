@@ -14,10 +14,8 @@ import android.view.View;
  */
 public class MainActivity extends AppCompatActivity{
 
-    private Toolbar toolbar;
+    public Toolbar toolbar;
     private FragmentManager fragmentManager;
-
-    private ActionBarDrawerToggle mDrawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,33 +26,17 @@ public class MainActivity extends AppCompatActivity{
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        Recent recent = new Recent();
+        DrawerFragment drawerFragment = (DrawerFragment) getSupportFragmentManager().findFragmentById(R.id.drawerFragment);
+        drawerFragment.setUp(R.id.drawerFragment, (DrawerLayout) findViewById(R.id.drawerLayout), toolbar);
+
+        RecentFragment recentFragment = new RecentFragment();
         fragmentManager = getFragmentManager();
-        setFragment(recent);
+        setMainFragment(recentFragment);
     }
 
-    private void setFragment(Fragment fragment) {
+    private void setMainFragment(Fragment fragment) {
         fragmentManager.beginTransaction()
                 .replace(R.id.mainFragmentContainer, fragment)
                 .commit();
-    }
-
-    private void setUpDrawer() {
-
-        DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
-            @Override
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-            }
-
-            @Override
-            public void onDrawerClosed(View drawerView) {
-                super.onDrawerClosed(drawerView);
-            }
-        };
-
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
     }
 }

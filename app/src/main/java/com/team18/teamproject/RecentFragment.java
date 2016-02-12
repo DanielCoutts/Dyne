@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 
 
-public class Recent extends Fragment {
+public class RecentFragment extends Fragment {
 
-    public Recent() {
+    public RecentFragment() {
 
     }
 
