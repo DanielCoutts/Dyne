@@ -42,8 +42,8 @@ public class RecentFragment extends Fragment {
 
         squareButton((ImageButton) getView().findViewById(R.id.button_1a) );
         squareButton((ImageButton) getView().findViewById(R.id.button_1b) );
-        squareButton((ImageButton) getView().findViewById(R.id.button_2a));
-        squareButton((ImageButton) getView().findViewById(R.id.button_2b));
+//        squareButton((ImageButton) getView().findViewById(R.id.button_2a));
+//        squareButton((ImageButton) getView().findViewById(R.id.button_2b));
     }
 
     private void squareButton(ImageButton tile) {

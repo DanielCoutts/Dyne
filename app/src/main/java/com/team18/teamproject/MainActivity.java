@@ -4,10 +4,8 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 /**
  * Created by Daniel on 06/12/2015.

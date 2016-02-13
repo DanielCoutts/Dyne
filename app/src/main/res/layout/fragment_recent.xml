@@ -59,7 +59,7 @@
                     android:background="@drawable/meatloaf1" />
 
             </LinearLayout>
-
+<!--
             <LinearLayout
                 android:id="@+id/row2"
                 android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                     android:background="@drawable/curry1" />
 
             </LinearLayout>
-
+-->
 
         </LinearLayout>
     </ScrollView>
