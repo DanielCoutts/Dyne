@@ -2,13 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FavouritesFragment">
+    tools:context=".FavouritesFragment"
+    >
 
     <!-- Main Content -->
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize">
+        android:layout_marginTop="?attr/actionBarSize"
+        >
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
@@ -20,23 +22,16 @@
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin"
-            tools:context=".MainRecent">
-
-            <ImageButton
-                android:id="@+id/most_recent"
-                android:contentDescription="@string/image_tile_description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginBottom="@dimen/tile_margin"
-                android:background="@drawable/potroast1" />
+            tools:context=".MainRecent"
+            >
 
             <LinearLayout
                 android:id="@+id/row1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/tile_margin"
-                android:layout_marginTop="@dimen/tile_margin">
+                android:layout_marginTop="@dimen/tile_margin"
+                >
 
                 <ImageButton
                     android:id="@+id/button_1a"
@@ -46,7 +41,8 @@
                     android:layout_marginEnd="@dimen/tile_margin"
                     android:layout_marginTop="@dimen/tile_margin"
                     android:layout_weight="1"
-                    android:background="@drawable/chicken1" />
+                    android:background="@drawable/chicken1"
+                    />
 
                 <ImageButton
                     android:id="@+id/button_1b"
@@ -56,7 +52,8 @@
                     android:layout_marginEnd="@dimen/tile_margin"
                     android:layout_marginTop="@dimen/tile_margin"
                     android:layout_weight="1"
-                    android:background="@drawable/meatloaf1" />
+                    android:background="@drawable/meatloaf1"
+                    />
 
             </LinearLayout>
 
@@ -65,7 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/tile_margin"
-                android:layout_marginTop="@dimen/tile_margin">
+                android:layout_marginTop="@dimen/tile_margin"
+                >
 
                 <ImageButton
                     android:id="@+id/button_2a"
@@ -75,7 +73,8 @@
                     android:layout_marginEnd="@dimen/tile_margin"
                     android:layout_marginTop="@dimen/tile_margin"
                     android:layout_weight="1"
-                    android:background="@drawable/donuts1" />
+                    android:background="@drawable/donuts1"
+                    />
 
                 <ImageButton
                     android:id="@+id/button_2b"
@@ -85,10 +84,10 @@
                     android:layout_marginStart="@dimen/tile_margin"
                     android:layout_marginTop="@dimen/tile_margin"
                     android:layout_weight="1"
-                    android:background="@drawable/curry1" />
+                    android:background="@drawable/curry1"
+                    />
 
             </LinearLayout>
-
 
         </LinearLayout>
     </ScrollView>
