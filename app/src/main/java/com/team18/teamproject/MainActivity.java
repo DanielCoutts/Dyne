@@ -1,8 +1,8 @@
 package com.team18.teamproject;
 
-import android.app.Fragment;
 import android.os.Bundle;
-import android.app.FragmentManager;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity{
         DrawerFragment drawerFragment = (DrawerFragment) getSupportFragmentManager().findFragmentById(R.id.drawerFragment);
         drawerFragment.setUp(R.id.drawerFragment, (DrawerLayout) findViewById(R.id.drawerLayout), toolbar);
 
-        RecentFragment recentFragment = new RecentFragment();
-        fragmentManager = getFragmentManager();
-        setMainFragment(recentFragment);
+       HomeFragment homeFragment = new HomeFragment();
+        fragmentManager = getSupportFragmentManager();
+        setMainFragment(homeFragment);
     }
 
     private void setMainFragment(Fragment fragment) {
