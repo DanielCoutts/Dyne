@@ -16,13 +16,14 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/card_margins">
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_marginBottom="@dimen/card_margins">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -38,10 +39,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+                        android:padding="@dimen/card_padding"
                         android:text="Breakfast"
                         android:textAlignment="center"
-                        android:textSize="12pt"
+                        android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -50,8 +51,8 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_marginBottom="@dimen/card_margins">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -67,10 +68,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+                        android:padding="@dimen/card_padding"
                         android:text="Lunch"
                         android:textAlignment="center"
-                        android:textSize="12pt"
+                        android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -79,8 +80,8 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_marginBottom="@dimen/card_margins">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -96,10 +97,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+                        android:padding="@dimen/card_padding"
                         android:text="Dinner"
                         android:textAlignment="center"
-                        android:textSize="12pt"
+                        android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -108,8 +109,8 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_marginBottom="@dimen/card_margins">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -125,10 +126,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+                        android:padding="@dimen/card_padding"
                         android:text="Desserts"
                         android:textAlignment="center"
-                        android:textSize="12pt"
+                        android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -137,8 +138,8 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_marginBottom="@dimen/card_margins">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -154,10 +155,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+                        android:padding="@dimen/card_padding"
                         android:text="Drinks"
                         android:textAlignment="center"
-                        android:textSize="12pt"
+                        android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -166,8 +167,8 @@
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:elevation="@dimen/cardview_default_elevation"
+                android:layout_marginBottom="@dimen/card_margins">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -183,10 +184,10 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="5dp"
+                        android:padding="@dimen/card_padding"
                         android:text="Vegetarian"
                         android:textAlignment="center"
-                        android:textSize="12pt"
+                        android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
                 </LinearLayout>
 

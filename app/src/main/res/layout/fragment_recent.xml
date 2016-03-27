@@ -17,12 +17,13 @@
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/card_margins">
 
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/card_margins"
                 android:elevation="@dimen/cardview_default_elevation">
 
                 <LinearLayout
@@ -40,13 +41,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="5dp">
+                        android:padding="@dimen/card_padding">
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Tomato Soup"
-                            android:textSize="12pt"
+                            android:textSize="@dimen/large_card_text"
                             android:textStyle="bold" />
 
                         <RelativeLayout
@@ -59,7 +60,7 @@
                                 android:layout_alignParentStart="true"
                                 android:layout_alignParentTop="true"
                                 android:text="45 Minutes"
-                                android:textSize="10pt" />
+                                android:textSize="@dimen/small_card_text" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -67,193 +68,13 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_alignParentTop="true"
                                 android:text="Hard"
-                                android:textSize="10pt" />
+                                android:textSize="@dimen/small_card_text" />
                         </RelativeLayout>
                     </LinearLayout>
 
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:elevation="@dimen/cardview_default_elevation">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/dinner1" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Tomato Soup"
-                            android:textSize="12pt"
-                            android:textStyle="bold" />
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:text="45 Minutes"
-                                android:textSize="10pt" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentTop="true"
-                                android:text="Hard"
-                                android:textSize="10pt" />
-                        </RelativeLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:elevation="@dimen/cardview_default_elevation">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/dinner1" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Tomato Soup"
-                            android:textSize="12pt"
-                            android:textStyle="bold" />
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:text="45 Minutes"
-                                android:textSize="10pt" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentTop="true"
-                                android:text="Hard"
-                                android:textSize="10pt" />
-                        </RelativeLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/activity_vertical_margin"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:elevation="@dimen/cardview_default_elevation">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/dinner1" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="5dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Tomato Soup"
-                            android:textSize="12pt"
-                            android:textStyle="bold" />
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentStart="true"
-                                android:layout_alignParentTop="true"
-                                android:text="45 Minutes"
-                                android:textSize="10pt" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentEnd="true"
-                                android:layout_alignParentTop="true"
-                                android:text="Hard"
-                                android:textSize="10pt" />
-                        </RelativeLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-            <!--<ImageButton-->
-            <!--android:id="@+id/most_recent"-->
-            <!--android:contentDescription="@string/image_tile_description"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_weight="1"-->
-            <!--android:background="@drawable/potroast1" />-->
-
 
         </LinearLayout>
     </ScrollView>
