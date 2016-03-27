@@ -22,13 +22,13 @@
 
     </RelativeLayout>
 
-    <!-- Navigation DrawerFragment -->
-    <fragment
-        android:id="@+id/drawerFragment"
-        android:layout_width="@dimen/drawer_width"
+    <!-- TODO -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:name="com.team18.teamproject.DrawerFragment"
-        tools:layout="@layout/fragment_drawer" />
+        android:orientation="vertical">
+
+
+    </LinearLayout>
 
 </android.support.v4.widget.DrawerLayout>

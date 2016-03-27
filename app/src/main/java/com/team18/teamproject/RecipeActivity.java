@@ -24,9 +24,6 @@ public class RecipeActivity extends AppCompatActivity{
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        DrawerFragment drawerFragment = (DrawerFragment) getSupportFragmentManager().findFragmentById(R.id.drawerFragment);
-        drawerFragment.setUp(R.id.drawerFragment, (DrawerLayout) findViewById(R.id.drawerLayout), toolbar);
-
        HomeFragment homeFragment = new HomeFragment();
         fragmentManager = getSupportFragmentManager();
         setMainFragment(homeFragment);

@@ -14,10 +14,13 @@ import android.view.MenuItem;
 /**
  * Created by Daniel on 06/12/2015.
  */
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     public Toolbar toolbar;
     private FragmentManager fragmentManager;
+
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,16 +31,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-//        DrawerFragment drawerFragment = (DrawerFragment) getSupportFragmentManager().findFragmentById(R.id.drawerFragment);
-//        drawerFragment.setUp(R.id.drawerFragment, (DrawerLayout) findViewById(R.id.drawerLayout), toolbar);
-        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.setDrawerListener(toggle);
         toggle.syncState();
 
-        HomeFragment homeFragment = new HomeFragment();
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
         fragmentManager = getSupportFragmentManager();
-        setMainFragment(homeFragment);
+        setMainFragment(new HomeFragment());
     }
 
     private void setMainFragment(Fragment fragment) {
@@ -48,9 +51,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        int id = item.getItemId();
 
-        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        if (id == R.id.nav_home) {
+            setMainFragment(new HomeFragment());
+        } else if (id == R.id.nav_recipes) {
+        } else if (id == R.id.nav_shopping_list) {
+
+        } else if (id == R.id.nav_timer) {
+
+        } else if (id == R.id.nav_essentials) {
+
+        } else if (id == R.id.nav_glossary) {
+
+        } else if (id == R.id.nav_settings) {
+
+        }
+
         drawerLayout.closeDrawer(GravityCompat.START);
-        return false;
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 }
