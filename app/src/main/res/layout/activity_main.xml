@@ -10,8 +10,9 @@
         android:layout_height="match_parent">
 
         <!-- Toolbar -->
-        <include layout="@layout/toolbar"
-            android:id="@+id/toolbar"/>
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
 
         <!-- Main Body -->
         <FrameLayout
@@ -23,8 +24,7 @@
     </RelativeLayout>
 
     <!-- NavigationView Element -->
-    <android.support.design.widget.NavigationView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"

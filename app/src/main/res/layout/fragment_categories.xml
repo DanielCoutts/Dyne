@@ -19,11 +19,14 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/card_margins">
 
+            <!-- Breakfast -->
             <android.support.v7.widget.CardView
+                android:id="@+id/category_breakfast"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margins"
                 android:elevation="@dimen/cardview_default_elevation"
-                android:layout_marginBottom="@dimen/card_margins">
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -31,10 +34,9 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/category_breakfast_imageview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/breakfast1" />
+                        android:layout_height="@dimen/categories_image_height" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -48,11 +50,14 @@
 
             </android.support.v7.widget.CardView>
 
+            <!-- Lunch -->
             <android.support.v7.widget.CardView
+                android:id="@+id/category_lunch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margins"
                 android:elevation="@dimen/cardview_default_elevation"
-                android:layout_marginBottom="@dimen/card_margins">
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -60,10 +65,9 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/category_lunch_imageview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/lunch1" />
+                        android:layout_height="@dimen/categories_image_height" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -77,11 +81,14 @@
 
             </android.support.v7.widget.CardView>
 
+            <!-- Dinner -->
             <android.support.v7.widget.CardView
+                android:id="@+id/category_dinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margins"
                 android:elevation="@dimen/cardview_default_elevation"
-                android:layout_marginBottom="@dimen/card_margins">
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -89,10 +96,9 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/category_dinner_imageview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/dinner1" />
+                        android:layout_height="@dimen/categories_image_height" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -106,11 +112,14 @@
 
             </android.support.v7.widget.CardView>
 
+            <!-- Desserts -->
             <android.support.v7.widget.CardView
+                android:id="@+id/category_desserts"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margins"
                 android:elevation="@dimen/cardview_default_elevation"
-                android:layout_marginBottom="@dimen/card_margins">
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -118,10 +127,9 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/category_desserts_imageview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/dessert1" />
+                        android:layout_height="@dimen/categories_image_height" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -135,11 +143,14 @@
 
             </android.support.v7.widget.CardView>
 
+            <!-- Drinks -->
             <android.support.v7.widget.CardView
+                android:id="@+id/category_drinks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margins"
                 android:elevation="@dimen/cardview_default_elevation"
-                android:layout_marginBottom="@dimen/card_margins">
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -147,10 +158,9 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/category_drinks_imageview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/drinks1" />
+                        android:layout_height="@dimen/categories_image_height" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -164,11 +174,14 @@
 
             </android.support.v7.widget.CardView>
 
+            <!-- Vegetarian -->
             <android.support.v7.widget.CardView
+                android:id="@+id/category_veg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margins"
                 android:elevation="@dimen/cardview_default_elevation"
-                android:layout_marginBottom="@dimen/card_margins">
+                android:foreground="?android:attr/selectableItemBackground">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -176,10 +189,9 @@
                     android:orientation="vertical">
 
                     <ImageView
+                        android:id="@+id/category_veg_imageview"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/vegetarian1" />
+                        android:layout_height="@dimen/categories_image_height" />
 
                     <TextView
                         android:layout_width="match_parent"

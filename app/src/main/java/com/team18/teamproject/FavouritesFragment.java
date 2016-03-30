@@ -29,11 +29,5 @@ public class FavouritesFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
-    private void squareButton(ImageButton tile) {
-        int width = tile.getWidth();
 
-        ViewGroup.LayoutParams params = tile.getLayoutParams();
-        params.height = width;
-        tile.requestLayout();
-    }
 }
