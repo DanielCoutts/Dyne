@@ -1,6 +1,7 @@
 package com.team18.teamproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -125,7 +126,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
             case R.id.nav_settings:
-
+                Intent intent = new Intent(this, RecipeActivity.class);
+                startActivity(intent);
                 break;
         }
 

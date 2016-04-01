@@ -21,7 +21,7 @@ public class NutritionFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_nutrition, container, false);
+        return inflater.inflate(R.layout.fragment_favourites, container, false);
     }
 
     @Override
@@ -29,11 +29,5 @@ public class NutritionFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
-    private void squareButton(ImageButton tile) {
-        int width = tile.getWidth();
 
-        ViewGroup.LayoutParams params = tile.getLayoutParams();
-        params.height = width;
-        tile.requestLayout();
-    }
 }
