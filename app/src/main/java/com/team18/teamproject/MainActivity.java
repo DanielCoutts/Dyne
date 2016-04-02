@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        if(getSupportActionBar() != null) {
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
@@ -58,7 +58,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fragmentManager = getSupportFragmentManager();
 
         // sets the main content area to the home fragment
-        setMainFragment(new HomeFragment());
+        if (savedInstanceState == null) {
+            setMainFragment(new HomeFragment());
+        }
 
         // Resizes and inserts the navigation drawer header image into the its ImageView
         ImageView header = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.drawer_header_background);
@@ -126,8 +128,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
             case R.id.nav_settings:
-                    Intent intent = new Intent(this, RecipeActivity.class);
-                    startActivity(intent);
+                Intent intent = new Intent(this, RecipeActivity.class);
+                startActivity(intent);
                 break;
         }
 

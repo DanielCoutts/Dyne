@@ -62,6 +62,7 @@ public class RecipeActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id) {
+            // Back button in action bar has the same behaviour as the system back button
             case android.R.id.home:
                 onBackPressed();
                 return true;
@@ -70,6 +71,9 @@ public class RecipeActivity extends AppCompatActivity {
         }
     }
 
+    /*
+     * Custom pager adapter that defines which fragments should be loaded into tabs.
+     */
     private class CustomAdapter extends FragmentPagerAdapter {
 
         private String fragments[] = {"Ingredients", "Method", "Nutrition"};
