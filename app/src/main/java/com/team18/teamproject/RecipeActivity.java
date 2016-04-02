@@ -63,8 +63,7 @@ public class RecipeActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case android.R.id.home:
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
