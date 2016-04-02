@@ -7,7 +7,6 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
@@ -44,22 +43,22 @@ public class CategoriesFragment extends Fragment {
      */
     private void loadImages() {
         ImageView breakfastImage = (ImageView) getActivity().findViewById(R.id.category_breakfast_imageview);
-        Picasso.with(getContext()).load(R.drawable.breakfast1).fit().centerCrop().into(breakfastImage);
+        Picasso.with(getContext()).load(R.drawable.cat_breakfast).fit().centerCrop().into(breakfastImage);
 
         ImageView lunchImage = (ImageView) getActivity().findViewById(R.id.category_lunch_imageview);
-        Picasso.with(getContext()).load(R.drawable.lunch1).fit().centerCrop().into(lunchImage);
+        Picasso.with(getContext()).load(R.drawable.cat_lunch).fit().centerCrop().into(lunchImage);
 
         ImageView dinnerImage = (ImageView) getActivity().findViewById(R.id.category_dinner_imageview);
-        Picasso.with(getContext()).load(R.drawable.dinner1).fit().centerCrop().into(dinnerImage);
+        Picasso.with(getContext()).load(R.drawable.cat_dinner).fit().centerCrop().into(dinnerImage);
 
         ImageView dessertsImage = (ImageView) getActivity().findViewById(R.id.category_desserts_imageview);
-        Picasso.with(getContext()).load(R.drawable.dessert1).fit().centerCrop().into(dessertsImage);
+        Picasso.with(getContext()).load(R.drawable.cat_dessert).fit().centerCrop().into(dessertsImage);
 
         ImageView drinksImage = (ImageView) getActivity().findViewById(R.id.category_drinks_imageview);
-        Picasso.with(getContext()).load(R.drawable.drinks1).fit().centerCrop().into(drinksImage);
+        Picasso.with(getContext()).load(R.drawable.cat_drinks).fit().centerCrop().into(drinksImage);
 
         ImageView vegImage = (ImageView) getActivity().findViewById(R.id.category_veg_imageview);
-        Picasso.with(getContext()).load(R.drawable.vegetarian1).fit().centerCrop().into(vegImage);
+        Picasso.with(getContext()).load(R.drawable.cat_vegetarian).fit().centerCrop().into(vegImage);
     }
 
     /*

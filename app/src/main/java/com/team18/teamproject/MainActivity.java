@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Resizes and inserts the navigation drawer header image into the its ImageView
         ImageView header = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.drawer_header_background);
-        Picasso.with(this).load(R.drawable.avocado2).fit().centerCrop().into(header);
+        Picasso.with(this).load(R.drawable.header_image).fit().centerCrop().into(header);
     }
 
     /*
