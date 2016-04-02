@@ -24,9 +24,9 @@ public class RecipeActivity extends AppCompatActivity{
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-       HomeFragment homeFragment = new HomeFragment();
+       RecipeFragment recipeFragment = new RecipeFragment();
         fragmentManager = getSupportFragmentManager();
-        setMainFragment(homeFragment);
+        setMainFragment(recipeFragment);
     }
 
     private void setMainFragment(Fragment fragment) {
