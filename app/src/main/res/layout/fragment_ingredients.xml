@@ -65,7 +65,7 @@
                     android:layout_alignBottom="@+id/recipeImage"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="32dp"
-                    android:background="@drawable/circle"
+                    android:background="@drawable/favourite_circle"
                     />
 
             </RelativeLayout>
