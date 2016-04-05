@@ -58,14 +58,14 @@
 
                 <ImageButton
                     android:id="@+id/favouriteButton"
-                    android:src="@drawable/favouritebutton"
+                    android:src="@mipmap/ic_favorite_white_24dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignEnd="@+id/recipeImage"
                     android:layout_alignBottom="@+id/recipeImage"
                     android:layout_marginEnd="20dp"
                     android:layout_marginBottom="32dp"
-                    android:background="@null"
+                    android:background="@drawable/circle"
                     />
 
             </RelativeLayout>
@@ -195,14 +195,20 @@
 
                 </TableLayout>
 
-                <ImageButton
+                <TextView
                     android:id="@+id/addToListButton"
-                    android:src="@drawable/addtolist"
+                    android:text="@string/addToList"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignEnd="@id/ingredients_list"
                     android:layout_alignBottom="@+id/ingredients_list"
-                    android:background="@null"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:background="@color/colorPrimaryDark"
                     />
 
             </RelativeLayout>

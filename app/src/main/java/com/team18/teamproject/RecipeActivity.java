@@ -32,6 +32,7 @@ public class RecipeActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle("Recipe_Name");
 
         pager = (ViewPager) findViewById(R.id.recipe_pager);
         pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
