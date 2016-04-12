@@ -64,7 +64,7 @@ public class HomeFragment extends Fragment {
 
     private class CustomAdapter extends FragmentPagerAdapter {
 
-        private String fragments[] = {"Recent", "Favourites", "Categories"};
+        private String fragments[] = {"Featured", "Favourites", "Categories"};
 
         public CustomAdapter(FragmentManager fragMan, Context applicationContext) {
             super(fragMan);
@@ -74,7 +74,7 @@ public class HomeFragment extends Fragment {
         public Fragment getItem(int position) {
             switch(position) {
                 case 0:
-                    return new RecentFragment();
+                    return new FeaturedFragment();
                 case 1:
                     return new FavouritesFragment();
                 case 2:

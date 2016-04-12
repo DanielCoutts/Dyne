@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- String names represent guide number, section number, and item number in the form 'guide#_s#i#' -->
+    <string name="guide1_title">Baking Techniques</string>
+    <string name="guide1_s1i1">Herbs and spices are essential flavouring ingredients. Most herbs are produced from the leaves and stems of a variety of plants. Spices, however, can come from plants’ roots, seeds, bark, buds or berries.
+
+It is best to keep these essential dry herbs on hand: basil, bay leaves, dill, marjoram, oregano, parsley, rosemary, sage, tarragon and thyme. Dried herbs have a more intense, concentrated flavour than fresh herbs. Crush dried herbs between your fingers before adding them to a dish to get the most flavour.
+
+Fresh herbs have a brighter, lighter and fresher taste than dried ones; however, they are best purchased fresh, refrigerated and used within a few days. As a rule, if a recipe calls for one tablespoon of dried herbs you should use two tablespoons when using fresh.</string>
+
+
+    <string name="guide2_title">Boiling, Poaching and Steaming</string>
+
+    <string name="guide3_title">Buying and Storing Fruits and Vegetables</string>
+
+    <string name="guide4_title">Buying and Storing Meat, Poultry and Fish</string>
+
+    <string name="guide5_title">Flour Types</string>
+
+    <string name="guide6_title">Glossary of Greens</string>
+
+    <string name="guide7_title">Herbs, Spices and Seasonings</string>
+
+    <string name="guide8_title">Roasting Times and Temperatures</string>
+
+    <string name="guide9_title">Using Knives Safely</string>
+
+    <string name="guide10_title">Working with Eggs</string>
+
+</resources>

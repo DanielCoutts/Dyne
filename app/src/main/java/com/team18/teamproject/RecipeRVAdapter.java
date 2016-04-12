@@ -8,18 +8,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-
 import java.util.List;
 
 /**
  * Created by Daniel on 30/03/2016.
  */
-public class RecentRVAdapter extends RecyclerView.Adapter<RecentRVAdapter.RecipeViewHolder> {
+public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.RecipeViewHolder> {
 
     List<Recipe> recipes;
 
-    RecentRVAdapter(List<Recipe> recipes) {
+    RecipeRVAdapter(List<Recipe> recipes) {
         this.recipes = recipes;
     }
 

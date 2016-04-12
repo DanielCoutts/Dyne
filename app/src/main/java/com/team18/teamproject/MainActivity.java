@@ -1,8 +1,6 @@
 package com.team18.teamproject;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -13,13 +11,20 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.AttributeSet;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.squareup.picasso.Picasso;
+import com.team18.teamproject.network.VolleySingleton;
 
 /**
  * Created by Daniel on 06/12/2015.
@@ -54,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Sets up Navigation listeners
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.getMenu().getItem(0).setChecked(true);
 
         fragmentManager = getSupportFragmentManager();
 
@@ -113,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 setMainFragment(new HomeFragment());
                 break;
             case R.id.nav_recipes:
-
+                setMainFragment(new AllRecipesFragment());
                 break;
             case R.id.nav_shopping_list:
 
@@ -122,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 break;
             case R.id.nav_essentials:
-
+                setMainFragment(new GuidesFragment());
                 break;
             case R.id.nav_glossary:
 
