@@ -11,6 +11,206 @@
         android:layout_height="match_parent"
         >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    >
+
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:text="@string/step_number"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/step_circle"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step"
+                    android:paddingStart="@dimen/card_padding"
+                    />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:background="@color/colorPrimary"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/method_text"
+                    />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:paddingStart="50dp"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:src="@mipmap/ic_navigate_before_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:src="@mipmap/ic_navigate_next_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    >
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="@string/step_number"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/step_circle"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step"
+                        android:layout_marginStart="@dimen/card_padding"
+                        />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:background="@color/colorPrimary"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/method_text"
+                    />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:src="@mipmap/ic_navigate_before_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:src="@mipmap/ic_navigate_next_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    >
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="@string/step_number"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/step_circle"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/step"
+                        android:layout_marginStart="@dimen/card_padding"
+                        />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:background="@color/colorPrimary"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/method_text"
+                    />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="50dp"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:src="@mipmap/ic_navigate_before_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:src="@mipmap/ic_navigate_next_black_24dp"
+                        android:padding="5dp"
+                        android:layout_margin="10dp"
+                        />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>

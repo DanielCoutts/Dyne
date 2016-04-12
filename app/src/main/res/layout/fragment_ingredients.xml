@@ -11,7 +11,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             >
 
@@ -31,96 +31,187 @@
                     />
 
                 <TextView
+                    android:id="@+id/recipeName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/recipe_name_template"
+                    android:textStyle="bold"
+                    android:layout_above="@+id/recipeTags"
+                    android:layout_alignStart="@+id/recipeImage"
+                    android:textColor="#FFFFFF"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="0dp"
+                    />
+
+                <TextView
+                    android:id="@+id/recipeTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipe_tags_list"
                     android:layout_alignBottom="@+id/recipeImage"
-                    android:layout_alignLeft="@+id/recipeImage"
+                    android:layout_alignStart="@+id/recipeImage"
                     android:textColor="#FFFFFF"
                     android:paddingBottom="12dp"
-                    android:paddingLeft="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="0dp"
                     />
 
                 <ImageButton
                     android:id="@+id/favouriteButton"
-                    android:src="@drawable/favouritebutton"
+                    android:src="@mipmap/ic_favorite_white_24dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignRight="@+id/recipeImage"
+                    android:layout_alignEnd="@+id/recipeImage"
                     android:layout_alignBottom="@+id/recipeImage"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginBottom="32dp"
-                    android:background="@null"
+                    android:background="@drawable/favourite_circle"
                     />
 
             </RelativeLayout>
 
-            <LinearLayout
-                android:id="@+id/infoRow1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/tile_margin"
-                android:layout_marginTop="@dimen/tile_margin"
+                <LinearLayout
+                    android:id="@+id/infoRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tile_margin"
+                    android:layout_marginTop="@dimen/tile_margin"
+                    >
+
+                    <!-- Update @string/serves with data from database -->
+                    <TextView
+                        android:id="@+id/serves"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/serves"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:background="@color/cardview_dark_background"
+                        android:layout_marginLeft="@dimen/tile_margin"
+                        android:layout_marginRight="@dimen/tile_margin"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        />
+
+                    <!-- Update @string/cook_time with data from database -->
+                    <TextView
+                        android:id="@+id/cookTime"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/cook_time"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:background="@color/cardview_dark_background"
+                        android:layout_marginLeft="@dimen/tile_margin"
+                        android:layout_marginRight="@dimen/tile_margin"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        />
+
+                    <!-- Update @string/difficulty with data from database -->
+                    <TextView
+                        android:id="@+id/difficulty"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/difficulty"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:background="@color/cardview_dark_background"
+                        android:layout_marginLeft="@dimen/tile_margin"
+                        android:layout_marginRight="@dimen/tile_margin"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        />
+
+                </LinearLayout>
+
+            <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
                 >
 
-                <!-- Update @string/serves with data from database -->
+                <TableLayout
+                    android:id="@+id/ingredients_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    >
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/recipe_ingredient_name"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/recipe_ingredient_name"
+                            />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/recipe_ingredient_name"
+                            />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/recipe_ingredient_name"
+                            />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <CheckBox
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@string/recipe_ingredient_name"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+
                 <TextView
-                    android:id="@+id/serves"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="@string/serves"
+                    android:id="@+id/addToListButton"
+                    android:text="@string/addToList"
+                    android:textStyle="bold"
                     android:textColor="#FFFFFF"
-                    android:textAlignment="center"
-                    android:background="@color/cardview_dark_background"
-                    android:layout_marginLeft="@dimen/tile_margin"
-                    android:layout_marginRight="@dimen/tile_margin"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/ingredients_list"
+                    android:layout_alignBottom="@+id/ingredients_list"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:background="@color/colorPrimaryDark"
                     />
 
-                <!-- Update @string/cook_time with data from database -->
-                <TextView
-                    android:id="@+id/cookTime"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="@string/cook_time"
-                    android:textColor="#FFFFFF"
-                    android:textAlignment="center"
-                    android:background="@color/cardview_dark_background"
-                    android:layout_marginLeft="@dimen/tile_margin"
-                    android:layout_marginRight="@dimen/tile_margin"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp"
-                    />
-
-                <!-- Update @string/difficulty with data from database -->
-                <TextView
-                    android:id="@+id/difficulty"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="@string/difficulty"
-                    android:textColor="#FFFFFF"
-                    android:textAlignment="center"
-                    android:background="@color/cardview_dark_background"
-                    android:layout_marginLeft="@dimen/tile_margin"
-                    android:layout_marginRight="@dimen/tile_margin"
-                    android:paddingTop="12dp"
-                    android:paddingBottom="12dp"
-                    />
-
-            </LinearLayout>
-
-            <GridLayout
-                android:id="@+id/ingredients_list"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <!-- Use Java to import ingredients as needed by recipe -->
-
-            </GridLayout>
+            </RelativeLayout>
 
         </LinearLayout>
 
