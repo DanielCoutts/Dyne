@@ -24,8 +24,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="no favourites to show"
-                android:textSize="@dimen/small_card_text"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="@dimen/small_card_text" />
 
         </LinearLayout>
     </ScrollView>
