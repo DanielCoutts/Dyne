@@ -1,4 +1,4 @@
-package com.team18.teamproject;
+package com.team18.teamproject.adapters;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.team18.teamproject.R;
+import com.team18.teamproject.Recipe;
+
 import java.util.List;
 
 /**
@@ -15,9 +18,9 @@ import java.util.List;
  */
 public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.RecipeViewHolder> {
 
-    List<Recipe> recipes;
+    private List<Recipe> recipes;
 
-    RecipeRVAdapter(List<Recipe> recipes) {
+    public RecipeRVAdapter(List<Recipe> recipes) {
         this.recipes = recipes;
     }
 

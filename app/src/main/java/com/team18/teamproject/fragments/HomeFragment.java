@@ -1,4 +1,4 @@
-package com.team18.teamproject;
+package com.team18.teamproject.fragments;
 
 
 import android.content.Context;
@@ -11,6 +11,8 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.team18.teamproject.R;
 
 
 public class HomeFragment extends Fragment {

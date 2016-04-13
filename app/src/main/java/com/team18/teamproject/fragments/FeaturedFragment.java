@@ -1,4 +1,4 @@
-package com.team18.teamproject;
+package com.team18.teamproject.fragments;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -16,6 +16,10 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.team18.teamproject.Application;
+import com.team18.teamproject.R;
+import com.team18.teamproject.Recipe;
+import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
 
 import org.json.JSONException;

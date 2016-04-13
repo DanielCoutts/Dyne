@@ -1,18 +1,20 @@
-package com.team18.teamproject;
+package com.team18.teamproject.activities;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
+import com.team18.teamproject.fragments.IngredientsFragment;
+import com.team18.teamproject.fragments.MethodFragment;
+import com.team18.teamproject.fragments.NutritionFragment;
+import com.team18.teamproject.R;
 
 /**
  * Created by Daniel on 06/12/2015.

@@ -1,4 +1,4 @@
-package com.team18.teamproject;
+package com.team18.teamproject.fragments;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
+import com.team18.teamproject.R;
 
 
 public class GuidesFragment extends Fragment {

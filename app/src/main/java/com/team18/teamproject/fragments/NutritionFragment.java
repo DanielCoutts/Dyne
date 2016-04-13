@@ -1,4 +1,4 @@
-package com.team18.teamproject;
+package com.team18.teamproject.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,6 +13,7 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.team18.teamproject.R;
 
 
 public class NutritionFragment extends Fragment {
