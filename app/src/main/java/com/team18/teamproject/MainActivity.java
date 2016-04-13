@@ -157,6 +157,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.action_search:
                 Snackbar.make(drawerLayout, "'Search' clicked", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
                 return true;
+            case R.id.action_facebook:
+                
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
