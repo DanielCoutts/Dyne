@@ -42,7 +42,7 @@ public class HomeFragment extends Fragment {
         pager = (ViewPager) getActivity().findViewById(R.id.pager);
         pager.setAdapter(new CustomAdapter(getActivity().getSupportFragmentManager(), getActivity().getApplicationContext()));
 
-        tabs = (TabLayout) getActivity().findViewById(R.id.tabs);
+        tabs = (TabLayout) getActivity().findViewById(R.id.home_tabs);
         tabs.setupWithViewPager(pager);
 
         tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
