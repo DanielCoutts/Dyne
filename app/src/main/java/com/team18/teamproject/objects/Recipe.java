@@ -1,4 +1,4 @@
-package com.team18.teamproject;
+package com.team18.teamproject.objects;
 
 /**
  * Created by Daniel on 30/03/2016.

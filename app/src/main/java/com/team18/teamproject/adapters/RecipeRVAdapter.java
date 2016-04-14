@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.team18.teamproject.R;
-import com.team18.teamproject.Recipe;
+import com.team18.teamproject.objects.Recipe;
 
 import java.util.List;
 

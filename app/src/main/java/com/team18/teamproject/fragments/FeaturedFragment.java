@@ -5,6 +5,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
-import com.team18.teamproject.Recipe;
+import com.team18.teamproject.network.CustomStringRequest;
+import com.team18.teamproject.objects.Recipe;
 import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
 
@@ -35,7 +37,8 @@ public class FeaturedFragment extends Fragment {
 
     private final static String URL = "http://homepages.cs.ncl.ac.uk/2015-16/csc2022_team18/getRecipeFromID.php";
 
-    RecyclerView recyclerView;
+    private RequestQueue requestQueue;
+    private RecyclerView recyclerView;
 
     private List<Recipe> recipes;
 
@@ -53,27 +56,36 @@ public class FeaturedFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        requestQueue = VolleySingleton.getInstance().getRequestQueue();
+
         initialiseData();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_featured, container, false);
+        final View view = inflater.inflate(R.layout.fragment_featured, container, false);
+        recyclerView = (RecyclerView) view.findViewById(R.id.featured_rv);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(layoutManager);
+
+        final RecipeRVAdapter adapter = new RecipeRVAdapter(recipes);
+        recyclerView.setAdapter(adapter);
+
+        return view;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        recyclerView = (RecyclerView) getActivity().findViewById(R.id.recent_rv);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-        RecipeRVAdapter adapter = new RecipeRVAdapter(recipes);
-        recyclerView.setAdapter(adapter);
-
         RequestQueue requestQueue = VolleySingleton.getInstance().getRequestQueue();
 
-        StringRequest request = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+        // Define parameters
+        Map<String, String> params = new HashMap<>();
+        params.put("RecipeID", "1");
+
+        // Create request
+        CustomStringRequest request = new CustomStringRequest(Request.Method.POST, URL, params, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Toast.makeText(Application.getAppContext(), response, Toast.LENGTH_LONG).show();
@@ -88,26 +100,14 @@ public class FeaturedFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                Application.connectionError(recyclerView);
 
                 /*
-                DEBUG TOAST
-                */
+                 * DEBUG TOAST
+                 */
                 Toast.makeText(Application.getAppContext(), "DEBUG:ERROR " + error.getMessage(), Toast.LENGTH_LONG).show();
-                /*
-                DEBUG TOAST
-                */
-
-                Snackbar.make(recyclerView, "Cannot connect to internet", Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
-        }) {
-
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> params = new HashMap<>();
-                params.put("RecipeID", "1");
-                return params;
-            }
-        };
+        });
 
         requestQueue.add(request);
     }

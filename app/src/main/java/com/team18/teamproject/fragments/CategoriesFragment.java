@@ -27,46 +27,51 @@ public class CategoriesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_categories, container, false);
+        final View view = inflater.inflate(R.layout.fragment_categories, container, false);
+
+        if (savedInstanceState == null) {
+            setupListeners(view);
+        }
+
+        loadImages(view);
+
+        return view;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        loadImages();
-
-        setupListeners();
     }
 
     /*
      * Resizing and loading images into ImageViews using the Picasso library.
      */
-    private void loadImages() {
-        ImageView breakfastImage = (ImageView) getActivity().findViewById(R.id.category_breakfast_imageview);
+    private void loadImages(View view) {
+        ImageView breakfastImage = (ImageView) view.findViewById(R.id.category_breakfast_imageview);
         Picasso.with(getContext()).load(R.drawable.cat_breakfast).fit().centerCrop().into(breakfastImage);
 
-        ImageView lunchImage = (ImageView) getActivity().findViewById(R.id.category_lunch_imageview);
+        ImageView lunchImage = (ImageView) view.findViewById(R.id.category_lunch_imageview);
         Picasso.with(getContext()).load(R.drawable.cat_lunch).fit().centerCrop().into(lunchImage);
 
-        ImageView dinnerImage = (ImageView) getActivity().findViewById(R.id.category_dinner_imageview);
+        ImageView dinnerImage = (ImageView) view.findViewById(R.id.category_dinner_imageview);
         Picasso.with(getContext()).load(R.drawable.cat_dinner).fit().centerCrop().into(dinnerImage);
 
-        ImageView dessertsImage = (ImageView) getActivity().findViewById(R.id.category_desserts_imageview);
+        ImageView dessertsImage = (ImageView) view.findViewById(R.id.category_desserts_imageview);
         Picasso.with(getContext()).load(R.drawable.cat_dessert).fit().centerCrop().into(dessertsImage);
 
-        ImageView drinksImage = (ImageView) getActivity().findViewById(R.id.category_drinks_imageview);
+        ImageView drinksImage = (ImageView) view.findViewById(R.id.category_drinks_imageview);
         Picasso.with(getContext()).load(R.drawable.cat_drinks).fit().centerCrop().into(drinksImage);
 
-        ImageView vegImage = (ImageView) getActivity().findViewById(R.id.category_veg_imageview);
+        ImageView vegImage = (ImageView) view.findViewById(R.id.category_veg_imageview);
         Picasso.with(getContext()).load(R.drawable.cat_vegetarian).fit().centerCrop().into(vegImage);
     }
 
     /*
      * Setting up onClick listeners for the category cards.
      */
-    private void setupListeners() {
-        CardView breakfast = (CardView) getActivity().findViewById(R.id.category_breakfast);
+    private void setupListeners(View view) {
+        CardView breakfast = (CardView) view.findViewById(R.id.category_breakfast);
         breakfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

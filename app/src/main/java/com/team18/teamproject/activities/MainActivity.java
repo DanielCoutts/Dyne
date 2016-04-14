@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Displays and configures hamburger icon
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.setDrawerListener(toggle);
+        drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
         // Sets up Navigation listeners
@@ -130,9 +130,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id) {
             case R.id.action_search:
                 Snackbar.make(drawerLayout, "'Search' clicked", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
-                return true;
-            case R.id.action_facebook:
-
                 return true;
         }
 
