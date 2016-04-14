@@ -1,6 +1,8 @@
 package com.team18.teamproject.activities;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
@@ -14,6 +16,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookSdk;
+import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.widget.ShareButton;
+import com.facebook.share.widget.ShareDialog;
 import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
 import com.team18.teamproject.fragments.NutritionFragment;
@@ -29,15 +36,34 @@ public class RecipeActivity extends AppCompatActivity {
     private TabLayout tabs;
     private ViewPager pager;
 
+   // CallbackManager callbackManager;
+   // ShareDialog shareDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+      //  FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_recipe);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("Recipe_Name");
+
+      //  callbackManager = CallbackManager.Factory.create();
+      //  shareDialog = new ShareDialog(this);
+
+         // if (ShareDialog.canShow(ShareLinkContent.class)) {
+         //       ShareLinkContent linkContent = new ShareLinkContent.Builder()
+         //               .setContentTitle("Hello Facebook")
+         //                .setContentDescription(
+         //                        "The 'Hello Facebook' sample  showcases simple Facebook integration")
+         //                .setContentUrl(Uri.parse("http://developers.facebook.com/android"))
+         //                .build();
+         //
+         //        ShareButton actionFacebook = (ShareButton) findViewById(R.id.action_facebook);
+         //        actionFacebook.setShareContent(linkContent);
+         //    }
 
         pager = (ViewPager) findViewById(R.id.recipe_pager);
         pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
@@ -96,6 +122,12 @@ public class RecipeActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+   // @Override
+   // protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+   //     super.onActivityResult(requestCode, resultCode, data);
+   //     callbackManager.onActivityResult(requestCode, resultCode, data);
+   // }
 
     /*
      * Custom pager adapter that defines which fragments should be loaded into tabs.

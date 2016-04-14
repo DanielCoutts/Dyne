@@ -16,11 +16,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-import com.facebook.CallbackManager;
-import com.facebook.FacebookSdk;
-import com.facebook.share.model.ShareLinkContent;
-import com.facebook.share.widget.ShareButton;
-import com.facebook.share.widget.ShareDialog;
 import com.squareup.picasso.Picasso;
 import com.team18.teamproject.fragments.AllRecipesFragment;
 import com.team18.teamproject.fragments.GuidesFragment;
@@ -39,34 +34,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private DrawerLayout drawerLayout;
 
-    CallbackManager callbackManager;
-    ShareDialog shareDialog;
-    private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
-    private Uri fileUri;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_main);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        callbackManager = CallbackManager.Factory.create();
-        shareDialog = new ShareDialog(this);
-
-        if (ShareDialog.canShow(ShareLinkContent.class)) {
-            ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                    .setContentTitle("Hello Facebook")
-                    .setContentDescription(
-                            "The 'Hello Facebook' sample  showcases simple Facebook integration")
-                    .setContentUrl(Uri.parse("http://developers.facebook.com/android"))
-                    .build();
-
-            ShareButton shareButton = (ShareButton) findViewById(R.id.fb_share_button);
-            shareButton.setShareContent(linkContent);
-        }
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -94,12 +68,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ImageView header = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.drawer_header_background);
         Picasso.with(this).load(R.drawable.header_image).fit().centerCrop().into(header);
 
-    }
-
-    @Override
-    protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
     /*
