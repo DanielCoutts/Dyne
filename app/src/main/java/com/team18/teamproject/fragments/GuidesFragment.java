@@ -27,37 +27,38 @@ public class GuidesFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_guides, container, false);
+        final View view = inflater.inflate(R.layout.fragment_guides, container, false);
+
+        loadImages(view);
+        setupListeners(view);
+
+        return view;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        loadImages();
-
-        setupListeners();
     }
 
     /*
      * Resizing and loading images into ImageViews using the Picasso library.
      */
-    private void loadImages() {
-        loadImage(R.id.guide1_imageview, R.drawable.cat_breakfast);
+    private void loadImages(View view) {
+        loadImage(R.id.guide1_imageview, R.drawable.cat_breakfast, view);
 
-        loadImage(R.id.guide2_imageview, R.drawable.cat_lunch);
+        loadImage(R.id.guide2_imageview, R.drawable.cat_lunch, view);
     }
 
-    private void loadImage(int imageViewId, int drawable) {
-        ImageView imageView = (ImageView) getActivity().findViewById(imageViewId);
-        Picasso.with(getContext()).load(drawable).fit().centerCrop().into(imageView);
+    private void loadImage(int imageViewId, int drawable, View view) {
+        ImageView imageView = (ImageView) view.findViewById(imageViewId);
+        Picasso.with(view.getContext()).load(drawable).fit().centerCrop().into(imageView);
     }
 
     /*
      * Setting up onClick listeners for the category cards.
      */
-    private void setupListeners() {
-        CardView cv1 = (CardView) getActivity().findViewById(R.id.guide1);
+    private void setupListeners(View view) {
+        CardView cv1 = (CardView) view.findViewById(R.id.guide1);
         cv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

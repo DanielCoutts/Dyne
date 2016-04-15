@@ -30,12 +30,4 @@ public class MethodFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
     }
-
-    private void squareButton(ImageButton tile) {
-        int width = tile.getWidth();
-
-        ViewGroup.LayoutParams params = tile.getLayoutParams();
-        params.height = width;
-        tile.requestLayout();
-    }
 }

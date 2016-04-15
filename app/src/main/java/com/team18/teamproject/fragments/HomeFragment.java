@@ -32,18 +32,20 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        pager = (ViewPager) view.findViewById(R.id.pager);
+        pager.setAdapter(new CustomAdapter(getActivity().getSupportFragmentManager(), getActivity().getApplicationContext()));
+
+        tabs = (TabLayout) view.findViewById(R.id.home_tabs);
+        tabs.setupWithViewPager(pager);
+
+        return view;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        pager = (ViewPager) getActivity().findViewById(R.id.pager);
-        pager.setAdapter(new CustomAdapter(getActivity().getSupportFragmentManager(), getActivity().getApplicationContext()));
-
-        tabs = (TabLayout) getActivity().findViewById(R.id.home_tabs);
-        tabs.setupWithViewPager(pager);
 
         tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
