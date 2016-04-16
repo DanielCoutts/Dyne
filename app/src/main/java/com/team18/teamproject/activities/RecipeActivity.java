@@ -2,8 +2,9 @@ package com.team18.teamproject.activities;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -18,8 +19,8 @@ import android.view.MenuItem;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
-import com.facebook.share.model.ShareLinkContent;
-import com.facebook.share.widget.ShareButton;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
 import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
@@ -39,6 +40,8 @@ public class RecipeActivity extends AppCompatActivity {
     CallbackManager callbackManager;
     ShareDialog shareDialog;
 
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,18 +55,6 @@ public class RecipeActivity extends AppCompatActivity {
 
         callbackManager = CallbackManager.Factory.create();
         shareDialog = new ShareDialog(this);
-
-          if (ShareDialog.canShow(ShareLinkContent.class)) {
-                ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                        .setContentTitle("Hello Facebook")
-                         .setContentDescription(
-                                 "The 'Hello Facebook' sample  showcases simple Facebook integration")
-                         .setContentUrl(Uri.parse("http://developers.facebook.com/android"))
-                         .build();
-
-                 ShareButton actionFacebook = new ShareButton(this);
-                 actionFacebook.setShareContent(linkContent);
-             }
 
         pager = (ViewPager) findViewById(R.id.recipe_pager);
         pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
@@ -90,6 +81,14 @@ public class RecipeActivity extends AppCompatActivity {
         });
     }
 
+    private void takePhoto() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+    }
+
+
     @Override
     /*
      * Adds the menu options
@@ -111,17 +110,9 @@ public class RecipeActivity extends AppCompatActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
-            
+
             case R.id.action_facebook:
-                if (ShareDialog.canShow(ShareLinkContent.class)) {
-                    ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                            .setContentTitle("Hello Facebook")
-                            .setContentDescription(
-                                    "The 'Hello Facebook' sample  showcases simple Facebook integration")
-                            .setContentUrl(Uri.parse("http://developers.facebook.com/android"))
-                            .build();
-                    shareDialog.show(linkContent);
-                }
+                takePhoto();
                 return true;
             case R.id.action_favourite:
 
@@ -135,6 +126,20 @@ public class RecipeActivity extends AppCompatActivity {
     protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            //if (ShareDialog.canShow(ShareLinkContent.class)) {
+                SharePhoto photo = new SharePhoto.Builder()
+                        .setBitmap(imageBitmap)
+                        .build();
+                SharePhotoContent photoContent = new SharePhotoContent.Builder()
+                        .addPhoto(photo)
+                        .build();
+                shareDialog.show(photoContent);
+           // }
+        }
+
     }
 
     /*
