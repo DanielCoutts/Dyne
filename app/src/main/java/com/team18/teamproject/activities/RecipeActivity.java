@@ -19,6 +19,7 @@ import android.view.MenuItem;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
+import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
@@ -41,6 +42,7 @@ public class RecipeActivity extends AppCompatActivity {
     ShareDialog shareDialog;
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    private Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,9 @@ public class RecipeActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        if (getSupportActionBar() != null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
         setTitle("Recipe_Name");
 
         callbackManager = CallbackManager.Factory.create();
@@ -86,8 +90,22 @@ public class RecipeActivity extends AppCompatActivity {
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
+        if (ShareDialog.canShow(SharePhotoContent.class)) {
+            sharePhoto();
+        }
     }
 
+    private void sharePhoto(){
+        SharePhoto photo = new SharePhoto.Builder()
+                .setBitmap(bitmap)
+                .setCaption("@string/share_message")
+                .build();
+        SharePhotoContent photoContent = new SharePhotoContent.Builder()
+                .addPhoto(photo)
+                .build();
+        shareDialog.show(photoContent);
+        setTitle(getTitle()+ "1");
+    }
 
     @Override
     /*
@@ -128,16 +146,10 @@ public class RecipeActivity extends AppCompatActivity {
         callbackManager.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            //if (ShareDialog.canShow(ShareLinkContent.class)) {
-                SharePhoto photo = new SharePhoto.Builder()
-                        .setBitmap(imageBitmap)
-                        .build();
-                SharePhotoContent photoContent = new SharePhotoContent.Builder()
-                        .addPhoto(photo)
-                        .build();
-                shareDialog.show(photoContent);
-           // }
+            bitmap = (Bitmap) extras.get("data");
+            setTitle(getTitle() + "2");
+        } else {
+            setTitle(getTitle()+ "3");
         }
 
     }
