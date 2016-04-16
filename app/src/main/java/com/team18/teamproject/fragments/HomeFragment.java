@@ -35,7 +35,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         pager = (ViewPager) view.findViewById(R.id.pager);
-        pager.setAdapter(new CustomAdapter(getActivity().getSupportFragmentManager(), getActivity().getApplicationContext()));
+        pager.setAdapter(new CustomAdapter(getChildFragmentManager(), getActivity().getApplicationContext()));
 
         tabs = (TabLayout) view.findViewById(R.id.home_tabs);
         tabs.setupWithViewPager(pager);
@@ -64,6 +64,13 @@ public class HomeFragment extends Fragment {
                 pager.setCurrentItem(tab.getPosition());
             }
         });
+    }
+
+    /*
+     * Advised to override this method in order to prevent views disappearing in nested fragments.
+     */
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
     }
 
     private class CustomAdapter extends FragmentPagerAdapter {
