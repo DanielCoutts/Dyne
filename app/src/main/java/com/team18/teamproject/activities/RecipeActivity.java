@@ -36,38 +36,34 @@ public class RecipeActivity extends AppCompatActivity {
     private TabLayout tabs;
     private ViewPager pager;
 
-   // CallbackManager callbackManager;
-   // ShareDialog shareDialog;
+    CallbackManager callbackManager;
+    ShareDialog shareDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-      //  FacebookSdk.sdkInitialize(getApplicationContext());
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_recipe);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        if(getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("Recipe_Name");
 
-      //  callbackManager = CallbackManager.Factory.create();
-      //  shareDialog = new ShareDialog(this);
+        callbackManager = CallbackManager.Factory.create();
+        shareDialog = new ShareDialog(this);
 
-         // if (ShareDialog.canShow(ShareLinkContent.class)) {
-         //       ShareLinkContent linkContent = new ShareLinkContent.Builder()
-         //               .setContentTitle("Hello Facebook")
-         //                .setContentDescription(
-         //                        "The 'Hello Facebook' sample  showcases simple Facebook integration")
-         //                .setContentUrl(Uri.parse("http://developers.facebook.com/android"))
-         //                .build();
-         //
-         //        ShareButton actionFacebook = (ShareButton) findViewById(R.id.action_facebook);
-         //        actionFacebook.setShareContent(linkContent);
-         //    }
+          if (ShareDialog.canShow(ShareLinkContent.class)) {
+                ShareLinkContent linkContent = new ShareLinkContent.Builder()
+                        .setContentTitle("Hello Facebook")
+                         .setContentDescription(
+                                 "The 'Hello Facebook' sample  showcases simple Facebook integration")
+                         .setContentUrl(Uri.parse("http://developers.facebook.com/android"))
+                         .build();
+
+                 ShareButton actionFacebook = new ShareButton(this);
+                 actionFacebook.setShareContent(linkContent);
+             }
 
         pager = (ViewPager) findViewById(R.id.recipe_pager);
         pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
@@ -115,9 +111,17 @@ public class RecipeActivity extends AppCompatActivity {
             case android.R.id.home:
                 onBackPressed();
                 return true;
-
+            
             case R.id.action_facebook:
-
+                if (ShareDialog.canShow(ShareLinkContent.class)) {
+                    ShareLinkContent linkContent = new ShareLinkContent.Builder()
+                            .setContentTitle("Hello Facebook")
+                            .setContentDescription(
+                                    "The 'Hello Facebook' sample  showcases simple Facebook integration")
+                            .setContentUrl(Uri.parse("http://developers.facebook.com/android"))
+                            .build();
+                    shareDialog.show(linkContent);
+                }
                 return true;
             case R.id.action_favourite:
 
@@ -127,11 +131,11 @@ public class RecipeActivity extends AppCompatActivity {
         }
     }
 
-   // @Override
-   // protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
-   //     super.onActivityResult(requestCode, resultCode, data);
-   //     callbackManager.onActivityResult(requestCode, resultCode, data);
-   // }
+    @Override
+    protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+    }
 
     /*
      * Custom pager adapter that defines which fragments should be loaded into tabs.
