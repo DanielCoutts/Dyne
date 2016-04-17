@@ -12,7 +12,7 @@
             android:title="All Recipes" />
         <item
             android:id="@+id/nav_eating"
-            android:icon="@drawable/ic_menu_silverware"
+            android:icon="@drawable/ic_menu_glass_tulip"
             android:title="Eating Out" />
         <item
             android:id="@+id/nav_shopping_list"
@@ -31,7 +31,6 @@
             android:icon="@drawable/ic_menu_tag"
             android:title="Glossary" />
     </group>
-
 
     <group android:id="@+id/nav_section_settings">
         <item
