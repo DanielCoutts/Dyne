@@ -1,10 +1,8 @@
 package com.team18.teamproject.activities;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
@@ -24,55 +22,76 @@ import com.team18.teamproject.R;
 import com.team18.teamproject.fragments.MapFragment;
 
 /**
- * Created by Daniel on 06/12/2015.
+ * The main activity contains a navigation drawer with a fragment in the main body of the page.
+ * Selecting items from the navigation drawer swaps out the main fragment with the desired section.
  */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    // The main app toolbar. This contains a hamburger menu, a title, and a search button.
+    /**
+     * The main app toolbar. This contains a hamburger menu, a title, and a search button.
+     */
     public Toolbar toolbar;
 
+    /**
+     * The fragment manager for the main page fragment.
+     */
     private FragmentManager fragmentManager;
 
+    /**
+     * The DrawerLayout element in the main activity's layout.
+     */
     private DrawerLayout drawerLayout;
+
+    /**
+     * The NavigationView in the DrawerLayout's drawer.
+     */
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set up associated layout file.
         setContentView(R.layout.activity_main);
 
+        // Initialise fields.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        fragmentManager = getSupportFragmentManager();
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
 
+        // Set up the toolbar.
+        setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
-        // Displays and configures hamburger icon
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
+        // Display and configure hamburger icon.
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        // Sets up Navigation listeners
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        // Set up Navigation listeners.
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.getMenu().getItem(0).setChecked(true);
 
-        fragmentManager = getSupportFragmentManager();
-
-        // sets the main content area to the home fragment
+        // Sets the main content area to the home fragment.
         if (savedInstanceState == null) {
             setMainFragment(new HomeFragment());
         }
 
-        // Resizes and inserts the navigation drawer header image into the its ImageView
+        // Resize and insert the navigation drawer header image into the its ImageView
         ImageView header = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.drawer_header_background);
         Picasso.with(this).load(R.drawable.header_image).fit().centerCrop().into(header);
 
     }
 
-    /*
-     * Changes the main display area to a given page (fragment)
+    /**
+     * Change the main display area to a given page (fragment).
+     *
+     * @param fragment fragment to load into the main display area.
+     *
+     * [created by Daniel]
      */
     private void setMainFragment(Fragment fragment) {
         fragmentManager.beginTransaction()
@@ -81,59 +100,63 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    /*
-     * Adds the search button
-     */
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
-    /*
-     * Listener for the actionbar menu
-     */
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
         switch (id) {
+
             case R.id.action_search:
-                Snackbar.make(drawerLayout, "'Search' clicked", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+                // TODO launch search activity
                 return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
     }
 
     @Override
-    /*
-     * Listener for the navigation menu
-     */
     public boolean onNavigationItemSelected(MenuItem item) {
         int id = item.getItemId();
 
+        // Define behaviour of navigation items.
         switch (id) {
             case R.id.nav_home:
                 setMainFragment(new HomeFragment());
                 break;
+
             case R.id.nav_recipes:
                 setMainFragment(new AllRecipesFragment());
                 break;
+
             case R.id.nav_eating:
                 setMainFragment(new MapFragment());
+                break;
+
             case R.id.nav_shopping_list:
 
                 break;
+
             case R.id.nav_timer:
 
                 break;
+
             case R.id.nav_essentials:
                 setMainFragment(new GuidesFragment());
                 break;
+
             case R.id.nav_glossary:
 
                 break;
+
             case R.id.nav_settings:
+                // TODO implement settings activity with three checkboxes: vegan, veg, gluten free
                 Intent intent = new Intent(this, RecipeActivity.class);
                 startActivity(intent);
                 break;
@@ -145,6 +168,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void onBackPressed() {
+
+        // If back is pressed when the drawer is open, close it.
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
