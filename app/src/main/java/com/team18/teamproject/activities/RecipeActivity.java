@@ -42,7 +42,6 @@ public class RecipeActivity extends AppCompatActivity {
     ShareDialog shareDialog;
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
-    private Bitmap bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,12 +89,10 @@ public class RecipeActivity extends AppCompatActivity {
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
-        if (ShareDialog.canShow(SharePhotoContent.class)) {
-            sharePhoto();
-        }
+
     }
 
-    private void sharePhoto(){
+    private void sharePhoto(Bitmap bitmap){
         SharePhoto photo = new SharePhoto.Builder()
                 .setBitmap(bitmap)
                 .setCaption("@string/share_message")
@@ -104,7 +101,6 @@ public class RecipeActivity extends AppCompatActivity {
                 .addPhoto(photo)
                 .build();
         shareDialog.show(photoContent);
-        setTitle(getTitle()+ "1");
     }
 
     @Override
@@ -146,12 +142,11 @@ public class RecipeActivity extends AppCompatActivity {
         callbackManager.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
-            bitmap = (Bitmap) extras.get("data");
-            setTitle(getTitle() + "2");
-        } else {
-            setTitle(getTitle()+ "3");
-        }
-
+            Bitmap bitmap = (Bitmap) extras.get("data");
+            if (ShareDialog.canShow(SharePhotoContent.class)) {
+               sharePhoto(bitmap);
+            }
+        } else {}
     }
 
     /*
