@@ -21,6 +21,7 @@ import com.team18.teamproject.fragments.AllRecipesFragment;
 import com.team18.teamproject.fragments.GuidesFragment;
 import com.team18.teamproject.fragments.HomeFragment;
 import com.team18.teamproject.R;
+import com.team18.teamproject.fragments.MapFragment;
 
 /**
  * Created by Daniel on 06/12/2015.
@@ -118,6 +119,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_recipes:
                 setMainFragment(new AllRecipesFragment());
                 break;
+            case R.id.nav_eating:
+                setMainFragment(new MapFragment());
             case R.id.nav_shopping_list:
 
                 break;
