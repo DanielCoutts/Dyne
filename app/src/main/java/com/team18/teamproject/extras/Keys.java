@@ -1,7 +1,7 @@
 package com.team18.teamproject.extras;
 
 /**
- * Created by Daniel on 17/04/2016.
+ * Interface containing keys for JSON parsing.
  */
 public interface Keys {
     interface Recipes {

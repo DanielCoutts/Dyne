@@ -5,12 +5,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,7 +17,6 @@ import android.view.MenuItem;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
-import com.facebook.share.model.ShareLinkContent;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
@@ -29,10 +26,14 @@ import com.team18.teamproject.fragments.NutritionFragment;
 import com.team18.teamproject.R;
 
 /**
- * Created by Daniel on 06/12/2015.
+ * The recipe activity contains three tabs: ingredients, method, and nutrition.
+ * Data is different based on the selected recipe, so it is loaded in when the activity is launched.
  */
 public class RecipeActivity extends AppCompatActivity {
 
+    /**
+     * The recipe activity toolbar. This contains a back button, a title, a favourite button, and a facebook share button.
+     */
     public Toolbar toolbar;
 
     private TabLayout tabs;

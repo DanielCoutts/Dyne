@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     /**
      * Change the main display area to a given page (fragment).
      *
-     * @param fragment fragment to load into the main display area.
+     * Created by Daniel.
      *
-     * [created by Daniel]
+     * @param fragment fragment to load into the main display area.
      */
     private void setMainFragment(Fragment fragment) {
         fragmentManager.beginTransaction()

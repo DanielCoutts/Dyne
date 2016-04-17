@@ -17,21 +17,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Daniel on 30/03/2016.
+ * Custom RecyclerView Adapter.
  */
 public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHolderRecipe> {
 
+    /**
+     * List of recipes to display in the RecyclerView.
+     */
     private List<Recipe> recipes = new ArrayList<>();
 
+    /**
+     * The LayoutInflater object for the fragment.
+     */
     private LayoutInflater layoutInflater;
 
+    /**
+     * The fragment context.
+     */
     private Context context;
 
+    /**
+     * Constructor that initialises the context and layoutInflater.
+     *
+     * @param context context of the parent
+     */
     public RecipeRVAdapter(Context context) {
         this.context = context;
         layoutInflater = LayoutInflater.from(context);
     }
 
+    /**
+     * Initialises recipe list with specified list object
+     *
+     * @param recipes List of recipes to
+     */
     public void setRecipeList(List<Recipe> recipes) {
         this.recipes = recipes;
         notifyItemRangeChanged(0, recipes.size());
@@ -63,6 +82,9 @@ public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHo
         super.onAttachedToRecyclerView(recyclerView);
     }
 
+    /**
+     * Inner ViewHolder class.
+     */
     public static class viewHolderRecipe extends RecyclerView.ViewHolder {
 
         CardView cv;
@@ -71,6 +93,11 @@ public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHo
         TextView difficulty;
         ImageView image;
 
+        /**
+         * Constructor that initialises fields.
+         *
+         * @param itemView View that will display the data.
+         */
         public viewHolderRecipe(View itemView) {
             super(itemView);
             cv = (CardView) itemView.findViewById(R.id.recipe_cardview);
