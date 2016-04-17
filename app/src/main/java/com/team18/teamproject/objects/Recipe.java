@@ -24,6 +24,16 @@ public class Recipe {
         imageUrl = "http://homepages.cs.ncl.ac.uk/2015-16/csc2022_team18/images/1.jpg";
     }
 
+    public Recipe(int id, String name, int serves, String category, String difficulty, String cookTime, String imageUrl) {
+        this.id = id;
+        this.name = name;
+        this.serves = serves;
+        this.category = category;
+        this.difficulty = difficulty;
+        this.cookTime = cookTime;
+        this.imageUrl = imageUrl;
+    }
+
     public int getId() {
         return id;
     }

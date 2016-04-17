@@ -39,7 +39,7 @@ public class FeaturedFragment extends Fragment {
 
     private RequestQueue requestQueue;
     private RecyclerView recyclerView;
-
+    private RecipeRVAdapter adapter;
     private List<Recipe> recipes;
 
     private void initialiseData() {
@@ -68,7 +68,7 @@ public class FeaturedFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        final RecipeRVAdapter adapter = new RecipeRVAdapter(recipes);
+        adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
         return view;

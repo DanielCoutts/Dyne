@@ -1,5 +1,6 @@
 package com.team18.teamproject.adapters;
 
+import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,38 +9,32 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.team18.teamproject.R;
 import com.team18.teamproject.objects.Recipe;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Daniel on 30/03/2016.
  */
-public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.RecipeViewHolder> {
+public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHolderRecipe> {
 
-    private List<Recipe> recipes;
+    private List<Recipe> recipes = new ArrayList<>();
 
-    public RecipeRVAdapter(List<Recipe> recipes) {
-        this.recipes = recipes;
+    private LayoutInflater layoutInflater;
+
+    private Context context;
+
+    public RecipeRVAdapter(Context context) {
+        this.context = context;
+        layoutInflater = LayoutInflater.from(context);
     }
 
-    public static class RecipeViewHolder extends RecyclerView.ViewHolder {
-        CardView cv;
-        TextView title;
-        TextView time;
-        TextView difficulty;
-        ImageView image;
-
-
-        public RecipeViewHolder(View itemView) {
-            super(itemView);
-            cv = (CardView) itemView.findViewById(R.id.recipe_cardview);
-            title = (TextView) itemView.findViewById(R.id.card_title);
-            time = (TextView) itemView.findViewById(R.id.card_time);
-            difficulty = (TextView) itemView.findViewById(R.id.card_difficulty);
-            image = (ImageView) itemView.findViewById(R.id.card_image);
-        }
+    public void setRecipeList(List<Recipe> recipes) {
+        this.recipes = recipes;
+        notifyItemRangeChanged(0, recipes.size());
     }
 
     @Override
@@ -48,21 +43,41 @@ public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.Recipe
     }
 
     @Override
-    public RecipeViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card_recipe, viewGroup, false);
-        RecipeViewHolder rvh = new RecipeViewHolder(v);
-        return rvh;
+    public viewHolderRecipe onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View view = layoutInflater.inflate(R.layout.card_recipe, viewGroup, false);
+        viewHolderRecipe viewHolder = new viewHolderRecipe(view);
+        return viewHolder;
     }
 
     @Override
-    public void onBindViewHolder(RecipeViewHolder rvh, int i) {
-        rvh.title.setText(recipes.get(i).getName());
-        rvh.time.setText(recipes.get(i).getCookTime());
-        rvh.difficulty.setText(recipes.get(i).getDifficulty());
+    public void onBindViewHolder(viewHolderRecipe viewHolder, int i) {
+        Recipe currentRecipe = recipes.get(i);
+        viewHolder.title.setText(currentRecipe.getName());
+        viewHolder.time.setText(currentRecipe.getCookTime());
+        viewHolder.difficulty.setText(currentRecipe.getDifficulty());
+        Picasso.with(context).load(currentRecipe.getImageUrl()).fit().centerCrop().into(viewHolder.image);
     }
 
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
         super.onAttachedToRecyclerView(recyclerView);
+    }
+
+    public static class viewHolderRecipe extends RecyclerView.ViewHolder {
+
+        CardView cv;
+        TextView title;
+        TextView time;
+        TextView difficulty;
+        ImageView image;
+
+        public viewHolderRecipe(View itemView) {
+            super(itemView);
+            cv = (CardView) itemView.findViewById(R.id.recipe_cardview);
+            title = (TextView) itemView.findViewById(R.id.card_title);
+            time = (TextView) itemView.findViewById(R.id.card_time);
+            difficulty = (TextView) itemView.findViewById(R.id.card_difficulty);
+            image = (ImageView) itemView.findViewById(R.id.card_image);
+        }
     }
 }
