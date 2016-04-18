@@ -12,6 +12,9 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 import com.team18.teamproject.R;
 
+/**
+ * Insert Comment Here
+ */
 
 public class CategoriesFragment extends Fragment {
 
