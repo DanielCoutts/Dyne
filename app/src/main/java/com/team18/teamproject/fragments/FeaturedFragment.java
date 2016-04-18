@@ -42,12 +42,6 @@ public class FeaturedFragment extends Fragment {
     private RecipeRVAdapter adapter;
     private List<Recipe> recipes;
 
-    private void initialiseData() {
-        recipes = new ArrayList<>();
-        recipes.add(new Recipe(1));
-        recipes.add(new Recipe(2));
-    }
-
     public FeaturedFragment() {
 
     }
@@ -57,8 +51,6 @@ public class FeaturedFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         requestQueue = VolleySingleton.getInstance().getRequestQueue();
-
-        initialiseData();
     }
 
     @Override

@@ -11,18 +11,7 @@ public class Recipe {
     private String category;
     private String difficulty;
     private String cookTime;
-
     private String imageUrl;
-
-    public Recipe(int id) {
-        this.id = id;
-        name = "testName";
-        serves = 1;
-        category = "testCat";
-        difficulty = "testDifficulty";
-        cookTime = "10 Minutes";
-        imageUrl = "http://homepages.cs.ncl.ac.uk/2015-16/csc2022_team18/images/1.jpg";
-    }
 
     public Recipe(int id, String name, int serves, String category, String difficulty, String cookTime, String imageUrl) {
         this.id = id;

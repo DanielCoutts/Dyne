@@ -1,21 +1,20 @@
 package com.team18.teamproject.fragments;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import java.util.ArrayList;
 
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
-import com.github.mikephil.charting.utils.ColorTemplate;
+import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
+import com.team18.teamproject.objects.Recipe;
 
 /**
  * Insert Comment Here
@@ -25,6 +24,8 @@ public class NutritionFragment extends Fragment {
 
     private View fragmentView;
 
+    private Recipe recipe;
+
     public NutritionFragment() {
 
     }
@@ -32,6 +33,8 @@ public class NutritionFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        recipe = Application.getCurrentRecipe();
     }
 
     @Override

@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     tools:context=".fragments.AllRecipesFragment">
 
-    <!-- Main Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">

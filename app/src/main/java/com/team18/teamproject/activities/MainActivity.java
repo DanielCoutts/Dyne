@@ -129,35 +129,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id) {
             case R.id.nav_home:
                 setMainFragment(new HomeFragment());
+                setTitle("Dyne");
                 break;
 
             case R.id.nav_recipes:
                 setMainFragment(new AllRecipesFragment());
+                setTitle("All Recipes");
                 break;
 
             case R.id.nav_eating:
                 setMainFragment(new MapFragment());
+                setTitle("Eating Out");
                 break;
 
             case R.id.nav_shopping_list:
-
+                setTitle("Shopping List");
                 break;
 
             case R.id.nav_timer:
-
+                setTitle("Timer");
                 break;
 
             case R.id.nav_essentials:
                 setMainFragment(new GuidesFragment());
+                setTitle("Essentials Guide");
                 break;
 
             case R.id.nav_glossary:
-
+                setTitle("Glossary");
                 break;
 
             case R.id.nav_settings:
                 // TODO implement settings activity with three checkboxes: vegan, veg, gluten free
-                Intent intent = new Intent(this, RecipeActivity.class);
+                Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
                 break;
         }

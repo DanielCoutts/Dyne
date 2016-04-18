@@ -7,13 +7,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
+import com.team18.teamproject.objects.Recipe;
 
 /**
  * Insert Comment Here
  */
 
 public class MethodFragment extends Fragment {
+
+    private Recipe recipe;
 
     public MethodFragment() {
 
@@ -22,6 +26,8 @@ public class MethodFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        recipe = Application.getCurrentRecipe();
     }
 
     @Override

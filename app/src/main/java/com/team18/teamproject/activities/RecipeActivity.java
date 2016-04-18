@@ -20,10 +20,12 @@ import com.facebook.FacebookSdk;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
+import com.team18.teamproject.Application;
 import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
 import com.team18.teamproject.fragments.NutritionFragment;
 import com.team18.teamproject.R;
+import com.team18.teamproject.objects.Recipe;
 
 /**
  * The recipe activity contains three tabs: ingredients, method, and nutrition.
@@ -35,6 +37,8 @@ public class RecipeActivity extends AppCompatActivity {
      * The recipe activity toolbar. This contains a back button, a title, a favourite button, and a facebook share button.
      */
     public Toolbar toolbar;
+
+    private Recipe recipe;
 
     private TabLayout tabs;
     private ViewPager pager;
@@ -50,12 +54,14 @@ public class RecipeActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_recipe);
 
+        recipe = Application.getCurrentRecipe();
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-        setTitle("Recipe_Name");
+        setTitle(recipe.getName());
 
         callbackManager = CallbackManager.Factory.create();
         shareDialog = new ShareDialog(this);
@@ -64,7 +70,9 @@ public class RecipeActivity extends AppCompatActivity {
         pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
 
         tabs = (TabLayout) findViewById(R.id.recipe_tabs);
-        tabs.setupWithViewPager(pager);
+        if (tabs != null) {
+            tabs.setupWithViewPager(pager);
+        }
 
         tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
@@ -93,7 +101,7 @@ public class RecipeActivity extends AppCompatActivity {
 
     }
 
-    private void sharePhoto(Bitmap bitmap){
+    private void sharePhoto(Bitmap bitmap) {
         SharePhoto photo = new SharePhoto.Builder()
                 .setBitmap(bitmap)
                 .setCaption("@string/share_message")
@@ -145,9 +153,10 @@ public class RecipeActivity extends AppCompatActivity {
             Bundle extras = data.getExtras();
             Bitmap bitmap = (Bitmap) extras.get("data");
             if (ShareDialog.canShow(SharePhotoContent.class)) {
-               sharePhoto(bitmap);
+                sharePhoto(bitmap);
             }
-        } else {}
+        } else {
+        }
     }
 
     /*

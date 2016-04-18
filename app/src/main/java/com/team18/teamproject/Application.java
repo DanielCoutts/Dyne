@@ -22,6 +22,8 @@ public class Application extends android.app.Application {
     private static List<Recipe> favourites = new ArrayList<>();
     // TODO getting, setting, and state saving.
 
+    private static Recipe currentRecipe;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -42,5 +44,13 @@ public class Application extends android.app.Application {
 
     public static void responseError(View view) {
         Snackbar.make(view, "Cannot Fetch Recipes", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+    }
+
+    public static Recipe getCurrentRecipe() {
+        return currentRecipe;
+    }
+
+    public static void setCurrentRecipe(Recipe currentRecipe) {
+        Application.currentRecipe = currentRecipe;
     }
 }

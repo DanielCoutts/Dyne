@@ -44,9 +44,9 @@ public class GuidesFragment extends Fragment {
      * Resizing and loading images into ImageViews using the Picasso library.
      */
     private void loadImages(View view) {
-        loadImage(R.id.guide1_imageview, R.drawable.cat_breakfast, view);
+        loadImage(R.id.guide1_imageview, R.drawable.essential_baking, view);
 
-        loadImage(R.id.guide2_imageview, R.drawable.cat_lunch, view);
+        loadImage(R.id.guide2_imageview, R.drawable.essential_boiling, view);
     }
 
     private void loadImage(int imageViewId, int drawable, View view) {
