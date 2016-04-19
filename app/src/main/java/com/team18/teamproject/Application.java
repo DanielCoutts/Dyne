@@ -7,7 +7,9 @@ import android.view.View;
 import com.team18.teamproject.objects.Recipe;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Daniel on 03/04/2016.
@@ -16,10 +18,17 @@ public class Application extends android.app.Application {
 
     private static Application sInstance;
 
+    /** Global vegetarian preference. */
+    private static boolean vegetarian;
+    /** Global vegan preference. */
+    private static boolean vegan;
+    /** Global gluten-free preference. */
+    private static boolean glutenFree;
+
     /**
-     * Globally accessible list of favourite recipes to be cached.
+     * Globally accessible map of favourite recipes to be cached.
      */
-    private static List<Recipe> favourites = new ArrayList<>();
+    private static Map<Integer,Recipe> favourites = new HashMap<>();
     // TODO getting, setting, and state saving.
 
     private static Recipe currentRecipe;
@@ -52,5 +61,33 @@ public class Application extends android.app.Application {
 
     public static void setCurrentRecipe(Recipe currentRecipe) {
         Application.currentRecipe = currentRecipe;
+    }
+
+    public static Map<Integer, Recipe> getFavourites() {
+        return favourites;
+    }
+
+    public static boolean isVegetarian() {
+        return vegetarian;
+    }
+
+    public static void setVegetarian(boolean vegetarian) {
+        Application.vegetarian = vegetarian;
+    }
+
+    public static boolean isVegan() {
+        return vegan;
+    }
+
+    public static void setVegan(boolean vegan) {
+        Application.vegan = vegan;
+    }
+
+    public static boolean isGlutenFree() {
+        return glutenFree;
+    }
+
+    public static void setGlutenFree(boolean glutenFree) {
+        Application.glutenFree = glutenFree;
     }
 }

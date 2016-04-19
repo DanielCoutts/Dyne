@@ -17,4 +17,46 @@
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_vertical_margin">
+
+            <Switch
+                android:id="@+id/toggle_vegetarian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/toggle_padding"
+                android:textSize="@dimen/regular_settings_text"
+                android:text="Vegetarian Recipes Only" />
+
+            <Switch
+                android:id="@+id/toggle_vegan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/toggle_padding"
+                android:textSize="@dimen/regular_settings_text"
+                android:text="Vegan Recipes Only" />
+
+            <Switch
+                android:id="@+id/toggle_glutenFree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/toggle_padding"
+                android:textSize="@dimen/regular_settings_text"
+                android:text="Gluten Free Recipes Only" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </LinearLayout>

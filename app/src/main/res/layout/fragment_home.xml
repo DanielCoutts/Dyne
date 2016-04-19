@@ -18,6 +18,7 @@
             android:background="?attr/colorPrimary"
             app:tabTextColor="@color/tabTextColor"
             app:tabSelectedTextColor="@color/tabSelectedTextColor"
+            app:tabIndicatorColor="@color/tabIndicatorColor"
             app:tabGravity="fill"
             app:tabMode="fixed" />
 

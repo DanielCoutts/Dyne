@@ -83,7 +83,7 @@ public class FeaturedFragment extends Fragment {
                 Toast.makeText(Application.getAppContext(), response, Toast.LENGTH_LONG).show();
                 try {
                     JSONObject object = new JSONObject(response);
-                    Toast.makeText(Application.getAppContext(), "WORKED\n " + object.toString(), Toast.LENGTH_LONG).show();
+//                    Toast.makeText(Application.getAppContext(), "WORKED\n " + object.toString(), Toast.LENGTH_LONG).show();
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(Application.getAppContext(), "NOT JSON: " + response, Toast.LENGTH_LONG).show();

@@ -27,6 +27,8 @@ import com.team18.teamproject.fragments.NutritionFragment;
 import com.team18.teamproject.R;
 import com.team18.teamproject.objects.Recipe;
 
+import java.util.Map;
+
 /**
  * The recipe activity contains three tabs: ingredients, method, and nutrition.
  * Data is different based on the selected recipe, so it is loaded in when the activity is launched.
@@ -36,7 +38,9 @@ public class RecipeActivity extends AppCompatActivity {
     /**
      * The recipe activity toolbar. This contains a back button, a title, a favourite button, and a facebook share button.
      */
-    public Toolbar toolbar;
+    private Toolbar toolbar;
+
+    private Menu menu;
 
     private Recipe recipe;
 
@@ -117,7 +121,9 @@ public class RecipeActivity extends AppCompatActivity {
      * Adds the menu options
      */
     public boolean onCreateOptionsMenu(Menu menu) {
+        this.menu = menu;
         getMenuInflater().inflate(R.menu.menu_recipe, menu);
+        setHeartFill();
         return true;
     }
 
@@ -138,10 +144,22 @@ public class RecipeActivity extends AppCompatActivity {
                 takePhoto();
                 return true;
             case R.id.action_favourite:
-
+                if (Application.getFavourites().keySet().contains(recipe.getId())) {
+                    Application.getFavourites().remove(recipe.getId());
+                    menu.getItem(0).setIcon(R.drawable.ic_menu_favourite_outline);
+                } else {
+                    Application.getFavourites().put(recipe.getId(), recipe);
+                    menu.getItem(0).setIcon(R.drawable.ic_menu_favourite_fill);
+                }
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void setHeartFill() {
+        if (Application.getFavourites().keySet().contains(recipe.getId())) {
+            menu.getItem(0).setIcon(R.drawable.ic_menu_favourite_fill);
         }
     }
 
