@@ -51,23 +51,22 @@ public class CategoriesFragment extends Fragment {
      * Resizing and loading images into ImageViews using the Picasso library.
      */
     private void loadImages(View view) {
-        ImageView breakfastImage = (ImageView) view.findViewById(R.id.category_breakfast_imageview);
-        Picasso.with(getContext()).load(R.drawable.cat_breakfast).fit().centerCrop().into(breakfastImage);
+        loadImage(view, R.id.category_breakfast_imageview, R.drawable.cat_breakfast);
 
-        ImageView lunchImage = (ImageView) view.findViewById(R.id.category_lunch_imageview);
-        Picasso.with(getContext()).load(R.drawable.cat_lunch).fit().centerCrop().into(lunchImage);
+        loadImage(view, R.id.category_lunch_imageview, R.drawable.cat_lunch);
 
-        ImageView dinnerImage = (ImageView) view.findViewById(R.id.category_dinner_imageview);
-        Picasso.with(getContext()).load(R.drawable.cat_dinner).fit().centerCrop().into(dinnerImage);
+        loadImage(view, R.id.category_dinner_imageview, R.drawable.cat_dinner);
 
-        ImageView dessertsImage = (ImageView) view.findViewById(R.id.category_desserts_imageview);
-        Picasso.with(getContext()).load(R.drawable.cat_dessert).fit().centerCrop().into(dessertsImage);
+        loadImage(view, R.id.category_desserts_imageview, R.drawable.cat_dessert);
 
-        ImageView drinksImage = (ImageView) view.findViewById(R.id.category_drinks_imageview);
-        Picasso.with(getContext()).load(R.drawable.cat_drinks).fit().centerCrop().into(drinksImage);
+        loadImage(view, R.id.category_drinks_imageview, R.drawable.cat_drinks);
 
-        ImageView vegImage = (ImageView) view.findViewById(R.id.category_veg_imageview);
-        Picasso.with(getContext()).load(R.drawable.cat_vegetarian).fit().centerCrop().into(vegImage);
+        loadImage(view, R.id.category_veg_imageview, R.drawable.cat_vegetarian);
+    }
+
+    private void loadImage(View view, int imageViewId, int drawable) {
+        ImageView imageView = (ImageView) view.findViewById(imageViewId);
+        Picasso.with(getContext()).load(drawable).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(imageView);
     }
 
     /*

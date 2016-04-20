@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -65,12 +66,7 @@ public class FeaturedFragment extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.featured_rv);
         recyclerView.setHasFixedSize(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()) {
-            @Override
-            public boolean canScrollVertically() {
-                return false;
-            }
-        });
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
@@ -83,6 +79,19 @@ public class FeaturedFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        // Set minimum height for the RecyclerView
+        final View v = view;
+        ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
+        if (viewTreeObserver.isAlive()) {
+            viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                @Override
+                public void onGlobalLayout() {
+                    v.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    recyclerView.setMinimumHeight(v.getHeight());
+                }
+            });
+        }
     }
 
     private void sendJsonRequest() {

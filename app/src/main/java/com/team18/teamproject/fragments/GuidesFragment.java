@@ -44,14 +44,14 @@ public class GuidesFragment extends Fragment {
      * Resizing and loading images into ImageViews using the Picasso library.
      */
     private void loadImages(View view) {
-        loadImage(R.id.guide1_imageview, R.drawable.essential_baking, view);
+        loadImage(view, R.id.guide1_imageview, R.drawable.essential_baking);
 
-        loadImage(R.id.guide2_imageview, R.drawable.essential_boiling, view);
+        loadImage(view, R.id.guide2_imageview, R.drawable.essential_boiling);
     }
 
-    private void loadImage(int imageViewId, int drawable, View view) {
+    private void loadImage(View view, int imageViewId, int drawable) {
         ImageView imageView = (ImageView) view.findViewById(imageViewId);
-        Picasso.with(view.getContext()).load(drawable).fit().centerCrop().into(imageView);
+        Picasso.with(view.getContext()).load(drawable).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(imageView);
     }
 
     /*

@@ -6,10 +6,8 @@ import android.view.View;
 
 import com.team18.teamproject.objects.Recipe;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by Daniel on 03/04/2016.
@@ -19,16 +17,16 @@ public class Application extends android.app.Application {
     private static Application sInstance;
 
     /** Global vegetarian preference. */
-    private static boolean vegetarian;
+    private static boolean vegetarian = false;
     /** Global vegan preference. */
-    private static boolean vegan;
+    private static boolean vegan = false;
     /** Global gluten-free preference. */
-    private static boolean glutenFree;
+    private static boolean glutenFree = false;
 
     /**
      * Globally accessible map of favourite recipes to be cached.
      */
-    private static Map<Integer,Recipe> favourites = new HashMap<>();
+    private static Map<Integer,Recipe> favourites = new TreeMap<>();
     // TODO getting, setting, and state saving.
 
     private static Recipe currentRecipe;

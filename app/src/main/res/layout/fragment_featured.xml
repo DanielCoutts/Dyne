@@ -4,23 +4,10 @@
     android:layout_height="match_parent"
     tools:context=".fragments.FeaturedFragment">
 
-    <!-- Main Content -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <android.support.v7.widget.RecyclerView
             android:id="@+id/featured_rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/card_margins"
-            android:paddingEnd="@dimen/activity_horizontal_margin"
-            android:paddingStart="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin">
-
-
-        </android.support.v7.widget.RecyclerView>
-
-    </ScrollView>
+            android:scrollbars="vertical" />
 
 </FrameLayout>

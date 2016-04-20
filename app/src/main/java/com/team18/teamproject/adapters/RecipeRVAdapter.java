@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.team18.teamproject.Application;
@@ -88,7 +87,7 @@ public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHo
             }
         });
 
-        Picasso.with(context).load(currentRecipe.getImageUrl()).fit().centerCrop().into(viewHolder.image);
+        Picasso.with(context).load(currentRecipe.getImageUrl()).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(viewHolder.image);
     }
 
     @Override

@@ -1,9 +1,11 @@
 package com.team18.teamproject.objects;
 
+import java.io.Serializable;
+
 /**
  * Created by Daniel on 30/03/2016.
  */
-public class Recipe {
+public class Recipe implements Serializable {
 
     private int id;
     private String name;
@@ -49,5 +51,15 @@ public class Recipe {
 
     public String getImageUrl() {
         return imageUrl;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
