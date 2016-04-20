@@ -1,35 +1,29 @@
 package com.team18.teamproject.fragments;
 
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
 import com.team18.teamproject.network.JsonParser;
-import com.team18.teamproject.objects.Recipe;
+import com.team18.teamproject.pojo.Recipe;
 import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;

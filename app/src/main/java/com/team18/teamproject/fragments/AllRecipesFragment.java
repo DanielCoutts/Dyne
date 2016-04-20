@@ -8,8 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -20,7 +18,7 @@ import com.team18.teamproject.R;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
 import com.team18.teamproject.network.JsonParser;
-import com.team18.teamproject.objects.Recipe;
+import com.team18.teamproject.pojo.Recipe;
 import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
 

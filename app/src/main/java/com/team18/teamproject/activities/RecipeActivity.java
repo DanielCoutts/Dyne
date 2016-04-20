@@ -28,9 +28,7 @@ import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
 import com.team18.teamproject.fragments.NutritionFragment;
 import com.team18.teamproject.R;
-import com.team18.teamproject.objects.Recipe;
-
-import java.util.Map;
+import com.team18.teamproject.pojo.Recipe;
 
 /**
  * The recipe activity contains three tabs: ingredients, method, and nutrition.
@@ -149,12 +147,12 @@ public class RecipeActivity extends AppCompatActivity {
     }
 
     private void shareError() {
-    Context context = getApplicationContext();
-    CharSequence text = "An error has occurred.";
-    int duration = Toast.LENGTH_SHORT;
+        Context context = getApplicationContext();
+        CharSequence text = "An error has occurred.";
+        int duration = Toast.LENGTH_SHORT;
 
-    Toast toast = Toast.makeText(context, text, duration);
-    toast.show();
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 
     @Override
@@ -182,7 +180,7 @@ public class RecipeActivity extends AppCompatActivity {
                 return true;
 
             case R.id.action_facebook:
-                if (isAppInstalled("com.facebook.katana")!= false) {
+                if (isAppInstalled("com.facebook.katana")) {
                     takePhoto();
                 } else {
                     try {

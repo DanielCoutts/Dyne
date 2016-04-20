@@ -4,7 +4,7 @@ import android.content.Context;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
-import com.team18.teamproject.objects.Recipe;
+import com.team18.teamproject.pojo.Recipe;
 
 import java.util.Map;
 import java.util.TreeMap;

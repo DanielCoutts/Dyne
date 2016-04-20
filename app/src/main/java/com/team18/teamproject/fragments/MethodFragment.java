@@ -5,11 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
-import com.team18.teamproject.objects.Recipe;
+import com.team18.teamproject.pojo.Recipe;
 
 /**
  * Insert Comment Here

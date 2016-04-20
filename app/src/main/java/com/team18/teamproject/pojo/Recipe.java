@@ -1,6 +1,8 @@
-package com.team18.teamproject.objects;
+package com.team18.teamproject.pojo;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Daniel on 30/03/2016.
@@ -14,6 +16,10 @@ public class Recipe implements Serializable {
     private String difficulty;
     private String cookTime;
     private String imageUrl;
+
+    private List<Ingredient> ingredients = new ArrayList<>();
+
+    private List<String> steps = new ArrayList<>();
 
     public Recipe(int id, String name, int serves, String category, String difficulty, String cookTime, String imageUrl) {
         this.id = id;

@@ -1,6 +1,6 @@
 package com.team18.teamproject.network;
 
-import com.team18.teamproject.objects.Recipe;
+import com.team18.teamproject.pojo.Recipe;
 
 import org.json.JSONArray;
 import org.json.JSONException;

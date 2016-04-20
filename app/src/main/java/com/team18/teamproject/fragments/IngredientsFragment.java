@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
-import com.team18.teamproject.objects.Recipe;
+import com.team18.teamproject.pojo.Recipe;
 
 /**
  * Insert Comment Here
