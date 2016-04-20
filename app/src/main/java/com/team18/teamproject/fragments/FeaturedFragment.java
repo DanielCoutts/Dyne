@@ -65,9 +65,12 @@ public class FeaturedFragment extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.featured_rv);
         recyclerView.setHasFixedSize(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setNestedScrollingEnabled(false);
-        // TODO Fix scrolling issues
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()) {
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
 
         adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);

@@ -61,8 +61,12 @@ public class AllRecipesFragment extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recipe_rv);
         recyclerView.setHasFixedSize(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setNestedScrollingEnabled(false);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()) {
+            @Override
+            public boolean canScrollVertically() {
+                return false;
+            }
+        });
 
         adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
