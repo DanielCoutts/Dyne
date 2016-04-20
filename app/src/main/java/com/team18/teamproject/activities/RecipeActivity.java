@@ -2,7 +2,9 @@ package com.team18.teamproject.activities;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.design.widget.TabLayout;
@@ -97,6 +99,16 @@ public class RecipeActivity extends AppCompatActivity {
         });
     }
 
+    private boolean isAppInstalled(String packageName) {
+        PackageManager pm = getPackageManager();
+        try {
+            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
     private void takePhoto() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
@@ -141,7 +153,15 @@ public class RecipeActivity extends AppCompatActivity {
                 return true;
 
             case R.id.action_facebook:
-                takePhoto();
+                if (isAppInstalled("com.facebook.katana")!= false) {
+                    takePhoto();
+                } else {
+                    try {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.facebook.katana")));
+                    } catch (android.content.ActivityNotFoundException anfe) {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + "com.facebook.katana")));
+                    }
+                }
                 return true;
             case R.id.action_favourite:
                 if (Application.getFavourites().keySet().contains(recipe.getId())) {
