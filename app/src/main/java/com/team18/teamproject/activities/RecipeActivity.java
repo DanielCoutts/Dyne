@@ -16,6 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
@@ -99,6 +100,13 @@ public class RecipeActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Test if another app is install on the device.
+     * <p/>
+     * Created by Alex 20/04/2016
+     *
+     * @param packageName Name of the package being tested for.
+     */
     private boolean isAppInstalled(String packageName) {
         PackageManager pm = getPackageManager();
         try {
@@ -109,6 +117,11 @@ public class RecipeActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Build intent for camera application and start camera activity.
+     * <p/>
+     * Created by Alex.
+     */
     private void takePhoto() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
@@ -117,6 +130,13 @@ public class RecipeActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Build a Facebook SharePhotoContent to share on Facebook.
+     * <p/>
+     * Create Alex
+     *
+     * @param bitmap Photo returned by camera activity
+     */
     private void sharePhoto(Bitmap bitmap) {
         SharePhoto photo = new SharePhoto.Builder()
                 .setBitmap(bitmap)
@@ -126,6 +146,15 @@ public class RecipeActivity extends AppCompatActivity {
                 .addPhoto(photo)
                 .build();
         shareDialog.show(photoContent);
+    }
+
+    private void shareError() {
+    Context context = getApplicationContext();
+    CharSequence text = "An error has occurred.";
+    int duration = Toast.LENGTH_SHORT;
+
+    Toast toast = Toast.makeText(context, text, duration);
+    toast.show();
     }
 
     @Override
@@ -193,7 +222,10 @@ public class RecipeActivity extends AppCompatActivity {
             if (ShareDialog.canShow(SharePhotoContent.class)) {
                 sharePhoto(bitmap);
             }
+        } else if (resultCode == RESULT_CANCELED) {
+
         } else {
+            shareError();
         }
     }
 
