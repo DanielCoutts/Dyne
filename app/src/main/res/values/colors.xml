@@ -8,4 +8,5 @@
     <color name="tabIndicatorColor">#FFFFFF</color>
     <color name="colorDivider">#B6B6B6</color>
     <color name="colorTextSecondary">#727272</color>
+    <color name="colorPieChart">#FF5252</color>
 </resources>

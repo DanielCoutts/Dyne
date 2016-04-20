@@ -77,7 +77,7 @@ public class NutritionFragment extends Fragment {
         // set the color
         int[] colors = new int[]{ContextCompat.getColor(getContext(), R.color.colorPrimaryDark),
                 ContextCompat.getColor(getContext(), R.color.colorDivider),
-                ContextCompat.getColor(getContext(), R.color.colorAccent)};
+                ContextCompat.getColor(getContext(), R.color.colorPieChart)};
         dataset.setColors(colors);
 
         // creating labels -  These are required by PieData class but not desired by app hence blank
