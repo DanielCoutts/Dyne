@@ -19,11 +19,14 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
+import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
+import com.team18.teamproject.network.JsonParser;
 import com.team18.teamproject.objects.Recipe;
 import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -35,12 +38,14 @@ import java.util.Map;
 
 public class FeaturedFragment extends Fragment {
 
-    private final static String URL = "http://homepages.cs.ncl.ac.uk/2015-16/csc2022_team18/getRecipeFromID.php";
+    private final static String URL = Urls.GET_FEATURED;
 
+    private VolleySingleton volleysingleton;
     private RequestQueue requestQueue;
-    private RecyclerView recyclerView;
     private RecipeRVAdapter adapter;
-    private List<Recipe> recipes;
+    private RecyclerView recyclerView;
+
+    private List<Recipe> recipes = new ArrayList<>();
 
     public FeaturedFragment() {
 
@@ -50,18 +55,24 @@ public class FeaturedFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        requestQueue = VolleySingleton.getInstance().getRequestQueue();
+        volleysingleton = VolleySingleton.getInstance();
+        requestQueue = volleysingleton.getRequestQueue();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_featured, container, false);
+        View view = inflater.inflate(R.layout.fragment_featured, container, false);
+
         recyclerView = (RecyclerView) view.findViewById(R.id.featured_rv);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
-        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(false);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setNestedScrollingEnabled(false);
+        // TODO Fix scrolling issues
 
         adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
+
+        sendJsonRequest();
 
         return view;
     }
@@ -69,38 +80,37 @@ public class FeaturedFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+    }
 
-        RequestQueue requestQueue = VolleySingleton.getInstance().getRequestQueue();
-
-        // Define parameters
+    private void sendJsonRequest() {
         Map<String, String> params = new HashMap<>();
-        params.put("RecipeID", "1");
+        params.put("Vegetarian", Application.boolToString(Application.isVegetarian()));
+        params.put("Vegan", Application.boolToString(Application.isVegan()));
+        params.put("GlutenFree", Application.boolToString(Application.isGlutenFree()));
 
-        // Create request
+        // Create Request
         CustomStringRequest request = new CustomStringRequest(Request.Method.POST, URL, params, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(Application.getAppContext(), response, Toast.LENGTH_LONG).show();
                 try {
-                    JSONObject object = new JSONObject(response);
-//                    Toast.makeText(Application.getAppContext(), "WORKED\n " + object.toString(), Toast.LENGTH_LONG).show();
+                    JSONArray array = new JSONArray(response);
+                    recipes = JsonParser.parseJsonRecipeArray(array);
+                    adapter.setRecipeList(recipes);
+
                 } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(Application.getAppContext(), "NOT JSON: " + response, Toast.LENGTH_LONG).show();
+                    // Display an error snackbar mess
+                    Application.responseError(recyclerView);
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Application.connectionError(recyclerView);
-
-                /*
-                 * DEBUG TOAST
-                 */
-                Toast.makeText(Application.getAppContext(), "DEBUG:ERROR " + error.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
 
         requestQueue.add(request);
     }
+
+
 }

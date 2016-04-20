@@ -55,6 +55,15 @@ public class Application extends android.app.Application {
         Snackbar.make(view, "Cannot Fetch Recipes", Snackbar.LENGTH_LONG).setAction("Action", null).show();
     }
 
+    public static String boolToString(Boolean bool) {
+        if (bool) {
+            return "1";
+        }
+        else {
+            return "0";
+        }
+    }
+
     public static Recipe getCurrentRecipe() {
         return currentRecipe;
     }
