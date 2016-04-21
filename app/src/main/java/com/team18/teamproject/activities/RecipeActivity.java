@@ -149,15 +149,6 @@ public class RecipeActivity extends AppCompatActivity {
         shareDialog.show(photoContent);
     }
 
-    private void shareError() {
-        Context context = getApplicationContext();
-        CharSequence text = "An error has occurred.";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
     @Override
     /*
      * Adds the menu options
@@ -228,10 +219,8 @@ public class RecipeActivity extends AppCompatActivity {
             if (ShareDialog.canShow(SharePhotoContent.class)) {
                 sharePhoto(bitmap);
             }
-        } else if (resultCode == RESULT_CANCELED) {
-
         } else {
-            shareError();
+
         }
     }
 

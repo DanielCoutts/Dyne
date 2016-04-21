@@ -20,10 +20,8 @@ import com.team18.teamproject.R;
 
 
 /**
- * Class to initialise an integrated map so display various
+ * Class to handle and initialise the map fragment with an integrated map to display various
  * eateries to the user and link to google maps app if they want directions.
- *
- * Created by Alex on 17/04/2016.
  */
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
@@ -68,8 +66,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     /**
      * Populates the map with markers for chosen locations including
      * location name, brief description of what's there and a colour coded marker.
-     *
-     * Created by Alex 20/04/2016.
      */
     private void populateMap(){
         mMap.addMarker(new MarkerOptions()

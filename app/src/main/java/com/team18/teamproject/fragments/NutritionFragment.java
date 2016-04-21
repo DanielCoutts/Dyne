@@ -17,7 +17,8 @@ import com.team18.teamproject.R;
 import com.team18.teamproject.pojo.Recipe;
 
 /**
- * Insert Comment Here
+ * Class to handle the function and initialise the nutritional information fragment
+ * for each recipe, including building the pie chart displayed on the page.
  */
 
 public class NutritionFragment extends Fragment {
@@ -42,7 +43,7 @@ public class NutritionFragment extends Fragment {
 
         fragmentView = inflater.inflate(R.layout.fragment_nutrition, container, false);
 
-        //Create a nutrition pie chart. Ints must be sorted, Carbohydrates, Protein, Fat
+        //Create a nutrition pie chart. Ints (Datatype can be changed  must be sorted, Carbohydrates, Protein, Fat
         createPiechart(8,6,4);
 
         return fragmentView;
@@ -55,8 +56,6 @@ public class NutritionFragment extends Fragment {
 
     /**
      * Initialises a pie chart using data provided from database.
-     *
-     * Created by Alex.
      *
      * @param carbs integer value for carbohydrates.
      * @param protein integer value for protein.

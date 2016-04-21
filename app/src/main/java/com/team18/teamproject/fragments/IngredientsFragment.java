@@ -12,7 +12,7 @@ import com.team18.teamproject.R;
 import com.team18.teamproject.pojo.Recipe;
 
 /**
- * Insert Comment Here
+ * Class to handle the function and initialising of the ingredients fragment for each recipe.
  */
 
 public class IngredientsFragment extends Fragment {

@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Insert Comment Here
+ * Class to handle the function and initialising of the method fragment for each recipe.
  */
 
 public class MethodFragment extends Fragment {
