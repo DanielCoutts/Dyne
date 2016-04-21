@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Custom RecyclerView Adapter.
  */
-public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHolderRecipe> {
+public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapter.viewHolderRecipe> {
 
     /**
      * List of recipes to display in the RecyclerView.
@@ -44,7 +44,7 @@ public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHo
      *
      * @param context context of the parent
      */
-    public RecipeRVAdapter(Context context) {
+    public IngredientRVAdapter(Context context) {
         this.context = context;
         layoutInflater = LayoutInflater.from(context);
     }
@@ -52,7 +52,7 @@ public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHo
     /**
      * Initialises recipe list with specified list object
      *
-     * @param recipes List of recipes to display
+     * @param recipes List of recipes to
      */
     public void setRecipeList(List<Recipe> recipes) {
         this.recipes = recipes;

@@ -64,8 +64,7 @@ public class RecipeActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         pager = (ViewPager) findViewById(R.id.recipe_pager);
 
-        RecipeCompleter.completeCurrentRecipe(pager);
-        recipe = Application.getCurrentRecipe();
+        recipe = Application.completeCurrentRecipe();
 
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {

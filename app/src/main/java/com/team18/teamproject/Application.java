@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
+import com.team18.teamproject.network.RecipeCompleter;
 import com.team18.teamproject.pojo.Recipe;
 
 import java.util.Map;
@@ -63,6 +64,11 @@ public class Application extends android.app.Application {
     }
 
     public static Recipe getCurrentRecipe() {
+        return currentRecipe;
+    }
+
+    public static  Recipe completeCurrentRecipe() {
+        RecipeCompleter.completeCurrentRecipe();
         return currentRecipe;
     }
 

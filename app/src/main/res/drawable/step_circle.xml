@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval"
-    >
+    android:shape="oval">
 
-    <solid
-        android:color="@color/colorPrimaryDark"
-        />
+    <solid android:color="@color/colorPrimary" />
 
     <size
-        android:height="20dp"
-        android:width="20dp"
-        />
+        android:width="@dimen/card_stepcircle_diameter"
+        android:height="@dimen/card_stepcircle_diameter" />
 
 </shape>

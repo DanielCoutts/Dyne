@@ -36,7 +36,7 @@ public class AllRecipesFragment extends Fragment {
 
     private final static String URL = Urls.GET_RECIPES;
 
-    private VolleySingleton volleysingleton;
+    private VolleySingleton volleySingleton;
     private RequestQueue requestQueue;
     private RecipeRVAdapter adapter;
     private RecyclerView recyclerView;
@@ -51,9 +51,8 @@ public class AllRecipesFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        volleysingleton = VolleySingleton.getInstance();
-        requestQueue = volleysingleton.getRequestQueue();
+        volleySingleton = VolleySingleton.getInstance();
+        requestQueue = volleySingleton.getRequestQueue();
     }
 
     @Override

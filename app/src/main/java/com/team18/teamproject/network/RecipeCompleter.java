@@ -28,16 +28,14 @@ public class RecipeCompleter {
 
     private static RequestQueue requestQueue = VolleySingleton.getInstance().getRequestQueue();
 
-    public static void completeCurrentRecipe(View view) {
-        requestIngredientsAndSet(view);
-        requestInstructionsAndSet(view);
-        requestNutritionAndSet(view);
-        requestRecommendedAndSet(view);
+    public static void completeCurrentRecipe() {
+        requestIngredientsAndSet();
+        requestInstructionsAndSet();
+        requestNutritionAndSet();
+        requestRecommendedAndSet();
     }
 
-    private static void requestIngredientsAndSet(View view) {
-
-        final View v = view;
+    private static void requestIngredientsAndSet() {
 
         Map<String, String> params = new HashMap<>();
         params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
@@ -52,24 +50,18 @@ public class RecipeCompleter {
                     Application.getCurrentRecipe().setIngredients(ingredients);
 
                 } catch (JSONException e) {
-                    // Display an error snackbar message.
-                    Application.responseError(v);
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                // Display an error snackbar message.
-                Application.connectionError(v);
             }
         });
 
         requestQueue.add(request);
     }
 
-    private static void requestInstructionsAndSet(View view) {
-
-        final View v = view;
+    private static void requestInstructionsAndSet() {
 
         Map<String, String> params = new HashMap<>();
         params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
@@ -84,24 +76,18 @@ public class RecipeCompleter {
                     Application.getCurrentRecipe().setInstructions(instructions);
 
                 } catch (JSONException e) {
-                    // Display an error snackbar message.
-                    Application.responseError(v);
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                // Display an error snackbar message.
-                Application.connectionError(v);
             }
         });
 
         requestQueue.add(request);
     }
 
-    private static void requestNutritionAndSet(View view) {
-
-        final View v = view;
+    private static void requestNutritionAndSet() {
 
         Map<String, String> params = new HashMap<>();
         params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
@@ -116,24 +102,18 @@ public class RecipeCompleter {
                     Application.getCurrentRecipe().setNutritionalInfo(nutritionInfo);
 
                 } catch (JSONException e) {
-                    // Display an error snackbar message.
-                    Application.responseError(v);
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                // Display an error snackbar message.
-                Application.connectionError(v);
             }
         });
 
         requestQueue.add(request);
     }
 
-    private static void requestRecommendedAndSet(View view) {
-
-        final View v = view;
+    private static void requestRecommendedAndSet() {
 
         Map<String, String> params = new HashMap<>();
         params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
@@ -148,15 +128,11 @@ public class RecipeCompleter {
                     Application.getCurrentRecipe().setRecommendedEssentials(essentials);
 
                 } catch (JSONException e) {
-                    // Display an error snackbar message.
-                    Application.responseError(v);
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                // Display an error snackbar message.
-                Application.connectionError(v);
             }
         });
 
