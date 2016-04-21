@@ -13,4 +13,26 @@ public interface Keys {
         public static final String KEY_DIFFICULTY="Difficulty";
         public static final String KEY_COOKTIME="CookTime";
     }
+
+    interface Ingredients {
+        public static final String KEY_NAME="IName";
+        public static final String KEY_UNITS="Units";
+        public static final String KEY_QUANTITY="Quantity";
+    }
+
+    interface Instructions {
+        public static final String KEY_STEP="Step";
+    }
+
+    interface Nutrition {
+        public static final String KEY_KCAL="KCal";
+        public static final String KEY_FAT="Fat";
+        public static final String KEY_SUGAR="Sugar";
+        public static final String KEY_PROTEIN="Protein";
+        public static final String KEY_CARBS="Carbohydrates";
+    }
+
+    interface Essentials {
+        public static final String KEY_ID="EssentialID";
+    }
 }

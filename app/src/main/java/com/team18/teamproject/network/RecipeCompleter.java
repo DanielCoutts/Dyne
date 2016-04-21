@@ -1,0 +1,166 @@
+package com.team18.teamproject.network;
+
+import android.view.View;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.team18.teamproject.Application;
+import com.team18.teamproject.extras.JsonParser;
+import com.team18.teamproject.extras.Urls;
+import com.team18.teamproject.pojo.Ingredient;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Methods for completing detailed recipe information when RecipeActivity is launched.
+ * <p/>
+ * Created by Daniel.
+ */
+public class RecipeCompleter {
+
+    private static RequestQueue requestQueue = VolleySingleton.getInstance().getRequestQueue();
+
+    public static void completeCurrentRecipe(View view) {
+        requestIngredientsAndSet(view);
+        requestInstructionsAndSet(view);
+        requestNutritionAndSet(view);
+        requestRecommendedAndSet(view);
+    }
+
+    private static void requestIngredientsAndSet(View view) {
+
+        final View v = view;
+
+        Map<String, String> params = new HashMap<>();
+        params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
+
+        // Create Request
+        CustomStringRequest request = new CustomStringRequest(Request.Method.POST, Urls.GET_INGREDIENTS, params, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray array = new JSONArray(response);
+                    List<Ingredient> ingredients = JsonParser.parseJSONIngredientArray(array);
+                    Application.getCurrentRecipe().setIngredients(ingredients);
+
+                } catch (JSONException e) {
+                    // Display an error snackbar message.
+                    Application.responseError(v);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // Display an error snackbar message.
+                Application.connectionError(v);
+            }
+        });
+
+        requestQueue.add(request);
+    }
+
+    private static void requestInstructionsAndSet(View view) {
+
+        final View v = view;
+
+        Map<String, String> params = new HashMap<>();
+        params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
+
+        // Create Request
+        CustomStringRequest request = new CustomStringRequest(Request.Method.POST, Urls.GET_INSTRUCTIONS, params, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray array = new JSONArray(response);
+                    List<String> instructions = JsonParser.parseJSONInstructionArray(array);
+                    Application.getCurrentRecipe().setInstructions(instructions);
+
+                } catch (JSONException e) {
+                    // Display an error snackbar message.
+                    Application.responseError(v);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // Display an error snackbar message.
+                Application.connectionError(v);
+            }
+        });
+
+        requestQueue.add(request);
+    }
+
+    private static void requestNutritionAndSet(View view) {
+
+        final View v = view;
+
+        Map<String, String> params = new HashMap<>();
+        params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
+
+        // Create Request
+        CustomStringRequest request = new CustomStringRequest(Request.Method.POST, Urls.GET_NUTRITION, params, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject object = new JSONObject(response);
+                    Map<String, Double> nutritionInfo = JsonParser.parseJSONNutritionInfo(object);
+                    Application.getCurrentRecipe().setNutritionalInfo(nutritionInfo);
+
+                } catch (JSONException e) {
+                    // Display an error snackbar message.
+                    Application.responseError(v);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // Display an error snackbar message.
+                Application.connectionError(v);
+            }
+        });
+
+        requestQueue.add(request);
+    }
+
+    private static void requestRecommendedAndSet(View view) {
+
+        final View v = view;
+
+        Map<String, String> params = new HashMap<>();
+        params.put("RecipeID", Application.getCurrentRecipe().getId() + "");
+
+        // Create Request
+        CustomStringRequest request = new CustomStringRequest(Request.Method.POST, Urls.GET_RECOMMENDED_ESSENTIALS, params, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray array = new JSONArray(response);
+                    List<String> essentials = JsonParser.parseJSONEssentialArray(array);
+                    Application.getCurrentRecipe().setRecommendedEssentials(essentials);
+
+                } catch (JSONException e) {
+                    // Display an error snackbar message.
+                    Application.responseError(v);
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // Display an error snackbar message.
+                Application.connectionError(v);
+            }
+        });
+
+        requestQueue.add(request);
+    }
+
+}

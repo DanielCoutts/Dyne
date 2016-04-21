@@ -14,6 +14,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -28,6 +29,7 @@ import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
 import com.team18.teamproject.fragments.NutritionFragment;
 import com.team18.teamproject.R;
+import com.team18.teamproject.network.RecipeCompleter;
 import com.team18.teamproject.pojo.Recipe;
 
 /**
@@ -59,9 +61,12 @@ public class RecipeActivity extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_recipe);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        pager = (ViewPager) findViewById(R.id.recipe_pager);
+
+        RecipeCompleter.completeCurrentRecipe(pager);
         recipe = Application.getCurrentRecipe();
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -71,7 +76,6 @@ public class RecipeActivity extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
         shareDialog = new ShareDialog(this);
 
-        pager = (ViewPager) findViewById(R.id.recipe_pager);
         pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
 
         tabs = (TabLayout) findViewById(R.id.recipe_tabs);
@@ -190,6 +194,7 @@ public class RecipeActivity extends AppCompatActivity {
                     }
                 }
                 return true;
+
             case R.id.action_favourite:
                 if (Application.getFavourites().keySet().contains(recipe.getId())) {
                     Application.getFavourites().remove(recipe.getId());
@@ -199,11 +204,15 @@ public class RecipeActivity extends AppCompatActivity {
                     menu.getItem(0).setIcon(R.drawable.ic_menu_favourite_fill);
                 }
                 return true;
+
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
+    /**
+     * Sets the heart icon to be filled if the recipe is in the favourites.
+     */
     private void setHeartFill() {
         if (Application.getFavourites().keySet().contains(recipe.getId())) {
             menu.getItem(0).setIcon(R.drawable.ic_menu_favourite_fill);

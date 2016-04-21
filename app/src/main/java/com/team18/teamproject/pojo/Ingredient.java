@@ -16,4 +16,16 @@ public class Ingredient implements Serializable {
         this.units = units;
         this.quantity = quantity;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getUnits() {
+        return units;
+    }
+
+    public double getQuantity() {
+        return quantity;
+    }
 }

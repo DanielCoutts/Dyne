@@ -17,7 +17,7 @@ import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
-import com.team18.teamproject.network.JsonParser;
+import com.team18.teamproject.extras.JsonParser;
 import com.team18.teamproject.pojo.Recipe;
 import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
@@ -104,13 +104,14 @@ public class FeaturedFragment extends Fragment {
                     adapter.setRecipeList(recipes);
 
                 } catch (JSONException e) {
-                    // Display an error snackbar mess
+                    // Display an error snackbar message.
                     Application.responseError(recyclerView);
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                // Display an error snackbar message.
                 Application.connectionError(recyclerView);
             }
         });
