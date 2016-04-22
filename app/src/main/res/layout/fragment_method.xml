@@ -1,15 +1,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
     <FrameLayout
         android:id="@+id/instruction_rv_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
-        tools:context=".fragments.MethodFragment"
-        android:layout_marginBottom="50dp">
+        android:layout_marginBottom="50dp"
+        tools:context=".fragments.MethodFragment">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/instruction_rv"
@@ -19,14 +19,37 @@
 
     </FrameLayout>
 
-    <ImageButton
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/facebook_button_height"
         android:layout_alignParentBottom="true"
-        android:elevation="2dp"
-        android:src="@drawable/ic_facebook">
+        android:background="@color/colorPrimary">
 
-        </ImageButton>
+        <LinearLayout
+            android:id="@+id/facebook_share_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/facebook_button_spacing"
+                android:contentDescription="@string/imagedesc_facebook"
+                android:src="@drawable/ic_facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/facebook_button_text"
+                android:textAllCaps="true"
+                android:textColor="@color/facebook_share_text"
+                android:textSize="@dimen/facebook_button_text" />
+
+        </LinearLayout>
+    </FrameLayout>
 
 </RelativeLayout>

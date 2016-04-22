@@ -10,4 +10,6 @@
     <color name="colorTextSecondary">#727272</color>
     <color name="colorPieChart">#FF5252</color>
     <color name="step_num_text">#FFFFFF</color>
+    <color name="facebook_share_text">#FFFFFF</color>
+    <color name="recipe_info_tile">#FFFFFF</color>
 </resources>

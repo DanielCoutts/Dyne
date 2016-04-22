@@ -14,6 +14,7 @@ import com.squareup.picasso.Picasso;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.activities.RecipeActivity;
+import com.team18.teamproject.pojo.Ingredient;
 import com.team18.teamproject.pojo.Recipe;
 
 import java.util.ArrayList;
@@ -22,12 +23,12 @@ import java.util.List;
 /**
  * Custom RecyclerView Adapter.
  */
-public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapter.viewHolderRecipe> {
+public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapter.viewHolderIngredient> {
 
     /**
-     * List of recipes to display in the RecyclerView.
+     * List of ingredients to display in the RecyclerView.
      */
-    private List<Recipe> recipes = new ArrayList<>();
+    private List<Ingredient> ingredients = new ArrayList<>();
 
     /**
      * The LayoutInflater object for the fragment.
@@ -42,7 +43,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
     /**
      * Constructor that initialises the context and layoutInflater.
      *
-     * @param context context of the parent
+     * @param context context of the parent.
      */
     public IngredientRVAdapter(Context context) {
         this.context = context;
@@ -50,44 +51,42 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
     }
 
     /**
-     * Initialises recipe list with specified list object
+     * Initialises recipe list with specified list object.
      *
-     * @param recipes List of recipes to
+     * @param ingredients List of ingredients to set.
      */
-    public void setRecipeList(List<Recipe> recipes) {
-        this.recipes = recipes;
+    public void setIngredientList(List<Ingredient> ingredients) {
+        this.ingredients = ingredients;
         notifyDataSetChanged();
     }
 
     @Override
     public int getItemCount() {
-        return recipes.size();
+        return ingredients.size();
     }
 
     @Override
-    public viewHolderRecipe onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = layoutInflater.inflate(R.layout.card_recipe, viewGroup, false);
-        return new viewHolderRecipe(view);
+    public viewHolderIngredient onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View view = layoutInflater.inflate(R.layout.card_ingredient, viewGroup, false);
+        return new viewHolderIngredient(view);
     }
 
     @Override
-    public void onBindViewHolder(viewHolderRecipe viewHolder, int i) {
-        final Recipe currentRecipe = recipes.get(i);
-        viewHolder.title.setText(currentRecipe.getName());
-        viewHolder.time.setText(currentRecipe.getCookTime());
-        viewHolder.difficulty.setText(currentRecipe.getDifficulty());
+    public void onBindViewHolder(viewHolderIngredient viewHolder, int i) {
+        final Ingredient currentIngredient = ingredients.get(i);
 
-        viewHolder.cv.setOnClickListener(new View.OnClickListener() {
+        String name = currentIngredient.getName();
+        double quantity = currentIngredient.getQuantity();
+        String units = currentIngredient.getUnits();
+
+        viewHolder.textView.setText(formatIngredient(name, quantity, units));
+
+        viewHolder.addIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Application.setCurrentRecipe(currentRecipe);
-
-                Intent intent = new Intent(Application.getAppContext(), RecipeActivity.class);
-                context.startActivity(intent);
+                // TODO Add to shopping list
             }
         });
-
-        Picasso.with(context).load(currentRecipe.getImageUrl()).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(viewHolder.image);
     }
 
     @Override
@@ -95,29 +94,36 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
         super.onAttachedToRecyclerView(recyclerView);
     }
 
+    private static String formatIngredient(String name, double quantity, String units) {
+        // TODO ingredients with null units & quantity not working.
+        if ((units == "null") && (quantity == 0)) {
+            return name;
+        }
+        else if (units == "null") {
+            return quantity + " " + name;
+        }
+        else {
+            return quantity + units + " of " + name;
+        }
+    }
+
     /**
      * Inner ViewHolder class.
      */
-    public static class viewHolderRecipe extends RecyclerView.ViewHolder {
+    public static class viewHolderIngredient extends RecyclerView.ViewHolder {
 
-        CardView cv;
-        TextView title;
-        TextView time;
-        TextView difficulty;
-        ImageView image;
+        TextView textView;
+        ImageView addIcon;
 
         /**
          * Constructor that initialises fields.
          *
          * @param itemView View that will display the data.
          */
-        public viewHolderRecipe(View itemView) {
+        public viewHolderIngredient(View itemView) {
             super(itemView);
-            cv = (CardView) itemView.findViewById(R.id.recipe_cardview);
-            title = (TextView) itemView.findViewById(R.id.card_title);
-            time = (TextView) itemView.findViewById(R.id.card_time);
-            difficulty = (TextView) itemView.findViewById(R.id.card_difficulty);
-            image = (ImageView) itemView.findViewById(R.id.card_image);
+            textView = (TextView) itemView.findViewById(R.id.card_ingredient);
+            addIcon = (ImageView) itemView.findViewById(R.id.card_add_ingredient);
         }
     }
 }

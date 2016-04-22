@@ -1,6 +1,11 @@
 package com.team18.teamproject.fragments;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -8,11 +13,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.LinearLayout;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.facebook.CallbackManager;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
+import com.facebook.share.widget.ShareDialog;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.adapters.InstructionRVAdapter;
@@ -40,11 +50,15 @@ public class MethodFragment extends Fragment {
     private Recipe recipe;
 
     private final static String URL = Urls.GET_INSTRUCTIONS;
+    static final int REQUEST_IMAGE_CAPTURE = 1;
 
     private VolleySingleton volleySingleton;
     private RequestQueue requestQueue;
     private InstructionRVAdapter adapter;
     private RecyclerView recyclerView;
+
+    CallbackManager callbackManager;
+    ShareDialog shareDialog;
 
     public MethodFragment() {
 
@@ -58,6 +72,9 @@ public class MethodFragment extends Fragment {
 
         volleySingleton = VolleySingleton.getInstance();
         requestQueue = volleySingleton.getRequestQueue();
+
+        callbackManager = CallbackManager.Factory.create();
+        shareDialog = new ShareDialog(this);
     }
 
     @Override
@@ -72,6 +89,8 @@ public class MethodFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         sendJsonRequest();
+
+        setupListeners(view);
 
         return view;
     }
@@ -125,4 +144,87 @@ public class MethodFragment extends Fragment {
 
         requestQueue.add(request);
     }
+
+    private void setupListeners(View view) {
+        LinearLayout button = (LinearLayout) view.findViewById(R.id.facebook_share_button);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isAppInstalled("com.facebook.katana")) {
+                    takePhoto();
+                } else {
+                    try {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.facebook.katana")));
+                    } catch (android.content.ActivityNotFoundException anfe) {
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + "com.facebook.katana")));
+                    }
+                }
+            }
+        });
+    }
+
+    /**
+     * Test if another app is install on the device.
+     * <p/>
+     * Created by Alex 20/04/2016
+     *
+     * @param packageName Name of the package being tested for.
+     */
+    private boolean isAppInstalled(String packageName) {
+        PackageManager pm = getContext().getPackageManager();
+        try {
+            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+            return true;
+        } catch (PackageManager.NameNotFoundException e) {
+            return false;
+        }
+    }
+
+    /**
+     * Build intent for camera application and start camera activity.
+     * <p/>
+     * Created by Alex.
+     */
+    private void takePhoto() {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (takePictureIntent.resolveActivity(getContext().getPackageManager()) != null) {
+            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+        }
+
+    }
+
+    /**
+     * Build a Facebook SharePhotoContent to share on Facebook.
+     * <p/>
+     * Create Alex
+     *
+     * @param bitmap Photo returned by camera activity
+     */
+    private void sharePhoto(Bitmap bitmap) {
+        SharePhoto photo = new SharePhoto.Builder()
+                .setBitmap(bitmap)
+                .setCaption("@string/share_message")
+                .build();
+        SharePhotoContent photoContent = new SharePhotoContent.Builder()
+                .addPhoto(photo)
+                .build();
+        shareDialog.show(photoContent);
+    }
+
+    @Override
+    public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == getActivity().RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap bitmap = (Bitmap) extras.get("data");
+            if (ShareDialog.canShow(SharePhotoContent.class)) {
+                sharePhoto(bitmap);
+            }
+        } else {
+
+        }
+    }
+
 }

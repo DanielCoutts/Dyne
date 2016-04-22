@@ -5,13 +5,6 @@
     tools:context=".activities.MainActivity">
 
     <item
-        android:id="@+id/action_facebook"
-        android:icon="@drawable/ic_facebook"
-        android:orderInCategory="1"
-        android:title="Share On Facebook"
-        app:showAsAction="always" />
-
-    <item
         android:id="@+id/action_favourite"
         android:icon="@drawable/ic_menu_favourite_outline"
         android:orderInCategory="0"

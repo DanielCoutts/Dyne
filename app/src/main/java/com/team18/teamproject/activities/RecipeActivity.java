@@ -50,11 +50,6 @@ public class RecipeActivity extends AppCompatActivity {
     private TabLayout tabs;
     private ViewPager pager;
 
-    CallbackManager callbackManager;
-    ShareDialog shareDialog;
-
-    static final int REQUEST_IMAGE_CAPTURE = 1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,9 +66,6 @@ public class RecipeActivity extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
         setTitle(recipe.getName());
-
-        callbackManager = CallbackManager.Factory.create();
-        shareDialog = new ShareDialog(this);
 
         pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
 
@@ -101,54 +93,6 @@ public class RecipeActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * Test if another app is install on the device.
-     * <p/>
-     * Created by Alex 20/04/2016
-     *
-     * @param packageName Name of the package being tested for.
-     */
-    private boolean isAppInstalled(String packageName) {
-        PackageManager pm = getPackageManager();
-        try {
-            pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
-            return true;
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
-    }
-
-    /**
-     * Build intent for camera application and start camera activity.
-     * <p/>
-     * Created by Alex.
-     */
-    private void takePhoto() {
-        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-        }
-
-    }
-
-    /**
-     * Build a Facebook SharePhotoContent to share on Facebook.
-     * <p/>
-     * Create Alex
-     *
-     * @param bitmap Photo returned by camera activity
-     */
-    private void sharePhoto(Bitmap bitmap) {
-        SharePhoto photo = new SharePhoto.Builder()
-                .setBitmap(bitmap)
-                .setCaption("@string/share_message")
-                .build();
-        SharePhotoContent photoContent = new SharePhotoContent.Builder()
-                .addPhoto(photo)
-                .build();
-        shareDialog.show(photoContent);
-    }
-
     @Override
     /*
      * Adds the menu options
@@ -173,18 +117,6 @@ public class RecipeActivity extends AppCompatActivity {
                 onBackPressed();
                 return true;
 
-            case R.id.action_facebook:
-                if (isAppInstalled("com.facebook.katana")) {
-                    takePhoto();
-                } else {
-                    try {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.facebook.katana")));
-                    } catch (android.content.ActivityNotFoundException anfe) {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + "com.facebook.katana")));
-                    }
-                }
-                return true;
-
             case R.id.action_favourite:
                 if (Application.getFavourites().keySet().contains(recipe.getId())) {
                     Application.getFavourites().remove(recipe.getId());
@@ -206,21 +138,6 @@ public class RecipeActivity extends AppCompatActivity {
     private void setHeartFill() {
         if (Application.getFavourites().keySet().contains(recipe.getId())) {
             menu.getItem(0).setIcon(R.drawable.ic_menu_favourite_fill);
-        }
-    }
-
-    @Override
-    protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap bitmap = (Bitmap) extras.get("data");
-            if (ShareDialog.canShow(SharePhotoContent.class)) {
-                sharePhoto(bitmap);
-            }
-        } else {
-
         }
     }
 
