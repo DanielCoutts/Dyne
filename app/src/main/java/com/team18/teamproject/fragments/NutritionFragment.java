@@ -73,12 +73,12 @@ public class NutritionFragment extends Fragment {
 
         view = inflater.inflate(R.layout.fragment_nutrition, container, false);
 
-        if (!(Application.getFavourites().keySet().contains(recipe.getId())
-                && nutrition.size() == 5)) {
-            sendJsonRequest();
+        if (Application.getFavourites().keySet().contains(recipe.getId())
+                && nutrition != null && nutrition.size() == 5) {
+            fillData();
         }
         else {
-            fillData();
+            sendJsonRequest();
         }
 
         return view;

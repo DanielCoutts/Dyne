@@ -18,6 +18,7 @@ import com.team18.teamproject.R;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
 import com.team18.teamproject.extras.JsonParser;
+import com.team18.teamproject.pojo.Ingredient;
 import com.team18.teamproject.pojo.Recipe;
 import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;

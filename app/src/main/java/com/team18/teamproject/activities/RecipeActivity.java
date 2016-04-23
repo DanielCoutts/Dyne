@@ -27,7 +27,7 @@ import com.team18.teamproject.pojo.Recipe;
 public class RecipeActivity extends AppCompatActivity {
 
     /**
-     * The recipe activity toolbar. This contains a back button, a title, a favourite button, and a facebook share button.
+     * The recipe activity toolbar. This contains a back button, a title and a favourite button.
      */
     private Toolbar toolbar;
 
@@ -47,7 +47,7 @@ public class RecipeActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         pager = (ViewPager) findViewById(R.id.recipe_pager);
 
-        recipe = Application.completeCurrentRecipe();
+        recipe = Application.getCurrentRecipe();
 
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {

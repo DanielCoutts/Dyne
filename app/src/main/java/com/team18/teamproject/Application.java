@@ -3,12 +3,14 @@ package com.team18.teamproject;
 import android.content.Context;
 import android.preference.PreferenceManager;
 import android.support.design.widget.Snackbar;
-import android.util.Log;
 import android.view.View;
 
 import com.google.gson.Gson;
+import com.team18.teamproject.pojo.Ingredient;
 import com.team18.teamproject.pojo.Recipe;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -36,9 +38,12 @@ public class Application extends android.app.Application {
      * Globally accessible map of favourite recipes to be cached.
      */
     private static Map<Integer, Recipe> favourites = new TreeMap<>();
-    // TODO getting, setting, and state saving.
+
+    private static List<Ingredient> shoppingList = new ArrayList<>();
 
     private static Recipe currentRecipe;
+
+    private static int currentGuideId;
 
     @Override
     public void onCreate() {
@@ -54,6 +59,7 @@ public class Application extends android.app.Application {
             vegan = wrapper.isVegan();
             glutenFree = wrapper.isGlutenFree();
             favourites = wrapper.getFavourites();
+            shoppingList = wrapper.getShoppingList();
         }
     }
 
@@ -85,18 +91,24 @@ public class Application extends android.app.Application {
         return currentRecipe;
     }
 
-    public static Recipe completeCurrentRecipe() {
-        // TODO Maybe delete
-//        RecipeCompleter.completeCurrentRecipe();
-        return currentRecipe;
-    }
-
     public static void setCurrentRecipe(Recipe currentRecipe) {
         Application.currentRecipe = currentRecipe;
     }
 
+    public static int getCurrentGuideId() {
+        return currentGuideId;
+    }
+
+    public static void setCurrentGuideId(int currentGuideId) {
+        Application.currentGuideId = currentGuideId;
+    }
+
     public static Map<Integer, Recipe> getFavourites() {
         return favourites;
+    }
+
+    public static List<Ingredient> getShoppingList() {
+        return shoppingList;
     }
 
     public static boolean isVegetarian() {
@@ -125,7 +137,7 @@ public class Application extends android.app.Application {
 
     public void saveState() {
         Gson gson = new Gson();
-        MyWrapper wrapper = new MyWrapper(vegetarian, vegan, glutenFree, favourites);
+        MyWrapper wrapper = new MyWrapper(vegetarian, vegan, glutenFree, favourites, shoppingList);
         String serialized = gson.toJson(wrapper);
         PreferenceManager.getDefaultSharedPreferences(getAppContext()).edit().putString("STATE", serialized).commit();
     }
@@ -140,15 +152,22 @@ public class Application extends android.app.Application {
 
         private Map<Integer, Recipe> favourites;
 
-        public MyWrapper(boolean vegetarian, boolean vegan, boolean glutenFree, Map<Integer, Recipe> favourites) {
+        private List<Ingredient> shoppingList;
+
+        public MyWrapper(boolean vegetarian, boolean vegan, boolean glutenFree, Map<Integer, Recipe> favourites, List<Ingredient> shoppingList) {
             this.vegetarian = vegetarian;
             this.vegan = vegan;
             this.glutenFree = glutenFree;
             this.favourites = favourites;
+            this.shoppingList = shoppingList;
         }
 
         public Map<Integer, Recipe> getFavourites() {
             return favourites;
+        }
+
+        public List<Ingredient> getShoppingList() {
+            return shoppingList;
         }
 
         public boolean isVegetarian() {
