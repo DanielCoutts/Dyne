@@ -67,5 +67,11 @@ public class FavouritesFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        List<Recipe> favourites = Arrays.asList( Application.getFavourites().values().toArray(new Recipe[Application.getFavourites().size()]) );
+        adapter.setRecipeList(favourites);
+    }
 
 }

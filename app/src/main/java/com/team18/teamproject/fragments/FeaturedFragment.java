@@ -119,5 +119,9 @@ public class FeaturedFragment extends Fragment {
         requestQueue.add(request);
     }
 
-
+    @Override
+    public void onResume() {
+        super.onResume();
+        sendJsonRequest();
+    }
 }

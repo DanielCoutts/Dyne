@@ -55,7 +55,9 @@ public class CategoriesFragment extends Fragment {
 
         loadImage(view, R.id.category_lunch_imageview, R.drawable.cat_lunch);
 
-        loadImage(view, R.id.category_dinner_imageview, R.drawable.cat_dinner);
+        loadImage(view, R.id.category_starter_imageview, R.drawable.cat_starter);
+
+        loadImage(view, R.id.category_main_imageview, R.drawable.cat_main);
 
         loadImage(view, R.id.category_desserts_imageview, R.drawable.cat_dessert);
 
@@ -69,15 +71,65 @@ public class CategoriesFragment extends Fragment {
         Picasso.with(getContext()).load(drawable).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(imageView);
     }
 
-    /*
-     * Setting up onClick listeners for the category cards.
+    /**
+     * Sets up onclick listeners for the category cards.
+     *
+     * @param view inflated fragment view.
      */
     private void setupListeners(View view) {
         CardView breakfast = (CardView) view.findViewById(R.id.category_breakfast);
         breakfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "It worked", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+
+            }
+        });
+
+        CardView lunch = (CardView) view.findViewById(R.id.category_lunch);
+        lunch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        CardView starter = (CardView) view.findViewById(R.id.category_starter);
+        starter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        CardView main = (CardView) view.findViewById(R.id.category_main);
+        main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        CardView dessert = (CardView) view.findViewById(R.id.category_desserts);
+        dessert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        CardView drink = (CardView) view.findViewById(R.id.category_drinks);
+        drink.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        CardView veg = (CardView) view.findViewById(R.id.category_veg);
+        veg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
     }

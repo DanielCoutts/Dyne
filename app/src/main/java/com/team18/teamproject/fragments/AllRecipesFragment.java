@@ -118,4 +118,10 @@ public class AllRecipesFragment extends Fragment {
 
         requestQueue.add(request);
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        sendJsonRequest();
+    }
 }

@@ -30,5 +30,7 @@
     <dimen name="recipe_tile_padding">12dp</dimen>
     <dimen name="recipe_image_height">200dp</dimen>
     <dimen name="ingredient_card_margins">8dp</dimen>
+    <dimen name="pie_chart_diameter">200dp</dimen>
+    <dimen name="card_spacing">8dp</dimen>
 
 </resources>

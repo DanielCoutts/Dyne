@@ -132,19 +132,18 @@ public class JsonParser {
      * @param object Nutrition JSON object.
      * @return Map of nutritional information.
      */
-    public static Map<String, Double> parseJSONNutritionInfo(JSONObject object) {
+    public static Map<String, Float> parseJSONNutritionInfo(JSONObject object) {
 
-        Map<String, Double> nutrition = new HashMap<>();
+        Map<String, Float> nutrition = new HashMap<>();
 
         if (object != null) {
 
             try {
-
-                nutrition.put("KCal", object.getDouble(Nutrition.KEY_KCAL));
-                nutrition.put("Fat", object.getDouble(Nutrition.KEY_FAT));
-                nutrition.put("Sugar", object.getDouble(Nutrition.KEY_SUGAR));
-                nutrition.put("Protein", object.getDouble(Nutrition.KEY_PROTEIN));
-                nutrition.put("Carbohydrates", object.getDouble(Nutrition.KEY_CARBS));
+                nutrition.put("KCal", Float.parseFloat(object.getString(Nutrition.KEY_KCAL)));
+                nutrition.put("Fat", Float.parseFloat(object.getString(Nutrition.KEY_FAT)));
+                nutrition.put("Sugar", Float.parseFloat(object.getString(Nutrition.KEY_SUGAR)));
+                nutrition.put("Protein", Float.parseFloat(object.getString(Nutrition.KEY_PROTEIN)));
+                nutrition.put("Carbohydrates", Float.parseFloat(object.getString(Nutrition.KEY_CARBS)));
 
             } catch (JSONException e) {
                 // Simply return the empty Map.

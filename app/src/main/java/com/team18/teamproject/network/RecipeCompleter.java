@@ -100,7 +100,7 @@ public class RecipeCompleter {
             public void onResponse(String response) {
                 try {
                     JSONObject object = new JSONObject(response);
-                    Map<String, Double> nutritionInfo = JsonParser.parseJSONNutritionInfo(object);
+                    Map<String, Float> nutritionInfo = JsonParser.parseJSONNutritionInfo(object);
                     Application.getCurrentRecipe().setNutritionalInfo(nutritionInfo);
 
                 } catch (JSONException e) {

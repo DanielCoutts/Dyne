@@ -3,9 +3,10 @@
     android:id="@+id/instruction_cardview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/card_margins"
+    android:layout_marginBottom="@dimen/card_spacing"
     android:layout_marginEnd="@dimen/card_margins"
     android:layout_marginStart="@dimen/card_margins"
+    android:layout_marginTop="@dimen/card_spacing"
     android:elevation="@dimen/cardview_default_elevation"
     android:foreground="?android:attr/selectableItemBackground">
 

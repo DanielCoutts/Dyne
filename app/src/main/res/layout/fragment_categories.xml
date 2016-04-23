@@ -81,9 +81,9 @@
 
             </android.support.v7.widget.CardView>
 
-            <!-- Dinner -->
+            <!-- Starter -->
             <android.support.v7.widget.CardView
-                android:id="@+id/category_dinner"
+                android:id="@+id/category_starter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/card_margins"
@@ -96,7 +96,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/category_dinner_imageview"
+                        android:id="@+id/category_starter_imageview"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/categories_image_height" />
 
@@ -104,7 +104,38 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/card_padding"
-                        android:text="Dinner"
+                        android:text="Starter"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/large_card_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Main -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/category_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_margins"
+                android:elevation="@dimen/cardview_default_elevation"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/category_main_imageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/categories_image_height" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/card_padding"
+                        android:text="Main Course"
                         android:textAlignment="center"
                         android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
@@ -135,7 +166,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/card_padding"
-                        android:text="Desserts"
+                        android:text="Dessert"
                         android:textAlignment="center"
                         android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />
@@ -166,7 +197,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="@dimen/card_padding"
-                        android:text="Drinks"
+                        android:text="Drink"
                         android:textAlignment="center"
                         android:textSize="@dimen/large_card_text"
                         android:textStyle="bold" />

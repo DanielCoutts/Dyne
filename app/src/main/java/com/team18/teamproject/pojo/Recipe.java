@@ -24,7 +24,7 @@ public class Recipe implements Serializable {
 
     private List<String> recommendedEssentials = new ArrayList<>();
 
-    private Map<String, Double> nutritionalInfo;
+    private Map<String, Float> nutritionalInfo;
 
     public Recipe(int id, String name, int serves, String category, String difficulty, String cookTime, String imageUrl) {
         this.id = id;
@@ -72,7 +72,7 @@ public class Recipe implements Serializable {
         return instructions;
     }
 
-    public Map<String, Double> getNutritionalInfo() {
+    public Map<String, Float> getNutritionalInfo() {
         return nutritionalInfo;
     }
 
@@ -88,7 +88,7 @@ public class Recipe implements Serializable {
         this.instructions = instructions;
     }
 
-    public void setNutritionalInfo(Map<String, Double> nutritionalInfo) {
+    public void setNutritionalInfo(Map<String, Float> nutritionalInfo) {
         this.nutritionalInfo = nutritionalInfo;
     }
 
