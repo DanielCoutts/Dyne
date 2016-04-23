@@ -1,36 +1,23 @@
 package com.team18.teamproject.activities;
 
 import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
-import com.facebook.share.model.SharePhoto;
-import com.facebook.share.model.SharePhotoContent;
-import com.facebook.share.widget.ShareDialog;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
 import com.team18.teamproject.fragments.NutritionFragment;
 import com.team18.teamproject.R;
-import com.team18.teamproject.network.RecipeCompleter;
 import com.team18.teamproject.pojo.Recipe;
 
 /**
