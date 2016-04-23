@@ -6,6 +6,7 @@
 
     <!-- Main Content -->
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ingredient_scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -21,7 +22,7 @@
 
 
             <LinearLayout
-                android:id="@+id/infoRow1"
+                android:id="@+id/info_row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/tile_margin"
@@ -74,7 +75,7 @@
                 android:id="@+id/ingredient_rv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/ingredient_card_margins"/>
+                android:paddingTop="@dimen/ingredient_card_margins" />
 
         </LinearLayout>
 

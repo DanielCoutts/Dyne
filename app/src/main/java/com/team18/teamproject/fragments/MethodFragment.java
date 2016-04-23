@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import android.widget.ScrollView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -93,7 +94,12 @@ public class MethodFragment extends Fragment {
         adapter = new InstructionRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
-        sendJsonRequest();
+        if (Application.getFavourites().keySet().contains(recipe.getId())
+                && recipe.getInstructions().size() > 0) {
+            adapter.setInstructionList(recipe.getInstructions());
+        } else {
+            sendJsonRequest();
+        }
 
         setupListeners(view);
 

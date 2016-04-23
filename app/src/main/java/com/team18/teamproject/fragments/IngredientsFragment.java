@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -47,6 +49,7 @@ public class IngredientsFragment extends Fragment {
     private RequestQueue requestQueue;
     private IngredientRVAdapter adapter;
     private RecyclerView recyclerView;
+    private ScrollView scrollView;
 
     public IngredientsFragment() {
 
@@ -90,9 +93,25 @@ public class IngredientsFragment extends Fragment {
         adapter = new IngredientRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
-        sendJsonRequest();
+        // TODO Fix weird favourites scrolling bug
+        if (Application.getFavourites().keySet().contains(recipe.getId())
+                && recipe.getIngredients().size() > 0) {
+            adapter.setIngredientList(recipe.getIngredients());
+        } else {
+            sendJsonRequest();
+        }
+
+        scrollView = (ScrollView) view.findViewById(R.id.ingredient_scrollview);
+        scrollView.fullScroll(ScrollView.FOCUS_UP);
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        // TODO Remove?
+        scrollView.fullScroll(ScrollView.FOCUS_UP);
     }
 
     @Override
