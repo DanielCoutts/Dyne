@@ -9,9 +9,9 @@ public class Ingredient implements Serializable {
 
     private String name;
     private String units;
-    private double quantity;
+    private String quantity;
 
-    public Ingredient(String name, String units, double quantity) {
+    public Ingredient(String name, String units, String quantity) {
         this.name = name;
         this.units = units;
         this.quantity = quantity;
@@ -25,7 +25,7 @@ public class Ingredient implements Serializable {
         return units;
     }
 
-    public double getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 }

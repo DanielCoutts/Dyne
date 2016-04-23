@@ -1,5 +1,7 @@
 package com.team18.teamproject.extras;
 
+import android.util.Log;
+
 import com.team18.teamproject.pojo.Ingredient;
 import com.team18.teamproject.pojo.Recipe;
 
@@ -83,7 +85,7 @@ public class JsonParser {
                     JSONObject currentIngredient = array.getJSONObject(i);
                     String name = currentIngredient.getString(Ingredients.KEY_NAME);
                     String units = currentIngredient.getString(Ingredients.KEY_UNITS);
-                    double quantity = currentIngredient.getDouble(Ingredients.KEY_QUANTITY);
+                    String quantity = currentIngredient.getString(Ingredients.KEY_QUANTITY);
 
                     ingredients.add(new Ingredient(name, units, quantity));
                 }

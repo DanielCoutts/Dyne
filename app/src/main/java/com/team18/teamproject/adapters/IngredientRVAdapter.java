@@ -76,7 +76,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
         final Ingredient currentIngredient = ingredients.get(i);
 
         String name = currentIngredient.getName();
-        double quantity = currentIngredient.getQuantity();
+        String quantity = currentIngredient.getQuantity();
         String units = currentIngredient.getUnits();
 
         viewHolder.textView.setText(formatIngredient(name, quantity, units));
@@ -94,15 +94,13 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
         super.onAttachedToRecyclerView(recyclerView);
     }
 
-    private static String formatIngredient(String name, double quantity, String units) {
+    private static String formatIngredient(String name, String quantity, String units) {
         // TODO ingredients with null units & quantity not working.
-        if ((units == "null") && (quantity == 0)) {
+        if ((units.equals("null")) && (quantity.equals("null"))) {
             return name;
-        }
-        else if (units == "null") {
+        } else if (units.equals("null")) {
             return quantity + " " + name;
-        }
-        else {
+        } else {
             return quantity + units + " of " + name;
         }
     }
