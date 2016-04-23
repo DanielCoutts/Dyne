@@ -114,4 +114,10 @@ public class SettingsActivity extends AppCompatActivity {
             });
         }
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Application.getsInstance().saveState();
+    }
 }

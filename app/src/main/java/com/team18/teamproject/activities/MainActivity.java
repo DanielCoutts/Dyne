@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
+import com.team18.teamproject.Application;
 import com.team18.teamproject.fragments.AllRecipesFragment;
 import com.team18.teamproject.fragments.GuidesFragment;
 import com.team18.teamproject.fragments.HomeFragment;
@@ -179,5 +180,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Application.getsInstance().saveState();
     }
 }

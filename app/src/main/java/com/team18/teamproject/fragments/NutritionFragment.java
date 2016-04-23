@@ -6,6 +6,7 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import java.util.ArrayList;
 
 import com.github.mikephil.charting.charts.PieChart;
@@ -27,6 +28,12 @@ public class NutritionFragment extends Fragment {
 
     private Recipe recipe;
 
+    private double kcal;
+    private double fat;
+    private double sugar;
+    private double protein;
+    private double carbs;
+
     public NutritionFragment() {
 
     }
@@ -44,7 +51,7 @@ public class NutritionFragment extends Fragment {
         fragmentView = inflater.inflate(R.layout.fragment_nutrition, container, false);
 
         //Create a nutrition pie chart. Ints (Datatype can be changed  must be sorted, Carbohydrates, Protein, Fat
-        createPiechart(8,6,4);
+        createPiechart(8, 6, 4);
 
         return fragmentView;
     }
@@ -57,11 +64,11 @@ public class NutritionFragment extends Fragment {
     /**
      * Initialises a pie chart using data provided from database.
      *
-     * @param carbs integer value for carbohydrates.
+     * @param carbs   integer value for carbohydrates.
      * @param protein integer value for protein.
-     * @param fat integer value for fat.
+     * @param fat     integer value for fat.
      */
-    public void createPiechart(int carbs, int protein, int fat){
+    public void createPiechart(int carbs, int protein, int fat) {
         PieChart pieChart = (PieChart) fragmentView.findViewById(R.id.chart);
         // creating data values
         ArrayList<Entry> entries = new ArrayList<>();

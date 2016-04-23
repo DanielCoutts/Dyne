@@ -11,6 +11,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -67,7 +68,9 @@ public class RecipeActivity extends AppCompatActivity {
         }
         setTitle(recipe.getName());
 
-        pager.setAdapter(new CustomAdapter(getSupportFragmentManager(), getApplicationContext()));
+        CustomAdapter adapter = new CustomAdapter(getSupportFragmentManager(), getApplicationContext());
+        pager.setAdapter(adapter);
+        pager.setOffscreenPageLimit(3);
 
         tabs = (TabLayout) findViewById(R.id.recipe_tabs);
         if (tabs != null) {
@@ -144,7 +147,7 @@ public class RecipeActivity extends AppCompatActivity {
     /*
      * Custom pager adapter that defines which fragments should be loaded into tabs.
      */
-    private class CustomAdapter extends FragmentPagerAdapter {
+    private class CustomAdapter extends FragmentStatePagerAdapter {
 
         private String fragments[] = {"Ingredients", "Method", "Nutrition"};
 
@@ -175,5 +178,11 @@ public class RecipeActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             return fragments[position];
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Application.getsInstance().saveState();
     }
 }

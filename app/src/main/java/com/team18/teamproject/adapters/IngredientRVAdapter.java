@@ -95,13 +95,13 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
     }
 
     private static String formatIngredient(String name, String quantity, String units) {
-        // TODO ingredients with null units & quantity not working.
+
         if ((units.equals("null")) && (quantity.equals("null"))) {
             return name;
         } else if (units.equals("null")) {
             return quantity + " " + name;
         } else {
-            return quantity + units + " of " + name;
+            return quantity + " " + units + " of " + name;
         }
     }
 
