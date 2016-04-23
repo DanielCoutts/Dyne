@@ -2,7 +2,6 @@ package com.team18.teamproject.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
@@ -56,7 +55,7 @@ public class GuidesFragment extends Fragment {
 
         loadImage(view, R.id.guide5_imageview, R.drawable.essential_flour);
 
-        loadImage(view, R.id.guide6_imageview, R.drawable.essential_greens_final);
+        loadImage(view, R.id.guide6_imageview, R.drawable.essential_greens);
 
         loadImage(view, R.id.guide7_imageview, R.drawable.essential_herbs);
 

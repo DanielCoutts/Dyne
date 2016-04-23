@@ -102,7 +102,6 @@ public class IngredientsFragment extends Fragment {
         }
 
         scrollView = (ScrollView) view.findViewById(R.id.ingredient_scrollview);
-        scrollView.fullScroll(ScrollView.FOCUS_UP);
 
         return view;
     }
@@ -111,7 +110,7 @@ public class IngredientsFragment extends Fragment {
     public void onResume() {
         super.onResume();
         // TODO Remove?
-        scrollView.fullScroll(ScrollView.FOCUS_UP);
+        scrollView.smoothScrollTo(0,0);
     }
 
     @Override
