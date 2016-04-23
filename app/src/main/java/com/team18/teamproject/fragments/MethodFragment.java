@@ -1,8 +1,12 @@
 package com.team18.teamproject.fragments;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.hardware.Camera;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -14,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -151,9 +156,23 @@ public class MethodFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isAppInstalled("com.facebook.katana")) {
+                if (isAppInstalled("com.facebook.katana") && isOnline(getContext()) && isCameraAvailable(getContext())) {
                     takePhoto();
-                } else {
+                } else if (!isCameraAvailable(getContext())){
+                    Context context = getContext();
+                    CharSequence text = "No Camera Detected";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                } else if (!isOnline(getContext())) {
+                    Context context = getContext();
+                    CharSequence text = "Connection Error";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                }  else {
                     try {
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.facebook.katana")));
                     } catch (android.content.ActivityNotFoundException anfe) {
@@ -162,6 +181,16 @@ public class MethodFragment extends Fragment {
                 }
             }
         });
+    }
+
+    private static boolean isCameraAvailable(Context context) {
+        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY);
+    }
+
+    private boolean isOnline(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+        return netInfo != null && netInfo.isConnectedOrConnecting();
     }
 
     /**

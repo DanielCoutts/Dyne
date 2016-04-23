@@ -43,8 +43,8 @@ public class NutritionFragment extends Fragment {
 
         fragmentView = inflater.inflate(R.layout.fragment_nutrition, container, false);
 
-        //Create a nutrition pie chart. Ints (Datatype can be changed  must be sorted, Carbohydrates, Protein, Fat
-        createPiechart(8,6,4);
+        //Create a nutrition pie chart. Ints (Datatype can be changed)  must be sorted, Carbohydrates, Protein, Fat, Sugar
+        createPiechart(8,6,4,2);
 
         return fragmentView;
     }
@@ -60,8 +60,9 @@ public class NutritionFragment extends Fragment {
      * @param carbs integer value for carbohydrates.
      * @param protein integer value for protein.
      * @param fat integer value for fat.
+     * @param sugar intger value for sugar
      */
-    public void createPiechart(int carbs, int protein, int fat){
+    public void createPiechart(int carbs, int protein, int fat, int sugar){
         PieChart pieChart = (PieChart) fragmentView.findViewById(R.id.chart);
         // creating data values
         ArrayList<Entry> entries = new ArrayList<>();
@@ -71,16 +72,20 @@ public class NutritionFragment extends Fragment {
         entries.add(new Entry(protein, 1));
         //Fat
         entries.add(new Entry(fat, 2));
+        //Sugar
+        entries.add(new Entry(sugar, 3));
 
         PieDataSet dataset = new PieDataSet(entries, "Nutrition");
         // set the color
         int[] colors = new int[]{ContextCompat.getColor(getContext(), R.color.colorPrimaryDark),
                 ContextCompat.getColor(getContext(), R.color.colorDivider),
-                ContextCompat.getColor(getContext(), R.color.colorPieChart)};
+                ContextCompat.getColor(getContext(), R.color.colorPieChart),
+                ContextCompat.getColor(getContext(), R.color.colorTextSecondary)};
         dataset.setColors(colors);
 
         // creating labels -  These are required by PieData class but not desired by app hence blank
         ArrayList<String> labels = new ArrayList<String>();
+        labels.add(" ");
         labels.add(" ");
         labels.add(" ");
         labels.add(" ");
