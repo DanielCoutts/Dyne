@@ -77,6 +77,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s2i2"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s2i1"
                         android:id="@+id/guide4_s2i2"/>
 
@@ -84,6 +85,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s2i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s2i2"
                         android:id="@+id/guide4_s2i3"/>
 
@@ -91,6 +93,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s2i4"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s2i3"/>
 
                 </RelativeLayout>
@@ -123,6 +126,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s3i2"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s3i1"
                         android:id="@+id/guide4_s3i2"/>
 
@@ -130,6 +134,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s3i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s3i2"
                         android:id="@+id/guide4_s3i3"/>
 
@@ -163,6 +168,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i2"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i1"
                         android:id="@+id/guide4_s4i2"/>
 
@@ -170,6 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i2"
                         android:id="@+id/guide4_s4i3"/>
 
@@ -177,6 +184,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i4"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i3"
                         android:id="@+id/guide4_s4i4"/>
 
@@ -184,6 +192,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i5"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i4"
                         android:id="@+id/guide4_s4i5"/>
 
@@ -191,6 +200,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i6"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i5"
                         android:id="@+id/guide4_s4i6"/>
 
@@ -198,6 +208,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i7"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i6"
                         android:id="@+id/guide4_s4i7"/>
 
@@ -205,6 +216,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i8"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i7"
                         android:id="@+id/guide4_s4i8"/>
 
@@ -212,6 +224,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i9"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i8"
                         android:id="@+id/guide4_s4i9"/>
 
@@ -219,6 +232,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i10"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i9"
                         android:id="@+id/guide4_s4i10"/>
 
@@ -226,6 +240,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s4i11"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s4i10"/>
 
                 </RelativeLayout>
@@ -258,6 +273,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s5i2"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s5i1"
                         android:id="@+id/guide4_s5i2"/>
 
@@ -265,6 +281,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s5i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s5i2"/>
 
                 </RelativeLayout>
@@ -297,6 +314,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i2"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i1"
                         android:id="@+id/guide4_s6i2"/>
 
@@ -304,6 +322,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i2"
                         android:id="@+id/guide4_s6i3"/>
 
@@ -311,6 +330,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i4"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i3"
                         android:id="@+id/guide4_s6i4"/>
 
@@ -318,6 +338,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i5"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i4"
                         android:id="@+id/guide4_s6i5"/>
 
@@ -325,6 +346,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i6"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i5"
                         android:id="@+id/guide4_s6i6"/>
 
@@ -332,6 +354,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i7"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i6"
                         android:id="@+id/guide4_s6i7"/>
 
@@ -339,6 +362,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i8"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i7"
                         android:id="@+id/guide4_s6i8"/>
 
@@ -346,20 +370,23 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i9"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i8"
                         android:id="@+id/guide4_s6i9"/>
 
                     <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/guide4_s6i10"
-                    android:layout_below="@id/guide4_s6i9"
-                    android:id="@+id/guide4_s6i10"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i10"
+                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide4_s6i9"
+                        android:id="@+id/guide4_s6i10"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i11"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i10"
                         android:id="@+id/guide4_s6i11"/>
 
@@ -367,6 +394,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i12"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i11"
                         android:id="@+id/guide4_s6i12"/>
 
@@ -374,6 +402,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i13"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i12"
                         android:id="@+id/guide4_s6i13"/>
 
@@ -381,6 +410,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i14"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s6i13"/>
 
                 </RelativeLayout>
@@ -413,6 +443,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s7i2"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s7i1"
                         android:id="@+id/guide4_s7i2"/>
 
@@ -420,6 +451,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s7i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s7i2"
                         android:id="@+id/guide4_s7i3"/>
 
@@ -427,6 +459,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s7i4"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s7i3"/>
 
                 </RelativeLayout>
@@ -459,6 +492,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s8i2"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s8i1"
                         android:id="@+id/guide4_s8i2"/>
 
@@ -466,6 +500,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s8i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s8i2"
                         android:id="@+id/guide4_s8i3"/>
 
@@ -473,6 +508,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s8i3"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s8i2"
                         android:id="@+id/guide4_s8i4"/>
 
@@ -480,6 +516,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s8i5"
+                        android:paddingTop="2dp"
                         android:layout_below="@id/guide4_s8i4"/>
 
                 </RelativeLayout>

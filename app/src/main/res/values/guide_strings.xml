@@ -50,7 +50,7 @@ Put the remaining whites on top and use a large rubber spatula to cut through an
 
 Make sure you go all the way down to the bottom of the mixing bowl when cutting through.
 
-Pull the spatula toward you to the edge of the bowl, turning t in the process to put some batter on top of the whites.
+Pull the spatula toward you to the edge of the bowl, turning it in the process to put some batter on top of the whites.
 
 Turn the bowl by a quarter and repeat this motion (dipping and scooping) about 10-15 times – depending on the amount of mixture and batter.
 
@@ -61,17 +61,15 @@ Make sure to not overblend, or the whipped whites will lose their volume. </stri
     <!-- GUIDE 2 -->
     <string name="guide2_title">Boiling, Poaching and Steaming</string>
     <string name="guide2_s1i1">Boiling:</string>
-    <string name="guide2_s1i2">Bringing water to 100 degrees Celsius in a saucepan or a kettle.
+    <string name="guide2_s1i2">Boiling means bringing water in a saucepan or a kettle to 100 degrees Celsius.
 
-“Let the water come to a rapid boil (when the bubbles are quickly breaking the surface).
+Covering the pot speeds up the boiling process and you will know that the water has come to a rapid boil when the bubbles are quickly breaking the water surface.
 
-Covering the pot speeds up the process by trapping surface heat.”
-
-Boiling is not the best way to cook vegetables because the water leaches a lot of vitamins from them and it is very easy to overcook them. </string>
+Boiling is not the best way to cook vegetables because the water leaches a lot of vitamins from them and makes it very easy to overcook them. </string>
     <string name="guide2_s2i1">Parboiling and blanching</string>
-    <string name="guide2_s2i2">Parboil means to briefly cook tough or salty foods in boiling water to softer their textures or skin and sometimes remove harsh flavours.
+    <string name="guide2_s2i2">Parboiling means to briefly cook tough or salty foods in boiling water to soften their textures or skin and sometimes remove harsh flavours.
 
-For example, the rice found in supermarkets is sometimes parboiled to shorten cooking time but retain nutrients. </string>
+For example, the rice found in supermarkets is sometimes parboiled to shorten its cooking time but retain the nutrients. </string>
     <string name="guide2_s2i3">Blanching is used when vegetables need to be cooked very briefly as they are plunged into boiling water for a minute.
 
 The vegetables then must be immediately submerged in cold water to stop the cooking process and retain their colour.
@@ -82,18 +80,18 @@ Blanching can also be used to loosen skins and increase the flavour of certain i
 
 This method is used for long, slow cooking and braising to add more flavour to the foods and make them tender. </string>
     <string name="guide2_s4i1">Reducing</string>
-    <string name="guide2_s4i2">This is the process of thickening and intensifying the flavours of liquids.
+    <string name="guide2_s4i2">This is the process of thickening and intensifying the flavours of liquids, such as sauces, soups or juices.
 
-However, it is very important not to over-reduce or burn the liquid.
-
-This technique is most often used for making sauces, soups or juices.</string>
+However, it is very important not to over-reduce or burn the liquid. </string>
     <string name="guide2_s5i1">Steaming</string>
-    <string name="guide2_s5i2">Steaming is very gentle, and therefore, it is the best way to cook vegetables because as it allows them to retain more essential vitamins and minerals as well as the colour, flavour, shape and texture.
+    <string name="guide2_s5i2">Steaming is very gentle.
+
+It is the best way to cook vegetables because it allows them to retain more of the essential vitamins and minerals as well as the colour, flavour, shape and texture.
 
 Using a stackable steamer is a great option if you would like to cook lots of different foods at the same time.
 
 You can also very easily make your own steamer pan by simply placing a metal sieve or colander on top of a saucepan. </string>
-    <string name="guide2_s5i3">When you steam foods set in a pan of water in the oven, it’s called a water bath.
+    <string name="guide2_s5i3">Steaming foods in a pan of water in the oven is called a water bath.
 
 Cheesecakes and custards are often baked this way to prevent cracks.</string>
     <string name="guide2_s6i1">Poaching</string>
@@ -235,7 +233,9 @@ The bacteria can be killed by heating the food to 75 °C for 10 minutes (longer 
 
 You can reduce the risk of contamination by – surprisingly – not rinsing raw chicken in the sink as it risks contaminating the sink, pans/utensils in it, faucet, floor, and clothes.</string>
     <string name="guide4_s4i4">There are some other ways you can minimise the chances of getting sick from the bacteria:</string>
-    <string name="guide4_s4i5">There are some other ways you can minimise the chances of getting sick from the bacteria:</string>
+    <string name="guide4_s4i5">1. When buying poultry, make sure it’s securely packaged (no leaks).
+
+You can ask the seller to wrap it in a plastic bag or do it yourself at checkout.</string>
     <string name="guide4_s4i6">2. Put the meat in the fridge immediately when you get back home and cook within 2 days.</string>
     <string name="guide4_s4i7">3. Never defrost chicken at room temperature. Defrost it in the fridge (chicken breast will take less than a day to thaw) or microwave (make sure you cook it immediately after thawing in this case).</string>
     <string name="guide4_s4i8">4. Don’t touch raw poultry with dish towels that may come in contact with other surfaces.</string>
@@ -334,12 +334,221 @@ However, catching wild fish puts them at risk of overfishing and becoming endang
 
     <!-- GUIDE 5 -->
     <string name="guide5_title">Flour Types</string>
+    <string name="guide5_s1i1">There are many different kinds of flour, which have various level of protein.
+
+For example, they can be made from either high-protein hard wheat, low-protein soft wheat or a combination.
+
+Each kind of flour also has a different gluten content, which is a protein that becomes stretchy with beating or kneading, helping baked goods rise.</string>
+    <string name="guide5_s2i1">Plain (white) flour</string>
+    <string name="guide5_s2i2">This is the most commonly used type of flour.
+
+It contains about 70% of the wheat grain.
+
+Most of the bran and wheat germ is removed when the grains are milled.
+
+All that is left is the white starchy part of the grain. </string>
+    <string name="guide5_s2i3">Plain flour is commonly used for cakes, pastries and biscuits.
+        It is often combined with a rising agent (such as baking powder or bicarbonate of soda) when used to bake cakes. </string>
+    <string name="guide5_s2i4">Moreover, this type of flour is usually artificially whitened but it is possible to buy an unbleached variety if necessary.</string>
+    <string name="guide5_s3i1">Strong (bread) flour</string>
+    <string name="guide5_s3i2">Strong flour is made from ‘hard’ wheat varieties because all the bran and wheat germ is removed from the wheat grain when processed.
+
+This makes it ideal for making bread because it is very high in gluten, which ensures that the dough will expand and rise well in order to produce a light loaf.
+
+Strong flour is not suitable for cake recipes.</string>
+    <string name="guide5_s4i1">Self-rising flour</string>
+    <string name="guide5_s4i2">This is simply plain flour mixed with rising agents (such as baking powder or bicarbonate of soda).
+
+The raising agent reacts during cooking and makes the dough expand to give a light and airy texture. </string>
+    <string name="guide5_s4i3">This type of flour can be easily made at home; however, because the raising agents are blended with plain flour during manufacturing, bought self-raising flour is more convenient to use.</string>
+    <string name="guide5_s5i1">Wholemeal flour</string>
+    <string name="guide5_s5i2">Wholemeal flour contains 100% of the wheat grain, including the bran and germ.
+
+It does have a much higher fibre content than plain flour; however, wholemeal flour produces heavier results than white flour so is often used in combination.</string>
+    <string name="guide5_s5i3">Strong and self-rising varieties of wholemeal flour can also be found in shops. </string>
+    <string name="guide5_s6i1">Gluten-free flour</string>
+    <string name="guide5_s6i2">This is just like plain flour but without any gluten. Gluten-free flour is usually made from a blend of rice flour, potato flour, buckwheat and maize flour.</string>
+    <string name="guide5_s7i1">Additional tips:</string>
+    <string name="guide5_s7i2">Store flour in an airtight container in a cool, dry place.</string>
 
     <!-- GUIDE 6 -->
     <string name="guide6_title">Glossary of Greens</string>
+    <string name="guide6_s1i1">Greens range in taste from mild to pungent and even bitter.
+
+The more variety of greens in the bowl, the better because there is more flavor and a higher nutritional content.</string>
+    <string name="guide6_s2i1">Most Popular Greens</string>
+    <string name="guide6_s3i1">Round lettuce</string>
+    <string name="guide6_s3i2">Often called “the traditional British lettuce”, it has soft green outer leaves and a slightly crispier, paler heart. </string>
+    <string name="guide6_s4i1">Iceberg lettuce</string>
+    <string name="guide6_s4i2">A pale green, round, densely packed lettuce which has crisp leaves.
+
+Its refreshing flavour makes is perfect for sandwiches or to add a crunch to mixed salads. </string>
+    <string name="guide6_s5i1">Romaine (COS) lettuce</string>
+    <string name="guide6_s5i2">It has a long, oval head of tightly packed crisp leaves, which are rich in potassium and have a subtle nutty flavour.
+
+They are traditionally used as base for Caesar salads with garlic, croutons, eggs and Parmesan cheese. </string>
+    <string name="guide6_s6i1">Little gem lettuce</string>
+    <string name="guide6_s6i2">A very small variety of Romaine lettuce with crispy, round leaves which have a sweet flavour.
+
+This type of lettuce is usually used in Waldorf salad with celery, apple, walnuts and mayonnaise. </string>
+    <string name="guide6_s7i1">Baby leaf spinach</string>
+    <string name="guide6_s7i2">One of the most popular salad leaves, which are tender and sweet. It is best to eat raw baby spinach as it minimises the loss of nutrients.
+
+It combines well with olive oil dressings but baby spinach also works well with warm salads, lentil dishes, grilled cheese or meat, eggs, and tomatoes. </string>
+    <string name="guide6_s8i1">Lamb’s lettuce</string>
+    <string name="guide6_s8i2">Its small spoon-shaped leaves have a nutty flavour.
+
+This type of lettuce is often used in mixed salads with a mustard dressing, and goes especially well with potatoes and beetroots. </string>
+    <string name="guide6_s9i1">Rocket</string>
+    <string name="guide6_s9i2">These thin spiky leaves have a strong peppery flavour which are very versatile.
+
+Some of the most common uses include cold salads, wilted in pasta or on top of a pizza. </string>
+    <string name="guide6_s10i1">Mizuna</string>
+    <string name="guide6_s10i2">This type of lettuce is very similar to rocket (light green serrated leaves with a soft texture).
+
+It has a hot, mustardy flavour which works well in salads and stir-fries. </string>
+    <string name="guide6_s11i1">Radicchio </string>
+    <string name="guide6_s11i2">It has very distinctive, red leaves which have a slightly bitter flavour and a chewy texture similar to cabbage leaves.
+
+Its most common uses include salads and as a garnish for savoury dishes. </string>
+    <string name="guide6_s12i1">Watercress</string>
+    <string name="guide6_s12i2">The leaves have a very distinct raw flavour, which is both peppery and slightly pungent.
+
+Watercress is usually eaten in soup and salads. </string>
+    <string name="guide6_s13i1">Kale</string>
+    <string name="guide6_s13i2">A member of the cabbage family, which comes in two forms: one with smooth leaves and curly kale, which has crinkly leaves.
+
+Both varieties have quite large leaves that have a strong and bitter flavour.
+
+The tough centre stalk should be removed before using.
+
+Kale is very commonly boiled and added to salads. </string>
 
     <!-- GUIDE 7 -->
     <string name="guide7_title">Herbs, Spices and Seasonings</string>
+    <string name="guide7_s1i1">Herbs and spices are essential flavouring ingredients.
+
+Most herbs are produced from the leaves and stems of a variety of plants.
+
+Spices, however, can come from plants’ roots, seeds, bark, buds or berries.</string>
+    <string name="guide7_s1i2">It is best to keep these essential dry herbs on hand: basil, bay leaves, dill, marjoram, oregano, parsley, rosemary, sage, tarragon and thyme.
+
+Dried herbs have a more intense, concentrated flavour than fresh herbs.
+
+Crush dried herbs between your fingers before adding them to a dish to get the most intense flavour.</string>
+    <string name="guide7_s1i3">Fresh herbs have a brighter, lighter and fresher taste than dried ones; however, they are best purchased fresh, refrigerated and used within a few days.
+
+As a rule, if a recipe calls for one tablespoon of dried herbs you should use two tablespoons when using fresh.</string>
+    <string name="guide7_s2i1">Basil</string>
+    <string name="guide7_s2i2">Widely used in Italian and French cuisine; excellent with tomatoes, eggs, fish, pasta and poultry.
+Should be stored in cool, dark, dry places.</string>
+    <string name="guide7_s3i1">Bay leaves</string>
+    <string name="guide7_s3i2">They are pungent and have a sharp, bitter taste.
+
+Add the dried leaves to long-cooking dishes such as soups, stews, marinades and roasts but remove them before serving the dish.</string>
+    <string name="guide7_s4i1">Chives</string>
+    <string name="guide7_s4i2">Chives have a mild, onion-like flavour which tastes great in cream sauces or soups; with chicken, eggs, shellfish and salads; or simply sprinkled as a garnish.</string>
+    <string name="guide7_s5i1">Cilantro</string>
+    <string name="guide7_s5i2">Dried version of cilantro is a lot paler in comparison to the fresh variety.
+
+It works well with Mexican and Asian dishes, especially on rice, with fish and pork or in salsa, guacamole and bean dips.</string>
+    <string name="guide7_s6i1">Dill</string>
+    <string name="guide7_s6i2">Seeds are often used in pickling recipes.
+
+Fresh leaves, however, are widely used in fish, shellfish and chicken dishes as well as omelettes and in salad dressings.</string>
+    <string name="guide7_s7i1">Marjoram</string>
+    <string name="guide7_s7i2">It has a very floral and woodsy flavour, which means that it can be added to almost any vegetable dish.</string>
+    <string name="guide7_s8i1">Mint</string>
+    <string name="guide7_s8i2">The two most common varieties are standard peppermint and spearmint.
+
+Tastes excellent when paired with fresh fruit, lamb, peas or in chocolate desserts.</string>
+    <string name="guide7_s9i1">Oregano</string>
+    <string name="guide7_s9i2">It is an essential ingredient in Italian and Greek cooking as it’s widely used with tomato, egg or cheese based dishes; however, it also goes well with red meat, poultry, fish and vegetable stews.</string>
+    <string name="guide7_s10i1">Parsley</string>
+    <string name="guide7_s10i2">It is often used as a garnish because of its light and grassy flavour, which is why it’s best to use fresh parsley.</string>
+    <string name="guide7_s11i1">Rosemary</string>
+    <string name="guide7_s11i2">Its strong flavour makes it excellent with grilled meat (especially lamb) and in herb bread, or to flavour oils and marinade.</string>
+    <string name="guide7_s12i1">Sage</string>
+    <string name="guide7_s12i2">It has a very fragrant aroma with pine-like flavour.
+
+Works well with fish and chicken, and in herb butter.</string>
+    <string name="guide7_s13i1">Tarragon</string>
+    <string name="guide7_s13i2">It has a strong anise flavour, which is widely used on chicken, pork, lamb, veal, fish and shellfish; however, it can also be used as flavouring for vinegar and in pickles, relishes, mustards and sauces.</string>
+    <string name="guide7_s14i1">Thyme</string>
+    <string name="guide7_s14i2">Thyme is great as an all-purpose seasoning because it has a subtle, dry aroma.
+
+Try it with vegetables, meat, poultry, fish, soups, stews, and cream sauces.</string>
+    <string name="guide7_s15i1">Spices are almost always sold dried and they should be stored in a cool, dry place.
+
+Many whole spices (such as peppercorns, nutmeg, cinnamon sticks and cumin seeds) are a lot more aromatic and flavourful than the pre-ground form.
+
+Whole spices can also be added to soup, stew, braises and marinades to add extra flavour, and then removed before serving.</string>
+    <string name="guide7_s16i1">Allspice</string>
+    <string name="guide7_s16i2">The name “Allspice” comes from the fact that its flavour resembles a combination of cinnamon, nutmeg and cloves.
+
+It is commonly used for savoury dishes such as Jerked meats, marinades, soups and stews.
+
+It also works great in sweet dishes such as cakes, cookies, fruit pies and puddings.</string>
+    <string name="guide7_s17i1">Caraway Seeds</string>
+    <string name="guide7_s17i2">These are very common in German cuisine as they are essential for rye bread as well as sauerkraut, sausage, cheese, cabbage and soups.</string>
+    <string name="guide7_s18i1">Cardamom</string>
+    <string name="guide7_s18i2">Being one of the main ingredients in garam masala, it is traditionally used in Indian cooking.
+
+Because of its intense, sweet flavour, it is also excellent in baked goods and pumpkin pie.</string>
+    <string name="guide7_s19i1">Cayenne or Red Pepper</string>
+    <string name="guide7_s19i2">A hot, powdered mixture made from dried and ground chili peppers.
+
+It is often used in sauces, soups and marinades to add some extra spice.</string>
+    <string name="guide7_s20i1">Chili powder</string>
+    <string name="guide7_s20i2">A spicy blend of ground chilies, cumin, oregano and garlic powder.
+
+Best used to flavour meat, sauces, stews and chili con carne.</string>
+    <string name="guide7_s21i1">Cinnamon</string>
+    <string name="guide7_s21i2">This is a sweet and aromatic spice from the bark of a tropical tree that can be used in both sweet and savoury dishes.
+
+However, it is most commonly used as a baking spice.</string>
+    <string name="guide7_s22i1">Clove</string>
+    <string name="guide7_s22i2">Adds a strong, pungent and sweet flavour to sweet or savoury dishes.
+
+Most common uses include applesauce, cookies and gingerbread.</string>
+    <string name="guide7_s23i1">Coriander Seeds</string>
+    <string name="guide7_s23i2">This spice has a very mild taste similar to a blend of lemon and sage.
+
+It is very often used for pickling, curries, sausage and baked goods.</string>
+    <string name="guide7_s24i1">Cumin</string>
+    <string name="guide7_s24i2">A smoky and earthy spice that is essential to Middle Eastern, Indian and South-western U.S. cuisine.</string>
+    <string name="guide7_s25i1">Curry Powder</string>
+    <string name="guide7_s25i2">A blend of many spices that is widely used in Indian savoury dishes.
+
+It can include more than a dozen different herbs and spices.
+
+Use it to season meat, rice, sautéed vegetables, and to add flavour to curries.</string>
+    <string name="guide7_s26i1">Ginger</string>
+    <string name="guide7_s26i2">Essential in gingerbread – ground ginger is made from dehydrated fresh ginger. It has a sweet and spicy aroma.</string>
+    <string name="guide7_s27i1">Nutmeg</string>
+    <string name="guide7_s27i2">Nutmeg’s pungent and sweet flavour is delicious in white sauces, sweet sauces but also over eggnog, in puddings, fruit pies and spice cakes.
+
+Best to use it freshly grated.</string>
+    <string name="guide7_s28i1">Paprika</string>
+    <string name="guide7_s28i2">The varieties range from sweet to hot or smoked.
+
+However, all of them add a sweet flavour and red colour to dishes such as dips, creamy salads, dressings, stews, sautéed meats and fish.</string>
+    <string name="guide7_s29i1">Peppercorns</string>
+    <string name="guide7_s29i2">Black pepper is probably the world’s most popular spice because it is a universal condiment that can be used to flavour nearly every savoury dish.
+
+White pepper, however, can be used to enrich cream sauces and white dishes for a pure white colour.
+
+There are also other coloured peppercorns that can add a variety of flavour.</string>
+    <string name="guide7_s30i1">Saffrom</string>
+    <string name="guide7_s30i2">This is the world’s most expensive spice because it’s made from dried stigmas that need to be handpicked from a special variety of purple crocus flowers.
+
+It can be bought as a powder or whole threads, and a little pinch goes a long way so it should be used sparingly.
+
+It is essential to classic Mediterranean dishes like bouillabaisse and paella. </string>
+    <string name="guide7_s31i1">Turmeric</string>
+    <string name="guide7_s31i2">Turmeric is a yellow-orange powder that is intensely aromatic and has a bitter, pungent flavour.
+
+It is a necessary ingredient of curry powder, but it also gives the American-style mustard its colour. </string>
 
     <!-- GUIDE 8 -->
     <string name="guide8_title">Roasting Times and Temperatures</string>
