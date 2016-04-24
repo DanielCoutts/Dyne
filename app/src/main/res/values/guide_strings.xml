@@ -61,7 +61,7 @@ Make sure to not overblend, or the whipped whites will lose their volume. </stri
     <!-- GUIDE 2 -->
     <string name="guide2_title">Boiling, Poaching and Steaming</string>
     <string name="guide2_s1i1">Boiling:</string>
-    <string name="guide2_s1i2">Boiling means bringing water in a saucepan or a kettle to 100 degrees Celsius.
+    <string name="guide2_s1i2">Boiling means bringing water in a saucepan or a kettle to 100°C.
 
 Covering the pot speeds up the boiling process and you will know that the water has come to a rapid boil when the bubbles are quickly breaking the water surface.
 
@@ -76,7 +76,7 @@ The vegetables then must be immediately submerged in cold water to stop the cook
 
 Blanching can also be used to loosen skins and increase the flavour of certain ingredients (such as almonds, peaches and tomatoes). </string>
     <string name="guide2_s3i1">Simmering and poaching</string>
-    <string name="guide2_s3i2">Simmering involves bringing the liquid to a gentle pre-boil, where few small air bubbles break through the surface (between 85 and 96 degrees Celsius).
+    <string name="guide2_s3i2">Simmering involves bringing the liquid to a gentle pre-boil, where few small air bubbles break through the surface (between 85°C and 96°C).
 
 This method is used for long, slow cooking and braising to add more flavour to the foods and make them tender. </string>
     <string name="guide2_s4i1">Reducing</string>
@@ -95,7 +95,7 @@ You can also very easily make your own steamer pan by simply placing a metal sie
 
 Cheesecakes and custards are often baked this way to prevent cracks.</string>
     <string name="guide2_s6i1">Poaching</string>
-    <string name="guide2_s6i2">Poaching is the method of cooking foods (such as eggs or fish) in liquid which shows only slight movement, but no bubbles (between 70 and 82 degrees Celsius).
+    <string name="guide2_s6i2">Poaching is the method of cooking foods (such as eggs or fish) in liquid which shows only slight movement, but no bubbles (between 70°C and 82°C).
 
 The flavour of the poaching liquid has a big effect on the final flavour of the finished dish, so it strongly advised to use stock or broth.</string>
 
@@ -564,74 +564,104 @@ Some ovens are off by as much as 10 degrees, so it’s useful to invest in an ov
 
     <!-- s2 -->
     <string name="guide8_s2i1">Boneless Rib Eye Roast</string>
-    <string name="guide8_s2i2">Oven Temp: 180 Celsius/350 Fahrenheit/Gas 4</string>
+    <string name="guide8_s2i2">Oven Temp: 180°C/350°F/Gas 4</string>
     <string name="guide8_s2i3">Weight: 3 to 4lbs/1.35 to 1.8kgs</string>
     <string name="guide8_s2i4">Medium Rare:</string>
-    <string name="guide8_s2i5">1&#189; to 1&#190;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s2i5">1&#189; to 1&#190;hrs, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s2i6">Medium:</string>
-    <string name="guide8_s2i7">1&#190; to 2hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s2i7">1&#190; to 2hrs, take out when core temp is 65°C/150°F</string>
     <string name="guide8_s2i8">Weight: 4 to 6lbs/1.8 to 2.7kgs</string>
     <string name="guide8_s2i9">Medium Rare:</string>
-    <string name="guide8_s2i10">1&#190; to 2hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s2i10">1&#190; to 2hrs, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s2i11">Medium:</string>
-    <string name="guide8_s2i12">2 to 2&#189;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s2i12">2 to 2&#189;hrs, take out when core temp is 65°C/150°F</string>
     <string name="guide8_s2i13">Weight: 6 to 8lbs/2.7 to 3.6kgs</string>
     <string name="guide8_s2i14">Medium Rare:</string>
-    <string name="guide8_s2i15">2 to 2&#188;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s2i15">2 to 2&#188;hrs, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s2i16">Medium:</string>
-    <string name="guide8_s2i17">2&#188; to 2&#190;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s2i17">2&#188; to 2&#190;hrs, take out when core temp is 65°C/150°F</string>
 
     <!-- s3 -->
     <string name="guide8_s3i1">Round Tip Roast</string>
-    <string name="guide8_s3i2">Oven Temp: 160 to 170 Celsius/325 Fahrenheit/Gas 3</string>
+    <string name="guide8_s3i2">Oven Temp: 160 to 170°C/325°F/Gas 3</string>
     <string name="guide8_s3i3">Weight: 2 to 4lbs/1.35 to 1.8kgs</string>
     <string name="guide8_s3i4">Medium Rare:</string>
-    <string name="guide8_s3i5">1&#190; to 2hrs, take out when core temp is 60 Celsius/140 Fahrenheit</string>
+    <string name="guide8_s3i5">1&#190; to 2hrs, take out when core temp is 60°C/140°F</string>
     <string name="guide8_s3i6">Medium:</string>
-    <string name="guide8_s3i7">2&#188; to 2&#189;hrs, take out when core temp is 68 Celsius/155 Fahrenheit</string>
+    <string name="guide8_s3i7">2&#188; to 2&#189;hrs, take out when core temp is 68°C/155°F</string>
     <string name="guide8_s3i8">Weight: 4 to 6lbs/1.8 to 2.7kgs</string>
     <string name="guide8_s3i9">Medium Rare:</string>
-    <string name="guide8_s3i10">2 to 2&#189;hrs, take out when core temp is 60 Celsius/140 Fahrenheit</string>
+    <string name="guide8_s3i10">2 to 2&#189;hrs, take out when core temp is 60°C/140°F</string>
     <string name="guide8_s3i11">Medium:</string>
-    <string name="guide8_s3i12">2&#190; to 3hrs, take out when core temp is 68 Celsius/155 Fahrenheit</string>
+    <string name="guide8_s3i12">2&#190; to 3hrs, take out when core temp is 68°C/155°F</string>
     <string name="guide8_s3i13">Weight: 6 to 8lbs/2.7 to 3.6kgs</string>
     <string name="guide8_s3i14">Medium Rare:</string>
-    <string name="guide8_s3i15">2&#189; to 3hrs, take out when core temp is 60 Celsius/140 Fahrenheit</string>
+    <string name="guide8_s3i15">2&#189; to 3hrs, take out when core temp is 60°C/140°F</string>
     <string name="guide8_s3i16">Medium:</string>
-    <string name="guide8_s3i17">3 to 3&#189;hrs, take out when core temp is 68 Celsius/155 Fahrenheit</string>
+    <string name="guide8_s3i17">3 to 3&#189;hrs, take out when core temp is 68°C/155°F</string>
 
     <!-- s4 -->
     <string name="guide8_s4i1">Tenderloin Roast</string>
-    <string name="guide8_s4i2">Oven Temp: 220 Celsius/425 Fahrenheit/Gas 7</string>
+    <string name="guide8_s4i2">Oven Temp: 220°C/425°F/Gas 7</string>
     <string name="guide8_s4i3">Weight: 2 to 3lbs/0.9 to 1.35kgs</string>
     <string name="guide8_s4i4">Medium Rare:</string>
-    <string name="guide8_s4i5">35 to 40mins, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s4i5">35 to 40mins, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s4i6">Medium:</string>
-    <string name="guide8_s4i7">45 to 50mins, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s4i7">45 to 50mins, take out when core temp is 65°C/150°F</string>
     <string name="guide8_s4i8">Weight: 4 to 5lbs/1.8 to 2.25kgs</string>
     <string name="guide8_s4i9">Medium Rare:</string>
-    <string name="guide8_s4i10">50 to 60mins, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s4i10">50 to 60mins, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s4i11">Medium:</string>
-    <string name="guide8_s4i12">60 to 70mins, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s4i12">60 to 70mins, take out when core temp is 65°C/150°F</string>
 
     <!-- s5 -->
     <string name="guide8_s5i1">Bone-in Rib Roast</string>
-    <string name="guide8_s5i2">Oven Temp: 180 Celsius/350 Fahrenheit/Gas 4</string>
+    <string name="guide8_s5i2">Oven Temp: 180°C/350°F/Gas 4</string>
     <string name="guide8_s5i3">Weight: 2 ribs/4 to 6lbs/1.8 to 2.7kgs</string>
     <string name="guide8_s5i4">Medium Rare:</string>
-    <string name="guide8_s5i5">1&#190; to 2&#188;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s5i5">1&#190; to 2&#188;hrs, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s5i6">Medium:</string>
-    <string name="guide8_s5i7">2&#188; to 2&#189;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s5i7">2&#188; to 2&#189;hrs, take out when core temp is 65°C/150°F</string>
     <string name="guide8_s5i8">Weight: 2 to 4 ribs/6 to 8lbs/2.7 to 3.6kgs</string>
     <string name="guide8_s5i9">Medium Rare:</string>
-    <string name="guide8_s5i10">2&#188; to 2&#189;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s5i10">2&#188; to 2&#189;hrs, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s5i11">Medium:</string>
-    <string name="guide8_s5i12">2&#190; to 3hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s5i12">2&#190; to 3hrs, take out when core temp is 65°C/150°F</string>
     <string name="guide8_s5i13">Weight: 4 to 5 ribs/8 to 10lbs/3.6 to 4.5kgs</string>
     <string name="guide8_s5i14">Medium Rare:</string>
-    <string name="guide8_s5i15">2&#189; to 3hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s5i15">2&#189; to 3hrs, take out when core temp is 57°C/135°F</string>
     <string name="guide8_s5i16">Medium:</string>
-    <string name="guide8_s5i17">3 to 3&#189;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s5i17">3 to 3&#189;hrs, take out when core temp is 65°C/150°F</string>
+
+    <!-- s6 -->
+    <string name="guide8_s6i1">Chicken, broiler or fryer (unstuffed)</string>
+    <string name="guide8_s6i2">180°C/350°F/Gas 4</string>
+    <string name="guide8_s6i3">3 to 4lbs/1.35 to 1.8kgs</string>
+    <string name="guide8_s6i4">1&#188; to 1&#189;hrs</string>
+
+    <!-- s7 -->
+    <string name="guide8_s7i1">Chicken, roaster (unstuffed)</string>
+    <string name="guide8_s7i2">180°C/350°F/Gas 4</string>
+    <string name="guide8_s7i3">5 to 7lbs/2.25 to 3.2kgs</string>
+    <string name="guide8_s7i4">2 to 2&#188;hrs</string>
+
+    <!-- s8 -->
+    <string name="guide8_s8i1">Whole turkey (thawed and unstuffed)</string>
+    <string name="guide8_s8i2">160°C to 170°C/325°F/Gas 3</string>
+    <string name="guide8_s8i3">8 to 12lbs/3.6 to 5.4kgs</string>
+    <string name="guide8_s8i4">2&#190; to 3hrs</string>
+    <string name="guide8_s8i5">12 to 14lbs or 5.4 to 6.5kgs</string>
+    <string name="guide8_s8i6">3 to 3&#190;hrs</string>
+    <string name="guide8_s8i7">8 to 12lbs/3.6 to 5.4kgs</string>
+    <string name="guide8_s8i8">3&#190; to 4&#188;hrs</string>
+    <string name="guide8_s8i9">8 to 12lbs/3.6 to 5.4kgs</string>
+    <string name="guide8_s8i10">4&#188; to 4&#189;hrs</string>
+
+    <!-- s9 -->
+    <string name="guide8_s9i1">Duck (whole, unstuffed)</string>
+    <string name="guide8_s9i2">160 to 170°C/325°F/Gas 3</string>
+    <string name="guide8_s9i3">4 to 5&#189;lbs/1.8 to 2.5kgs</string>
+    <string name="guide8_s9i4">2&#189; to 3hrs</string>
 
     <!-- GUIDE 9 -->
     <string name="guide9_title">Using Knives Safely</string>
