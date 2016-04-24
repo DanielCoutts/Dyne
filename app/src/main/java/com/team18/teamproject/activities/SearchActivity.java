@@ -1,18 +1,12 @@
 package com.team18.teamproject.activities;
 
-import android.content.Context;
-import android.content.res.Configuration;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.EditText;
 
 import com.android.volley.Request;
@@ -91,19 +85,6 @@ public class SearchActivity extends AppCompatActivity {
         // Set up adapter with RecyclerView.
         adapter = new RecipeRVAdapter(this);
         recyclerView.setAdapter(adapter);
-
-        // Set minimum height for the RecyclerView
-        final View v = findViewById(R.id.search_layout);
-        ViewTreeObserver viewTreeObserver = v.getViewTreeObserver();
-        if (viewTreeObserver.isAlive()) {
-            viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    v.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                    recyclerView.setMinimumHeight(v.getHeight());
-                }
-            });
-        }
 
         sendJsonRequest(searchText);
         searchBar.setText(searchText);

@@ -1,8 +1,6 @@
 package com.team18.teamproject.adapters;
 
 import android.content.Context;
-import android.content.Intent;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,12 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
-import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
-import com.team18.teamproject.activities.RecipeActivity;
 import com.team18.teamproject.pojo.Ingredient;
-import com.team18.teamproject.pojo.Recipe;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
@@ -60,19 +59,6 @@ public class FavouritesFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        // Set minimum height for the RecyclerView
-        final View v = view;
-        ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
-        if (viewTreeObserver.isAlive()) {
-            viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    v.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                    recyclerView.setMinimumHeight(v.getHeight());
-                }
-            });
-        }
     }
 
     @Override

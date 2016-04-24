@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.hardware.Camera;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -16,10 +15,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import android.widget.ScrollView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -33,7 +30,6 @@ import com.facebook.share.widget.ShareDialog;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.adapters.InstructionRVAdapter;
-import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.extras.JsonParser;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
@@ -43,7 +39,6 @@ import com.team18.teamproject.pojo.Recipe;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -122,19 +117,6 @@ public class MethodFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        // Set minimum height for the RecyclerView
-        final View v = view;
-        ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
-        if (viewTreeObserver.isAlive()) {
-            viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    v.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                    recyclerView.setMinimumHeight(v.getHeight());
-                }
-            });
-        }
     }
 
     /**

@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -15,12 +14,12 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
+import com.team18.teamproject.adapters.RecipeRVAdapter;
+import com.team18.teamproject.extras.JsonParser;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
-import com.team18.teamproject.extras.JsonParser;
-import com.team18.teamproject.pojo.Recipe;
-import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
+import com.team18.teamproject.pojo.Recipe;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -84,19 +83,6 @@ public class FeaturedFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        // Set minimum height for the RecyclerView
-        final View v = view;
-        ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
-        if (viewTreeObserver.isAlive()) {
-            viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    v.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                    recyclerView.setMinimumHeight(v.getHeight());
-                }
-            });
-        }
     }
 
     /**

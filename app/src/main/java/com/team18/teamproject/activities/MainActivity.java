@@ -16,10 +16,10 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 import com.team18.teamproject.Application;
+import com.team18.teamproject.R;
 import com.team18.teamproject.fragments.AllRecipesFragment;
 import com.team18.teamproject.fragments.GuidesFragment;
 import com.team18.teamproject.fragments.HomeFragment;
-import com.team18.teamproject.R;
 import com.team18.teamproject.fragments.MapFragment;
 
 /**

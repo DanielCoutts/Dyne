@@ -8,12 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -25,15 +19,19 @@ import com.github.mikephil.charting.data.PieDataSet;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.extras.JsonParser;
-import com.team18.teamproject.extras.Keys.*;
+import com.team18.teamproject.extras.Keys.Nutrition;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
 import com.team18.teamproject.network.VolleySingleton;
 import com.team18.teamproject.pojo.Recipe;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 /**
  * Fragment that shows nutritional information for the current recipe.

@@ -1,10 +1,6 @@
 package com.team18.teamproject.network;
 
-import android.graphics.Bitmap;
-import android.util.LruCache;
-
 import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.team18.teamproject.Application;
 

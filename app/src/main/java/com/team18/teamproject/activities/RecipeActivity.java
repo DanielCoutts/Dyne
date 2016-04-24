@@ -13,10 +13,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.team18.teamproject.Application;
+import com.team18.teamproject.R;
 import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
 import com.team18.teamproject.fragments.NutritionFragment;
-import com.team18.teamproject.R;
 import com.team18.teamproject.pojo.Recipe;
 
 /**

@@ -12,7 +12,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.team18.teamproject.extras.Keys.*;
+import static com.team18.teamproject.extras.Keys.Essentials;
+import static com.team18.teamproject.extras.Keys.Ingredients;
+import static com.team18.teamproject.extras.Keys.Instructions;
+import static com.team18.teamproject.extras.Keys.Nutrition;
+import static com.team18.teamproject.extras.Keys.Recipes;
 
 
 /**

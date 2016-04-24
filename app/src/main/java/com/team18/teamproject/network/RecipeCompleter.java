@@ -1,7 +1,5 @@
 package com.team18.teamproject.network;
 
-import android.view.View;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
