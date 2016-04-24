@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Main ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:orientation="vertical">
+
+            <!--guide1_s1-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s1i1"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide1_s2-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s2i1"
+                        android:id="@+id/guide4_s2i1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s2i2"
+                        android:layout_below="@id/guide4_s2i1"
+                        android:id="@+id/guide4_s2i2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s2i3"
+                        android:layout_below="@id/guide4_s2i2"
+                        android:id="@+id/guide4_s2i3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s2i4"
+                        android:layout_below="@id/guide4_s2i3"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide1_s3-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s3i1"
+                        android:id="@+id/guide4_s3i1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s3i2"
+                        android:layout_below="@id/guide4_s3i1"
+                        android:id="@+id/guide4_s3i2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s3i3"
+                        android:layout_below="@id/guide4_s3i2"
+                        android:id="@+id/guide4_s3i3"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide1_s4-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i1"
+                        android:id="@+id/guide4_s4i1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i2"
+                        android:layout_below="@id/guide4_s4i1"
+                        android:id="@+id/guide4_s4i2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i3"
+                        android:layout_below="@id/guide4_s4i2"
+                        android:id="@+id/guide4_s4i3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i4"
+                        android:layout_below="@id/guide4_s4i3"
+                        android:id="@+id/guide4_s4i4"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i5"
+                        android:layout_below="@id/guide4_s4i4"
+                        android:id="@+id/guide4_s4i5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i6"
+                        android:layout_below="@id/guide4_s4i5"
+                        android:id="@+id/guide4_s4i6"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i7"
+                        android:layout_below="@id/guide4_s4i6"
+                        android:id="@+id/guide4_s4i7"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i8"
+                        android:layout_below="@id/guide4_s4i7"
+                        android:id="@+id/guide4_s4i8"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i9"
+                        android:layout_below="@id/guide4_s4i8"
+                        android:id="@+id/guide4_s4i9"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i10"
+                        android:layout_below="@id/guide4_s4i9"
+                        android:id="@+id/guide4_s4i10"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s4i11"
+                        android:layout_below="@id/guide4_s4i10"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide1_s5-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s5i1"
+                        android:id="@+id/guide4_s5i1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s5i2"
+                        android:layout_below="@id/guide4_s5i1"
+                        android:id="@+id/guide4_s5i2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s5i3"
+                        android:layout_below="@id/guide4_s5i2"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide1_s6-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i1"
+                        android:id="@+id/guide4_s6i1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i2"
+                        android:layout_below="@id/guide4_s6i1"
+                        android:id="@+id/guide4_s6i2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i3"
+                        android:layout_below="@id/guide4_s6i2"
+                        android:id="@+id/guide4_s6i3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i4"
+                        android:layout_below="@id/guide4_s6i3"
+                        android:id="@+id/guide4_s6i4"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i5"
+                        android:layout_below="@id/guide4_s6i4"
+                        android:id="@+id/guide4_s6i5"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i6"
+                        android:layout_below="@id/guide4_s6i5"
+                        android:id="@+id/guide4_s6i6"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i7"
+                        android:layout_below="@id/guide4_s6i6"
+                        android:id="@+id/guide4_s6i7"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i8"
+                        android:layout_below="@id/guide4_s6i7"
+                        android:id="@+id/guide4_s6i8"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i9"
+                        android:layout_below="@id/guide4_s6i8"
+                        android:id="@+id/guide4_s6i9"/>
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/guide4_s6i10"
+                    android:layout_below="@id/guide4_s6i9"
+                    android:id="@+id/guide4_s6i10"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i11"
+                        android:layout_below="@id/guide4_s6i10"
+                        android:id="@+id/guide4_s6i11"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i12"
+                        android:layout_below="@id/guide4_s6i11"
+                        android:id="@+id/guide4_s6i12"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i13"
+                        android:layout_below="@id/guide4_s6i12"
+                        android:id="@+id/guide4_s6i13"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s6i14"
+                        android:layout_below="@id/guide4_s6i13"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide1_s7-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s7i1"
+                        android:id="@+id/guide4_s7i1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s7i2"
+                        android:layout_below="@id/guide4_s7i1"
+                        android:id="@+id/guide4_s7i2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s7i3"
+                        android:layout_below="@id/guide4_s7i2"
+                        android:id="@+id/guide4_s7i3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s7i4"
+                        android:layout_below="@id/guide4_s7i3"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide1_s8-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s8i1"
+                        android:id="@+id/guide4_s8i1"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s8i2"
+                        android:layout_below="@id/guide4_s8i1"
+                        android:id="@+id/guide4_s8i2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s8i3"
+                        android:layout_below="@id/guide4_s8i2"
+                        android:id="@+id/guide4_s8i3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s8i3"
+                        android:layout_below="@id/guide4_s8i2"
+                        android:id="@+id/guide4_s8i4"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide4_s8i5"
+                        android:layout_below="@id/guide4_s8i4"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

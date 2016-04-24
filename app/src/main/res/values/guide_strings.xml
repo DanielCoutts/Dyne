@@ -2,30 +2,352 @@
 <resources>
 
     <!-- String names represent guide number, section number, and item number in the form 'guide#_s#i#' -->
+    <!-- GUIDE 1 -->
     <string name="guide1_title">Baking Techniques</string>
-    <string name="guide1_s1i1">Herbs and spices are essential flavouring ingredients. Most herbs are produced from the leaves and stems of a variety of plants. Spices, however, can come from plants’ roots, seeds, bark, buds or berries.
+    <string name="guide1_s1i1">You have all the ingredients measured, your sleeves rolled up and ready to start baking those chewy caramel cookies.
 
-It is best to keep these essential dry herbs on hand: basil, bay leaves, dill, marjoram, oregano, parsley, rosemary, sage, tarragon and thyme. Dried herbs have a more intense, concentrated flavour than fresh herbs. Crush dried herbs between your fingers before adding them to a dish to get the most flavour.
+Everything is prepared and just waiting for you to start following the recipe and mix it.
 
-Fresh herbs have a brighter, lighter and fresher taste than dried ones; however, they are best purchased fresh, refrigerated and used within a few days. As a rule, if a recipe calls for one tablespoon of dried herbs you should use two tablespoons when using fresh.</string>
+But here’s the catch – you need different techniques to get the desired result of chewy cookies, bread or cupcakes.
 
+The way you work with batter determines how will it turn out.
 
+So get ready to learn all the baking techniques you might come across in the recipes.</string>
+    <string name="guide1_s2i1">Stirring:</string>
+    <string name="guide1_s2i2">Mixing the ingredients by moving them around with a spoon until they combine.</string>
+    <string name="guide1_s3i1">Beating:</string>
+    <string name="guide1_s3i2">More vigorous than stirring – moving ingredients around by hand or electric mixer, until they are smooth.
+
+In general, 100 energetic hand-beaten stokes equal one minute of beating with an electric mixer.</string>
+    <string name="guide1_s4i1">Whipping:</string>
+    <string name="guide1_s4i2">Similar to beating but adds more air into the ingredients (like cream or egg whites).
+
+Mix the ingredients using a whisk or electric mixer with a whisk attachment.</string>
+    <string name="guide1_s4i3">A lot of recipes require egg whites whipped into stiff or soft peaks. Before you begin whipping, make sure the bowl and whisk are clean and dry – even a bit of oil, water or egg yolk can prevent the egg whites from being stiff.
+
+If you want your bowl to be really clean, wipe it with a cloth dipped in vinegar and then rinse and dry it.
+
+Avoid using plastic bowls if you can as fat and grease tend to stick to plastic, which can reduce the volume of the whipped whites.</string>
+    <string name="guide1_s4i4">If some of the yolk breaks and falls into the whites before whipping them, you can remove it with a piece of kitchen towel.
+
+Beat the whites slowly until they are foamy and then increase the speed to add as much air as possible into the whites. Continue until they form smooth and shiny peaks.
+
+If you overbeat the whites (they lose their shine and start looking dry, grainy), add one more egg white and beat for a short time. </string>
+    <string name="guide1_s5i1">Whisking:</string>
+    <string name="guide1_s5i2">Combining ingredients by whipping briefly using a hand wire whisk.</string>
+    <string name="guide1_s6i1">Creaming:</string>
+    <string name="guide1_s6i2">Combining sugar with butter, margarine or shortening by beating by hand or with an electric mixer until it turns light and fluffy.</string>
+    <string name="guide1_s7i1">Kneading:</string>
+    <string name="guide1_s7i2">Working the yeast bread dough with an electric mixer (using dough hook attachments) or by hand.
+
+This pushing, folding and pressing movement develops gluten in the dough, which gives it a smooth, elastic texture and helps it rise.</string>
+    <string name="guide1_s8i1">Folding:</string>
+    <string name="guide1_s8i2">Combining a light mixture (like whipped cream) into a heavier mixture (such as cake batter).
+
+To fold egg whites into cake batter, start with taking about a quarter of the whipped whites and stir it into the yolk mixture as it will lighten the batter.
+
+Put the remaining whites on top and use a large rubber spatula to cut through and separate the mixture through the middle.
+
+Make sure you go all the way down to the bottom of the mixing bowl when cutting through.
+
+Pull the spatula toward you to the edge of the bowl, turning t in the process to put some batter on top of the whites.
+
+Turn the bowl by a quarter and repeat this motion (dipping and scooping) about 10-15 times – depending on the amount of mixture and batter.
+
+Repeat until the whites and batter are combined.
+
+Make sure to not overblend, or the whipped whites will lose their volume. </string>
+
+    <!-- GUIDE 2 -->
     <string name="guide2_title">Boiling, Poaching and Steaming</string>
+    <string name="guide2_s1i1">Boiling:</string>
+    <string name="guide2_s1i2">Bringing water to 100 degrees Celsius in a saucepan or a kettle.
 
+“Let the water come to a rapid boil (when the bubbles are quickly breaking the surface).
+
+Covering the pot speeds up the process by trapping surface heat.”
+
+Boiling is not the best way to cook vegetables because the water leaches a lot of vitamins from them and it is very easy to overcook them. </string>
+    <string name="guide2_s2i1">Parboiling and blanching</string>
+    <string name="guide2_s2i2">Parboil means to briefly cook tough or salty foods in boiling water to softer their textures or skin and sometimes remove harsh flavours.
+
+For example, the rice found in supermarkets is sometimes parboiled to shorten cooking time but retain nutrients. </string>
+    <string name="guide2_s2i3">Blanching is used when vegetables need to be cooked very briefly as they are plunged into boiling water for a minute.
+
+The vegetables then must be immediately submerged in cold water to stop the cooking process and retain their colour.
+
+Blanching can also be used to loosen skins and increase the flavour of certain ingredients (such as almonds, peaches and tomatoes). </string>
+    <string name="guide2_s3i1">Simmering and poaching</string>
+    <string name="guide2_s3i2">Simmering involves bringing the liquid to a gentle pre-boil, where few small air bubbles break through the surface (between 85 and 96 degrees Celsius).
+
+This method is used for long, slow cooking and braising to add more flavour to the foods and make them tender. </string>
+    <string name="guide2_s4i1">Reducing</string>
+    <string name="guide2_s4i2">This is the process of thickening and intensifying the flavours of liquids.
+
+However, it is very important not to over-reduce or burn the liquid.
+
+This technique is most often used for making sauces, soups or juices.</string>
+    <string name="guide2_s5i1">Steaming</string>
+    <string name="guide2_s5i2">Steaming is very gentle, and therefore, it is the best way to cook vegetables because as it allows them to retain more essential vitamins and minerals as well as the colour, flavour, shape and texture.
+
+Using a stackable steamer is a great option if you would like to cook lots of different foods at the same time.
+
+You can also very easily make your own steamer pan by simply placing a metal sieve or colander on top of a saucepan. </string>
+    <string name="guide2_s5i3">When you steam foods set in a pan of water in the oven, it’s called a water bath.
+
+Cheesecakes and custards are often baked this way to prevent cracks.</string>
+    <string name="guide2_s6i1">Poaching</string>
+    <string name="guide2_s6i2">Poaching is the method of cooking foods (such as eggs or fish) in liquid which shows only slight movement, but no bubbles (between 70 and 82 degrees Celsius).
+
+The flavour of the poaching liquid has a big effect on the final flavour of the finished dish, so it strongly advised to use stock or broth.</string>
+
+    <!-- GUIDE 3 -->
     <string name="guide3_title">Buying and Storing Fruits and Vegetables</string>
+    <string name="guide3_s1i1">Fruits and vegetables are an important part of your diet and the quality of the produce directly impacts the quality of the meals you prepare.
 
+Avoid buying produce with brown spots, wrinkled skin or not healthy-looking.
+
+Make sure it is not overripe by squeezing.
+
+Here are more tips about buying and storing produce:</string>
+    <string name="guide3_s2i1">Apples:</string>
+    <string name="guide3_s2i2">Should be crisp and firm. Keep refrigerated or store in a cool dry place. Can be kept for several weeks.</string>
+    <string name="guide3_s3i1">Artichokes and Asparagus:</string>
+    <string name="guide3_s3i2">Keep refrigerated and use within 2-3 days of purchase.</string>
+    <string name="guide3_s4i1">Avocados:</string>
+    <string name="guide3_s4i2">Should slightly yield to pressure when ripe. Keep at room temperature until fully ripened.
+
+If not using right away, keep refrigerated to make them last for a few more days.</string>
+    <string name="guide3_s5i1">Bananas:</string>
+    <string name="guide3_s5i2">Eat before they turn completely brown.
+
+Keep refrigerated to slow down ripening.</string>
+    <string name="guide3_s6i1">Bell peppers:</string>
+    <string name="guide3_s6i2">Keep refrigerated and use within 2 weeks of purchase.</string>
+    <string name="guide3_s7i1">Broccoli and cauliflower:</string>
+    <string name="guide3_s7i2">Keep refrigerated and use within a week of purchase.</string>
+    <string name="guide3_s8i1">Cabbage:</string>
+    <string name="guide3_s8i2">Keep refrigerated for 1-2 weeks.</string>
+    <string name="guide3_s9i1">Carrots:</string>
+    <string name="guide3_s9i2">Should be firm, but rubbery, without small roots growing all over them. Can be kept for several weeks when refrigerated.</string>
+    <string name="guide3_s10i1">Celery:</string>
+    <string name="guide3_s10i2">Should be firm and crisp. Keep refrigerated for 1-2 weeks.</string>
+    <string name="guide3_s11i1">Cherries and berries:</string>
+    <string name="guide3_s11i2">Keep refrigerated. Best consumed on the day of purchase as they get soft and moldy quickly.</string>
+    <string name="guide3_s12i1">Citrus fruits:</string>
+    <string name="guide3_s12i2">Keep refrigerated for up to 3 weeks.</string>
+    <string name="guide3_s13i1">Corn:</string>
+    <string name="guide3_s13i2">Keep refrigerated and use on the day of purchase.</string>
+    <string name="guide3_s14i1">Cucumbers and eggplant:</string>
+    <string name="guide3_s14i2">The skin should be firm, shiny, and smooth, without soft brown spots. Keep refrigerated for up to a week.</string>
+    <string name="guide3_s15i1">Garlic:</string>
+    <string name="guide3_s15i2">Should be firm and without green sprouts. Can be kept at room temperature or kept refrigerated to make it last longer.</string>
+    <string name="guide3_s16i1">Grapes:</string>
+    <string name="guide3_s16i2">Should look full and juicy with a powdery bloom on the skin. Keep refrigerated for up to a week.</string>
+    <string name="guide3_s17i1">Green beans:</string>
+    <string name="guide3_s17i2">Keep refrigerated and use within 3-4 days of purchase.</string>
+    <string name="guide3_s18i1">Leafy greens (beet tops, collards, kale, mustard greens):</string>
+    <string name="guide3_s18i2">Keep refrigerated and use within 1-2 days of purchase.</string>
+    <string name="guide3_s19i1">Mushrooms:</string>
+    <string name="guide3_s19i2">Mushrooms: Keep in the fridge in a paper bag and use within a week.</string>
+    <string name="guide3_s20i1">Onions, potatoes, shallots, and hard-shelled winter squash:</string>
+    <string name="guide3_s20i2">Onions, potatoes, and shallots should be firm. Store at a room temperature in a cool, dry and dark place</string>
+    <string name="guide3_s21i1">Pineapple:</string>
+    <string name="guide3_s21i2">Keep at room temperature away from heat and sun. Can also be refrigerated whole or cut up. Best consumed within a few days of purchase.</string>
+    <string name="guide3_s22i1">Salad greens:</string>
+    <string name="guide3_s22i2">Rinse, trim, and dry thoroughly before storing in plastic bags or wrapped in kitchen towel. Keep refrigerated and use within 3-4 days.</string>
+    <string name="guide3_s23i1">Spinach:</string>
+    <string name="guide3_s23i2">Rinse, trim, and dry thoroughly. Keep refrigerated and use within 2-3 days.</string>
+    <string name="guide3_s24i1">Summer squash (zucchini and yellow squash):</string>
+    <string name="guide3_s24i2">Keep refrigerated for up to a week.</string>
+    <string name="guide3_s25i1">Tomatoes:</string>
+    <string name="guide3_s25i2">Store at room temperature for more flavor.
+
+Keep in a cool, dry place until fully ripened.
+
+Consume when ripe or keep in a fridge for a few more days.
+
+Let them return to room temperature before eating.</string>
+    <string name="guide3_s26i1">Tropical fruits:</string>
+    <string name="guide3_s26i2">Should be firm but yield slightly to pressure and should smell fruity.
+
+Keep at room temperature until they are ripe, keep refrigerated afterwards.
+
+Let them return to room temperature before eating.</string>
+    <string name="guide3_s27i1">Unripe melons and tree fruits (like pears, peaches, and nectarines):</string>
+    <string name="guide3_s27i2">Keep at room temperature until they are ripe. Keep refrigerated for a few more days.</string>
+
+    <!-- GUIDE 4 -->
     <string name="guide4_title">Buying and Storing Meat, Poultry and Fish</string>
+    <string name="guide4_s1i1">Meat, poultry and fish are highly perishable products and need to be stored in the coldest part of the freezer.
 
+Always keep them tightly wrapped, ideally in a separate drawer, to prevent their juices from coming into contact with other food.
+
+Remember to always check expiration dates and never let meat, poultry, or fish thaw at room temperature.
+
+It gives bacteria time to develop and might have unpleasant consequences.
+
+Always defrost them in the fridge, which  takes a lot more time (put it in the fridge the evening before you want to cook) but it is the safest method.</string>
+    <string name="guide4_s2i1">Beef</string>
+    <string name="guide4_s2i2">The quality of beef depends on the age of the animal, the amount of fat – marbling - in the cut (more is better), its colour and texture.
+
+More tender cuts are usually cooked by roasting, broiling, grilling or sautéing.
+
+The led tender cuts (ones that have more muscle tissue and not as much fat) are cooked by stewing and braising.</string>
+    <string name="guide4_s2i3">When buying meat, search for cuts that are bright red - make sure they are not grey or dull.
+
+If you spot a lot of juice in the packaging, the meat might have been previously frozen and then thawed – look for fresh meat.
+
+Boneless and well-trimmed cuts are more expensive but have more edible meat than untrimmed ones, which usually evens the price.</string>
+    <string name="guide4_s2i4">If you buy raw meat, use it within 2 days of purchase, before the expiration date or freeze it.
+
+To do so, wrap it in aluminium foil, thick plastic wrap, or freezer bags and press out as much air as possible.
+
+Don’t forget to date the packages. Keep minced beef frozen for up to 3 months and other cuts for up to 6 months.
+
+Defrost in the fridge or microwave. </string>
+    <string name="guide4_s3i1">Chicken</string>
+    <string name="guide4_s3i2">When buying chicken, make sure it’s clean, free of visible blood stains (unless small and unobtrusive), not bruised and looks healthy.
+
+Keep in mind that a chicken’s skin has a range of colours depending on its diet.
+
+Remember to rinse under cold water and dry the meat before cooking.
+
+Also cut away excess fat. After preparing poultry make sure to wash your hands, utensils and surfaces you used to make sure other food doesn’t get contaminated with bacteria.</string>
+    <string name="guide4_s3i3">Use the poultry within 1-2 days of purchase. You can freeze a whole, raw and wrapped chicken for up to 12 months.
+
+Already cut parts can be frozen for up to 9 months.
+
+Defrost chicken in the fridge, never at room temperature and make sure to keep it on top of something (like a plate) to prevent the juices from dripping on other food.
+
+Cut up parts take about 3-6 hours to defrost in the fridge so make sure you take them out earlier.
+
+If you need the meat fast, you can defrost in the microwave but do so on a lowest setting and make sure you use it immediately after thawing.</string>
+    <string name="guide4_s4i1">Minimising the risk of salmonella</string>
+    <string name="guide4_s4i2">There’s a high chance you’ve heard about a salmonella outbreak in a restaurant, school, or somewhere else.
+
+This is a real hazard as majority of raw poultry (other meats to a much lesser extent) carries the bacteria.
+
+It’s not easy to eliminate it from the meat as it may come from the soil on which the animal grew up, the food it ate, droppings or during the processing of meat.</string>
+    <string name="guide4_s4i3">Salmonella is rarely fatal but it can be a not very nice surprise during a picnic or family meal.
+
+The bacteria can be killed by heating the food to 75 °C for 10 minutes (longer on lower temperatures).
+
+You can reduce the risk of contamination by – surprisingly – not rinsing raw chicken in the sink as it risks contaminating the sink, pans/utensils in it, faucet, floor, and clothes.</string>
+    <string name="guide4_s4i4">There are some other ways you can minimise the chances of getting sick from the bacteria:</string>
+    <string name="guide4_s4i5">There are some other ways you can minimise the chances of getting sick from the bacteria:</string>
+    <string name="guide4_s4i6">2. Put the meat in the fridge immediately when you get back home and cook within 2 days.</string>
+    <string name="guide4_s4i7">3. Never defrost chicken at room temperature. Defrost it in the fridge (chicken breast will take less than a day to thaw) or microwave (make sure you cook it immediately after thawing in this case).</string>
+    <string name="guide4_s4i8">4. Don’t touch raw poultry with dish towels that may come in contact with other surfaces.</string>
+    <string name="guide4_s4i9">5. Remember that freezing doesn’t kill bacteria.</string>
+    <string name="guide4_s4i10">6. Wash the cutting boards and knives thoroughly after handling raw chicken. Check your clothing for drips.</string>
+    <string name="guide4_s4i11">7. After handling raw meat, make sure to wash your hands thoroughly with soap (anti-bacterial soap is a good choice).</string>
+    <string name="guide4_s5i1">Taking into account how the chicken was raised</string>
+    <string name="guide4_s5i2">The easiest way for producers to mass raise chickens is in cages.
+
+Their movement is very limited and they never see the outside world.
+
+The chicken you buy might have also been raised in a big barn – they have bedding and more space to move.
+
+Free-range chickens live in a barn and have continuous access to outdoors.
+
+Organic chickens have a grown pasture access and are fed organic food.</string>
+    <string name="guide4_s5i3">The price of the meat and eggs depends on how the chicken was raised.
+
+As you can guess, organic is the most expensive, while cage-grown chickens are the cheapest. </string>
+    <string name="guide4_s6i1">Fish and other seafood</string>
+    <string name="guide4_s6i2">There two categories of fish: lean and oily.
+
+Some of the lean fish are: cod, haddock, halibut, sole, flounder, and snapper.
+
+Oily fish have more intense flavour, more fatty acids that are good for your heart, and usually darker flesh.
+
+Some of them are: salmon, tuna, swordfish, mackerel, and bluefish.
+
+When purchasing oily fish but fillets with the skin on – this makes the fish hold together during cooking.
+
+Lean fish are generally packaged without skin.</string>
+    <string name="guide4_s6i3">If you buy fish from the fisher/at the market, ask the seller what is the freshest.
+
+Here are some other types of tasty fish to add variety to the usual salmon-or-tuna dilemma:</string>
+    <string name="guide4_s6i4">Bluefish: White, meaty flesh. Has a mild flavour and tastes best when pan-fried or braised.</string>
+    <string name="guide4_s6i5">Bluefish: White, meaty flesh. Has a mild flavour and tastes best when pan-fried or braised.</string>
+    <string name="guide4_s6i6">Cod: White, firm flesh. Has a mild flavour and can be baked, fried, broiled, or braised.</string>
+    <string name="guide4_s6i7">Haddock: White, meaty flesh. Has a mild flavour and tastes best pan-fried or braised.</string>
+    <string name="guide4_s6i8">Hake: Very similar to the cod. Mild flavoured but low in fat – make sure you don’t overcook it. Can be cooked same way as cod.</string>
+    <string name="guide4_s6i9">Porgy: White, firm flesh and low in fat. Has a very delicate flavour. Best grilled or broiled.</string>
+    <string name="guide4_s6i10">Tilapia: Has a mild flavour. The flesh holds together and can be cooked in various way.</string>
+    <string name="guide4_s6i11">Whiting (silver hake): White, semi firm and fine flesh. Subtle when pan-fried or broiled.</string>
+    <string name="guide4_s6i12">When buying fish, freshness is the most important.
+
+A fresh fish has bright and clear eyes (not cloudy), the gills are deep red, not brownish.
+
+The skin should be bright, clear with no trace of slime.
+
+It may be counterintuitive, but a very fresh fish shouldn’t smell fishy. It might smell briny, not fishy.</string>
+    <string name="guide4_s6i13">If you’re buying fish fresh, ask the seller to cut fillets from the fish in front of you.
+
+Pre-cut fillets should be lying on a bed of ice instead of wrapped in plastic (this can trap odour and bacteria).
+
+They should look moist and lie flat (not curl at the edges). </string>
+    <string name="guide4_s6i14">Cook fresh fish and other seafood as soon as possible – best on the day of purchase.
+
+You can freeze fresh and cleaned fish for 2-3 months. Wrap then in two layers of freezer wrap.
+
+Refreezing compromises the texture of many types fish and other seafood so avoid it if you can.</string>
+    <string name="guide4_s7i1">Buying shellfish</string>
+    <string name="guide4_s7i2">Look for shellfish that are odourless and firmly closed.
+
+Only buy closed mussels or clams. Fresh mussels, oysters, and clams should be eaten as soon as possible.
+
+Store them for no more than 24hours – keep them in the fridge in a plastic bag with small holes to allow some air flow.
+
+Shrimps are best bought in the shell and eaten on the day of purchase.
+
+Be careful to not overcook shellfish because they become rubbery.</string>
+    <string name="guide4_s7i3">Confused by terms like jumbo and extra large when buying shrimp?
+
+They aren’t very helpful so look the count number on the label or seafood display.
+
+This number indicates how shrimp comprise 1 pound – the lower the count the bigger the shrimp.
+
+A standard size is about 21-25 cont.
+
+Choose the size of the shrimp based on what the recipe recommends.</string>
+    <string name="guide4_s7i4">Follow the same method when buying scallops. Labelling scallops as 20/30 means about 20-30 comprise 1 pound.</string>
+    <string name="guide4_s8i1">Considering where the seafood came from</string>
+    <string name="guide4_s8i2">About half of the seafood consumed today is farm-raised. Many types of fish and shellfish are endangered.
+
+Therefore, aquaculture allows us to meet the demand for seafood without putting wild fish in more danger of extinction.
+
+Farm-raised seafood is not bad for you or inferior.</string>
+    <string name="guide4_s8i3">Aquaculture is the breeding, rearing and harvesting plants and other aquatic animals in different types of water environments (like ponds, lakes, rivers, or even the ocean).</string>
+    <string name="guide4_s8i4">You can also find wild-caught and sustainably caught seafood.
+
+Wild-caught fish are caught in their natural habitats.
+
+Supporters of wild-caught fish claim that farmed fish have less healthy omega-3 fatty acids because of crowded conditions, are fed antibiotics, or dyed to look better.
+
+However, catching wild fish puts them at risk of overfishing and becoming endangered or even extinct. Sustainably caught fish are fished keeping in mind the importance of sustaining wild populations and not putting other species at risk.</string>
+    <string name="guide4_s8i5">While farm-raised fish may have a different taste if you compare it with a wild-caught side by side, it’s mostly a matter of your personal taste.</string>
+
+
+    <!-- GUIDE 5 -->
     <string name="guide5_title">Flour Types</string>
 
+    <!-- GUIDE 6 -->
     <string name="guide6_title">Glossary of Greens</string>
 
+    <!-- GUIDE 7 -->
     <string name="guide7_title">Herbs, Spices and Seasonings</string>
 
+    <!-- GUIDE 8 -->
     <string name="guide8_title">Roasting Times and Temperatures</string>
 
+    <!-- GUIDE 9 -->
     <string name="guide9_title">Using Knives Safely</string>
 
+    <!-- GUIDE 10 -->
     <string name="guide10_title">Working with Eggs</string>
 
 </resources>

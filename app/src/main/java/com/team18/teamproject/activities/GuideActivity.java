@@ -30,7 +30,7 @@ public class GuideActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-        setTitle(getString(R.string.guide1_title));
+        //setTitle(getString(R.string.guide1_title));
     }
 
     private void setLayout(int id) {
@@ -39,18 +39,18 @@ public class GuideActivity extends AppCompatActivity {
                 setTitle(R.string.guide1_title);
                 setContentView(R.layout.guide_1);
                 return;
-//            case 2:
-//                setTitle(R.string.guide2_title);
-//                setContentView(R.layout.guide_2);
-//                return;
-//            case 3:
-//                setTitle(R.string.guide3_title);
-//                setContentView(R.layout.guide_3);
-//                return;
-//            case 4:
-//                setTitle(R.string.guide4_title);
-//                setContentView(R.layout.guide_4);
-//                return;
+            case 2:
+                setTitle(R.string.guide2_title);
+                setContentView(R.layout.guide_2);
+                return;
+            case 3:
+                setTitle(R.string.guide3_title);
+                setContentView(R.layout.guide_3);
+                return;
+            case 4:
+                setTitle(R.string.guide4_title);
+                setContentView(R.layout.guide_4);
+                return;
 //            case 5:
 //                setTitle(R.string.guide5_title);
 //                setContentView(R.layout.guide_5);
