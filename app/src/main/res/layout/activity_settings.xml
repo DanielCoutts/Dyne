@@ -34,8 +34,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="@dimen/toggle_padding"
-                android:textSize="@dimen/regular_settings_text"
-                android:text="Vegetarian Recipes Only" />
+                android:text="@string/vegetarian_toggle"
+                android:textSize="@dimen/regular_settings_text" />
 
             <Switch
                 android:id="@+id/toggle_vegan"
@@ -43,8 +43,8 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="@dimen/toggle_padding"
-                android:textSize="@dimen/regular_settings_text"
-                android:text="Vegan Recipes Only" />
+                android:text="@string/vegan_toggle"
+                android:textSize="@dimen/regular_settings_text" />
 
             <Switch
                 android:id="@+id/toggle_glutenFree"
@@ -52,8 +52,59 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="@dimen/toggle_padding"
-                android:textSize="@dimen/regular_settings_text"
-                android:text="Gluten Free Recipes Only" />
+                android:text="@string/gluten_free_toggle"
+                android:textSize="@dimen/regular_settings_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/about_div_spacing"
+                android:layout_marginTop="@dimen/about_div_spacing"
+                android:background="#bdbdbd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/about_para_spacing"
+                android:text="@string/about_title"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/about_para_spacing"
+                android:text="@string/about_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/about_para_spacing"
+                android:text="@string/about_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/about_para_spacing"
+                android:text="@string/about_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/about_para_spacing"
+                android:text="@string/about_4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/about_para_spacing"
+                android:text="@string/about_5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/about_para_spacing"
+                android:text="@string/about_6" />
 
         </LinearLayout>
 

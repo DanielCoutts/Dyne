@@ -66,7 +66,7 @@ public class CategoryActivity extends AppCompatActivity {
 
         retrieveData();
 
-        setTitle(category);
+        setTitle();
 
         // Initialise Volley fields.
         volleySingleton = VolleySingleton.getInstance();
@@ -188,6 +188,38 @@ public class CategoryActivity extends AppCompatActivity {
 
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void setTitle() {
+        switch (category) {
+            case "Breakfast":
+                setTitle("Breakfast");
+                break;
+
+            case "Lunch":
+                setTitle("Lunch");
+                break;
+
+            case "Starter":
+                setTitle("Starters");
+                break;
+
+            case "Main":
+                setTitle("Main Courses");
+                break;
+
+            case "Dessert":
+                setTitle("Desserts");
+                break;
+
+            case "Drinks":
+                setTitle("Drinks");
+                break;
+
+            case "Vegetarian":
+                setTitle("Vegetarian Recipes");
+                break;
         }
     }
 

@@ -68,6 +68,10 @@ public class GuidesFragment extends Fragment {
         loadImage(view, R.id.guide7_imageview, R.drawable.essential_herbs);
 
         loadImage(view, R.id.guide8_imageview, R.drawable.essential_roasting);
+
+        loadImage(view, R.id.guide9_imageview, R.drawable.essential_knives);
+
+        loadImage(view, R.id.guide10_imageview, R.drawable.essential_eggs);
     }
 
     /**
