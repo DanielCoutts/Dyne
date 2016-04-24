@@ -1,6 +1,7 @@
 package com.team18.teamproject.activities;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -58,7 +59,10 @@ public class SearchActivity extends AppCompatActivity {
 
     private List<Recipe> recipes = new ArrayList<>();
 
-    private String searchText = "";
+    /**
+     * The last executed search.
+     */
+    private static String searchText = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,6 +104,9 @@ public class SearchActivity extends AppCompatActivity {
                 }
             });
         }
+
+        sendJsonRequest(searchText);
+        searchBar.setText(searchText);
     }
 
     /**
@@ -155,22 +162,15 @@ public class SearchActivity extends AppCompatActivity {
                 onBackPressed();
                 return true;
 
+            // Executes search when search pressed.
             case R.id.search:
                 searchText = searchBar.getText().toString();
                 sendJsonRequest(searchText);
-                Log.d("DEBUG - button", searchText);
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
 
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.d("DEBUG", "works");
-        adapter.setRecipeList(recipes);
     }
 }
