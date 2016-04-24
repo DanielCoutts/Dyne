@@ -148,10 +148,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 setTitle("Shopping List");
                 break;
 
-            case R.id.nav_timer:
-                setTitle("Timer");
-                break;
-
             case R.id.nav_essentials:
                 setMainFragment(new GuidesFragment());
                 setTitle("Essentials Guide");
@@ -162,7 +158,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_settings:
-                // TODO implement settings activity with three checkboxes: vegan, veg, gluten free
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
                 break;

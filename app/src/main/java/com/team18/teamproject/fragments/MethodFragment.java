@@ -84,11 +84,10 @@ public class MethodFragment extends Fragment {
         // Initialise facebook SDK
         FacebookSdk.sdkInitialize(Application.getAppContext());
 
+        // Initialise fields.
         recipe = Application.getCurrentRecipe();
-
         volleySingleton = VolleySingleton.getInstance();
         requestQueue = volleySingleton.getRequestQueue();
-
         callbackManager = CallbackManager.Factory.create();
         shareDialog = new ShareDialog(this);
     }
@@ -97,13 +96,17 @@ public class MethodFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_method, container, false);
 
+        // Set up RecyclerView.
         recyclerView = (RecyclerView) view.findViewById(R.id.instruction_rv);
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        // Set up adapter with RecyclerView.
         adapter = new InstructionRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
+        // Retrieves instructions from favourites if they are available.
+        // Otherwise, request ingredients from database.
         if (Application.getFavourites().keySet().contains(recipe.getId())
                 && recipe.getInstructions().size() > 0) {
             adapter.setInstructionList(recipe.getInstructions());
@@ -134,6 +137,10 @@ public class MethodFragment extends Fragment {
         }
     }
 
+    /**
+     * Sends a POST request for JSON data.
+     * Populates the recycler view or shows an error as a snackbar message.
+     */
     private void sendJsonRequest() {
 
         Map<String, String> params = new HashMap<>();
@@ -166,6 +173,11 @@ public class MethodFragment extends Fragment {
         requestQueue.add(request);
     }
 
+    /**
+     * Sets up listeners for the Facebook button.
+     *
+     * @param view Inflated layout view.
+     */
     private void setupListeners(View view) {
         LinearLayout button = (LinearLayout) view.findViewById(R.id.facebook_share_button);
 
@@ -174,7 +186,7 @@ public class MethodFragment extends Fragment {
             public void onClick(View v) {
                 if (isAppInstalled("com.facebook.katana") && isOnline(getContext()) && isCameraAvailable(getContext())) {
                     takePhoto();
-                } else if (!isCameraAvailable(getContext())){
+                } else if (!isCameraAvailable(getContext())) {
                     Context context = getContext();
                     CharSequence text = "No Camera Detected";
                     int duration = Toast.LENGTH_SHORT;
@@ -188,7 +200,7 @@ public class MethodFragment extends Fragment {
 
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
-                }  else {
+                } else {
                     try {
                         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.facebook.katana")));
                     } catch (android.content.ActivityNotFoundException anfe) {
@@ -211,8 +223,6 @@ public class MethodFragment extends Fragment {
 
     /**
      * Test if another app is install on the device.
-     * <p/>
-     * Created by Alex 20/04/2016
      *
      * @param packageName Name of the package being tested for.
      */
@@ -228,8 +238,6 @@ public class MethodFragment extends Fragment {
 
     /**
      * Build intent for camera application and start camera activity.
-     * <p/>
-     * Created by Alex.
      */
     private void takePhoto() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -241,8 +249,6 @@ public class MethodFragment extends Fragment {
 
     /**
      * Build a Facebook SharePhotoContent to share on Facebook.
-     * <p/>
-     * Create Alex
      *
      * @param bitmap Photo returned by camera activity
      */

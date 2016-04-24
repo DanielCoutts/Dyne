@@ -5,37 +5,33 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_home"
-            android:title="Home" />
+            android:title="@string/home" />
         <item
             android:id="@+id/nav_recipes"
             android:icon="@drawable/ic_menu_silverware"
-            android:title="All Recipes" />
+            android:title="@string/all_recipes" />
         <item
             android:id="@+id/nav_eating"
             android:icon="@drawable/ic_menu_glass_tulip"
-            android:title="Eating Out" />
+            android:title="@string/eating_out" />
         <item
             android:id="@+id/nav_shopping_list"
             android:icon="@drawable/ic_menu_cart"
-            android:title="Shopping List" />
-        <item
-            android:id="@+id/nav_timer"
-            android:icon="@drawable/ic_menu_timer"
-            android:title="Timer" />
+            android:title="@string/shopping_list" />
         <item
             android:id="@+id/nav_essentials"
             android:icon="@drawable/ic_menu_guide"
-            android:title="Essentials Guide" />
+            android:title="@string/essentials_guide" />
         <item
             android:id="@+id/nav_glossary"
             android:icon="@drawable/ic_menu_tag"
-            android:title="Glossary" />
+            android:title="@string/glossary" />
     </group>
 
     <group android:id="@+id/nav_section_settings">
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_menu_settings"
-            android:title="Settings" />
+            android:title="@string/settings" />
     </group>
 </menu>

@@ -36,16 +36,17 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * Class to handle the function and initialise the nutritional information fragment
- * for each recipe, including building the pie chart displayed on the page.
+ * Fragment that shows nutritional information for the current recipe.
  */
-
 public class NutritionFragment extends Fragment {
 
     View view;
 
     private Recipe recipe;
 
+    /**
+     * Script URL
+     */
     private final static String URL = Urls.GET_NUTRITION;
 
     private VolleySingleton volleySingleton;
@@ -53,6 +54,9 @@ public class NutritionFragment extends Fragment {
 
     Map<String, Float> nutrition;
 
+    /**
+     * Empty public constructor.
+     */
     public NutritionFragment() {
 
     }
@@ -61,9 +65,9 @@ public class NutritionFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Initialise fields.
         recipe = Application.getCurrentRecipe();
         nutrition = recipe.getNutritionalInfo();
-
         volleySingleton = VolleySingleton.getInstance();
         requestQueue = volleySingleton.getRequestQueue();
     }
