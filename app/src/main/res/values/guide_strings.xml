@@ -552,6 +552,86 @@ It is a necessary ingredient of curry powder, but it also gives the American-sty
 
     <!-- GUIDE 8 -->
     <string name="guide8_title">Roasting Times and Temperatures</string>
+    <string name="guide8_s1i1">General Tips:</string>
+    <string name="guide8_s1i2">Position the oven shelves so that the meat is in the centre of the oven.</string>
+    <string name="guide8_s1i3">Let the meat rest for about 10 - 15 minutes after cooking to let it relax and make it easier to carve. </string>
+    <string name="guide8_s1i4">When inserting a meat thermometer into a roast, don’t let the metal touch the bone because the bone is hotter than the meat.
+
+Try to insert the thermometer into the centre of the joint or at the thickest point.</string>
+    <string name="guide8_s1i5">Keep in mind that every oven is different.
+
+Some ovens are off by as much as 10 degrees, so it’s useful to invest in an oven thermometer. </string>
+
+    <!-- s2 -->
+    <string name="guide8_s2i1">Boneless Rib Eye Roast</string>
+    <string name="guide8_s2i2">Oven Temp: 180 Celsius/350 Fahrenheit/Gas 4</string>
+    <string name="guide8_s2i3">Weight: 3 to 4lbs/1.35 to 1.8kgs</string>
+    <string name="guide8_s2i4">Medium Rare:</string>
+    <string name="guide8_s2i5">1&#189; to 1&#190;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s2i6">Medium:</string>
+    <string name="guide8_s2i7">1&#190; to 2hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s2i8">Weight: 4 to 6lbs/1.8 to 2.7kgs</string>
+    <string name="guide8_s2i9">Medium Rare:</string>
+    <string name="guide8_s2i10">1&#190; to 2hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s2i11">Medium:</string>
+    <string name="guide8_s2i12">2 to 2&#189;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s2i13">Weight: 6 to 8lbs/2.7 to 3.6kgs</string>
+    <string name="guide8_s2i14">Medium Rare:</string>
+    <string name="guide8_s2i15">2 to 2&#188;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s2i16">Medium:</string>
+    <string name="guide8_s2i17">2&#188; to 2&#190;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+
+    <!-- s3 -->
+    <string name="guide8_s3i1">Round Tip Roast</string>
+    <string name="guide8_s3i2">Oven Temp: 160 to 170 Celsius/325 Fahrenheit/Gas 3</string>
+    <string name="guide8_s3i3">Weight: 2 to 4lbs/1.35 to 1.8kgs</string>
+    <string name="guide8_s3i4">Medium Rare:</string>
+    <string name="guide8_s3i5">1&#190; to 2hrs, take out when core temp is 60 Celsius/140 Fahrenheit</string>
+    <string name="guide8_s3i6">Medium:</string>
+    <string name="guide8_s3i7">2&#188; to 2&#189;hrs, take out when core temp is 68 Celsius/155 Fahrenheit</string>
+    <string name="guide8_s3i8">Weight: 4 to 6lbs/1.8 to 2.7kgs</string>
+    <string name="guide8_s3i9">Medium Rare:</string>
+    <string name="guide8_s3i10">2 to 2&#189;hrs, take out when core temp is 60 Celsius/140 Fahrenheit</string>
+    <string name="guide8_s3i11">Medium:</string>
+    <string name="guide8_s3i12">2&#190; to 3hrs, take out when core temp is 68 Celsius/155 Fahrenheit</string>
+    <string name="guide8_s3i13">Weight: 6 to 8lbs/2.7 to 3.6kgs</string>
+    <string name="guide8_s3i14">Medium Rare:</string>
+    <string name="guide8_s3i15">2&#189; to 3hrs, take out when core temp is 60 Celsius/140 Fahrenheit</string>
+    <string name="guide8_s3i16">Medium:</string>
+    <string name="guide8_s3i17">3 to 3&#189;hrs, take out when core temp is 68 Celsius/155 Fahrenheit</string>
+
+    <!-- s4 -->
+    <string name="guide8_s4i1">Tenderloin Roast</string>
+    <string name="guide8_s4i2">Oven Temp: 220 Celsius/425 Fahrenheit/Gas 7</string>
+    <string name="guide8_s4i3">Weight: 2 to 3lbs/0.9 to 1.35kgs</string>
+    <string name="guide8_s4i4">Medium Rare:</string>
+    <string name="guide8_s4i5">35 to 40mins, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s4i6">Medium:</string>
+    <string name="guide8_s4i7">45 to 50mins, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s4i8">Weight: 4 to 5lbs/1.8 to 2.25kgs</string>
+    <string name="guide8_s4i9">Medium Rare:</string>
+    <string name="guide8_s4i10">50 to 60mins, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s4i11">Medium:</string>
+    <string name="guide8_s4i12">60 to 70mins, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+
+    <!-- s5 -->
+    <string name="guide8_s5i1">Bone-in Rib Roast</string>
+    <string name="guide8_s5i2">Oven Temp: 180 Celsius/350 Fahrenheit/Gas 4</string>
+    <string name="guide8_s5i3">Weight: 2 ribs/4 to 6lbs/1.8 to 2.7kgs</string>
+    <string name="guide8_s5i4">Medium Rare:</string>
+    <string name="guide8_s5i5">1&#190; to 2&#188;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s5i6">Medium:</string>
+    <string name="guide8_s5i7">2&#188; to 2&#189;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s5i8">Weight: 2 to 4 ribs/6 to 8lbs/2.7 to 3.6kgs</string>
+    <string name="guide8_s5i9">Medium Rare:</string>
+    <string name="guide8_s5i10">2&#188; to 2&#189;hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s5i11">Medium:</string>
+    <string name="guide8_s5i12">2&#190; to 3hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
+    <string name="guide8_s5i13">Weight: 4 to 5 ribs/8 to 10lbs/3.6 to 4.5kgs</string>
+    <string name="guide8_s5i14">Medium Rare:</string>
+    <string name="guide8_s5i15">2&#189; to 3hrs, take out when core temp is 57 Celsius/135 Fahrenheit</string>
+    <string name="guide8_s5i16">Medium:</string>
+    <string name="guide8_s5i17">3 to 3&#189;hrs, take out when core temp is 65 Celsius/150 Fahrenheit</string>
 
     <!-- GUIDE 9 -->
     <string name="guide9_title">Using Knives Safely</string>
