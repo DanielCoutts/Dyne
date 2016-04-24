@@ -41,7 +41,7 @@ public class CategoryActivity extends AppCompatActivity {
      */
     private Toolbar toolbar;
 
-    private String url = Urls.GET_CATEGORY;
+    private final static String URL = Urls.GET_CATEGORY;
 
     private String category = "";
 
@@ -150,7 +150,7 @@ public class CategoryActivity extends AppCompatActivity {
             params.put("Category", category);
 
             // Create Request
-            CustomStringRequest request = new CustomStringRequest(Request.Method.POST, url, params, new Response.Listener<String>() {
+            CustomStringRequest request = new CustomStringRequest(Request.Method.POST, URL, params, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     try {

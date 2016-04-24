@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="@dimen/about_para_spacing"
                 android:text="@string/about_title"
-                android:textSize="20sp"
+                android:textSize="@dimen/about_size"
                 android:textStyle="bold" />
 
             <TextView
