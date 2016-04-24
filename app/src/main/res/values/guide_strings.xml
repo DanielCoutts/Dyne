@@ -147,9 +147,9 @@ Keep refrigerated to slow down ripening.</string>
     <string name="guide3_s18i1">Leafy greens (beet tops, collards, kale, mustard greens):</string>
     <string name="guide3_s18i2">Keep refrigerated and use within 1-2 days of purchase.</string>
     <string name="guide3_s19i1">Mushrooms:</string>
-    <string name="guide3_s19i2">Mushrooms: Keep in the fridge in a paper bag and use within a week.</string>
+    <string name="guide3_s19i2">Keep in the fridge in a paper bag and use within a week.</string>
     <string name="guide3_s20i1">Onions, potatoes, shallots, and hard-shelled winter squash:</string>
-    <string name="guide3_s20i2">Onions, potatoes, and shallots should be firm. Store at a room temperature in a cool, dry and dark place</string>
+    <string name="guide3_s20i2">Onions, potatoes, and shallots should be firm. Store at a room temperature in a cool, dry and dark place.</string>
     <string name="guide3_s21i1">Pineapple:</string>
     <string name="guide3_s21i2">Keep at room temperature away from heat and sun. Can also be refrigerated whole or cut up. Best consumed within a few days of purchase.</string>
     <string name="guide3_s22i1">Salad greens:</string>
@@ -191,7 +191,7 @@ Always defrost them in the fridge, which  takes a lot more time (put it in the f
 
 More tender cuts are usually cooked by roasting, broiling, grilling or sautéing.
 
-The led tender cuts (ones that have more muscle tissue and not as much fat) are cooked by stewing and braising.</string>
+The less tender cuts (ones that have more muscle tissue and not as much fat) are cooked by stewing and braising.</string>
     <string name="guide4_s2i3">When buying meat, search for cuts that are bright red - make sure they are not grey or dull.
 
 If you spot a lot of juice in the packaging, the meat might have been previously frozen and then thawed – look for fresh meat.
@@ -227,9 +227,9 @@ If you need the meat fast, you can defrost in the microwave but do so on a lowes
 This is a real hazard as majority of raw poultry (other meats to a much lesser extent) carries the bacteria.
 
 It’s not easy to eliminate it from the meat as it may come from the soil on which the animal grew up, the food it ate, droppings or during the processing of meat.</string>
-    <string name="guide4_s4i3">Salmonella is rarely fatal but it can be a not very nice surprise during a picnic or family meal.
+    <string name="guide4_s4i3">Salmonella is rarely fatal but it can turn out to be a nasty surprise during a picnic or family meal.
 
-The bacteria can be killed by heating the food to 75 °C for 10 minutes (longer on lower temperatures).
+The bacteria can be killed by heating the food to 75°C for 10 minutes (longer on lower temperatures).
 
 You can reduce the risk of contamination by – surprisingly – not rinsing raw chicken in the sink as it risks contaminating the sink, pans/utensils in it, faucet, floor, and clothes.</string>
     <string name="guide4_s4i4">There are some other ways you can minimise the chances of getting sick from the bacteria:</string>
@@ -264,19 +264,19 @@ Oily fish have more intense flavour, more fatty acids that are good for your hea
 
 Some of them are: salmon, tuna, swordfish, mackerel, and bluefish.
 
-When purchasing oily fish but fillets with the skin on – this makes the fish hold together during cooking.
+When purchasing oily fish choose fillets with the skin on – this makes the fish hold together during cooking.
 
 Lean fish are generally packaged without skin.</string>
     <string name="guide4_s6i3">If you buy fish from the fisher/at the market, ask the seller what is the freshest.
 
 Here are some other types of tasty fish to add variety to the usual salmon-or-tuna dilemma:</string>
     <string name="guide4_s6i4">Bluefish: White, meaty flesh. Has a mild flavour and tastes best when pan-fried or braised.</string>
-    <string name="guide4_s6i5">Bluefish: White, meaty flesh. Has a mild flavour and tastes best when pan-fried or braised.</string>
+    <string name="guide4_s6i5">Catfish: Has a mild taste, dense, usually deep-fried or cooked in a strong sauce.</string>
     <string name="guide4_s6i6">Cod: White, firm flesh. Has a mild flavour and can be baked, fried, broiled, or braised.</string>
     <string name="guide4_s6i7">Haddock: White, meaty flesh. Has a mild flavour and tastes best pan-fried or braised.</string>
     <string name="guide4_s6i8">Hake: Very similar to the cod. Mild flavoured but low in fat – make sure you don’t overcook it. Can be cooked same way as cod.</string>
     <string name="guide4_s6i9">Porgy: White, firm flesh and low in fat. Has a very delicate flavour. Best grilled or broiled.</string>
-    <string name="guide4_s6i10">Tilapia: Has a mild flavour. The flesh holds together and can be cooked in various way.</string>
+    <string name="guide4_s6i10">Tilapia: Has a mild flavour. The flesh holds together and can be cooked in various ways.</string>
     <string name="guide4_s6i11">Whiting (silver hake): White, semi firm and fine flesh. Subtle when pan-fried or broiled.</string>
     <string name="guide4_s6i12">When buying fish, freshness is the most important.
 
@@ -284,7 +284,7 @@ A fresh fish has bright and clear eyes (not cloudy), the gills are deep red, not
 
 The skin should be bright, clear with no trace of slime.
 
-It may be counterintuitive, but a very fresh fish shouldn’t smell fishy. It might smell briny, not fishy.</string>
+It may be counterintuitive, but a very fresh fish shouldn’t smell fishy. It might smell briny, but not fishy.</string>
     <string name="guide4_s6i13">If you’re buying fish fresh, ask the seller to cut fillets from the fish in front of you.
 
 Pre-cut fillets should be lying on a bed of ice instead of wrapped in plastic (this can trap odour and bacteria).
@@ -292,7 +292,7 @@ Pre-cut fillets should be lying on a bed of ice instead of wrapped in plastic (t
 They should look moist and lie flat (not curl at the edges). </string>
     <string name="guide4_s6i14">Cook fresh fish and other seafood as soon as possible – best on the day of purchase.
 
-You can freeze fresh and cleaned fish for 2-3 months. Wrap then in two layers of freezer wrap.
+You can freeze fresh and cleaned fish for 2-3 months. Wrap them in two layers of freezer wrap.
 
 Refreezing compromises the texture of many types fish and other seafood so avoid it if you can.</string>
     <string name="guide4_s7i1">Buying shellfish</string>
@@ -307,11 +307,11 @@ Shrimps are best bought in the shell and eaten on the day of purchase.
 Be careful to not overcook shellfish because they become rubbery.</string>
     <string name="guide4_s7i3">Confused by terms like jumbo and extra large when buying shrimp?
 
-They aren’t very helpful so look the count number on the label or seafood display.
+They aren’t very helpful so look for the count number on the label or seafood display.
 
-This number indicates how shrimp comprise 1 pound – the lower the count the bigger the shrimp.
+This number indicates how many shrimp comprise 1 pound – the lower the count the bigger the shrimp.
 
-A standard size is about 21-25 cont.
+A standard size is about 21-25 count.
 
 Choose the size of the shrimp based on what the recipe recommends.</string>
     <string name="guide4_s7i4">Follow the same method when buying scallops. Labelling scallops as 20/30 means about 20-30 comprise 1 pound.</string>
@@ -328,7 +328,7 @@ Wild-caught fish are caught in their natural habitats.
 
 Supporters of wild-caught fish claim that farmed fish have less healthy omega-3 fatty acids because of crowded conditions, are fed antibiotics, or dyed to look better.
 
-However, catching wild fish puts them at risk of overfishing and becoming endangered or even extinct. Sustainably caught fish are fished keeping in mind the importance of sustaining wild populations and not putting other species at risk.</string>
+However, catching wild fish puts them at risk of overfishing and becoming endangered or even extinct. Sustainably caught fish are caught keeping in mind the importance of sustaining wild populations and not putting other species at risk.</string>
     <string name="guide4_s8i5">While farm-raised fish may have a different taste if you compare it with a wild-caught side by side, it’s mostly a matter of your personal taste.</string>
 
 
@@ -561,6 +561,10 @@ Try to insert the thermometer into the centre of the joint or at the thickest po
     <string name="guide8_s1i5">Keep in mind that every oven is different.
 
 Some ovens are off by as much as 10 degrees, so it’s useful to invest in an oven thermometer. </string>
+    <string name="guide8_s1i6">Depending on the size of the bird, allow additional 15 to 20 minutes cooking time if stuffed.
+
+Internal temperature for stuffing should be 74°C or 165°F.</string>
+    <string name="guide8_s1i7">Internal temperature for poultry should be at least 74°C or 165°F in the thigh.</string>
 
     <!-- s2 -->
     <string name="guide8_s2i1">Boneless Rib Eye Roast</string>
@@ -636,31 +640,31 @@ Some ovens are off by as much as 10 degrees, so it’s useful to invest in an ov
     <!-- s6 -->
     <string name="guide8_s6i1">Chicken, broiler or fryer (unstuffed)</string>
     <string name="guide8_s6i2">180°C/350°F/Gas 4</string>
-    <string name="guide8_s6i3">3 to 4lbs/1.35 to 1.8kgs</string>
+    <string name="guide8_s6i3">Weight: 3 to 4lbs/1.35 to 1.8kgs</string>
     <string name="guide8_s6i4">1&#188; to 1&#189;hrs</string>
 
     <!-- s7 -->
     <string name="guide8_s7i1">Chicken, roaster (unstuffed)</string>
     <string name="guide8_s7i2">180°C/350°F/Gas 4</string>
-    <string name="guide8_s7i3">5 to 7lbs/2.25 to 3.2kgs</string>
+    <string name="guide8_s7i3">Weight: 5 to 7lbs/2.25 to 3.2kgs</string>
     <string name="guide8_s7i4">2 to 2&#188;hrs</string>
 
     <!-- s8 -->
     <string name="guide8_s8i1">Whole turkey (thawed and unstuffed)</string>
     <string name="guide8_s8i2">160°C to 170°C/325°F/Gas 3</string>
-    <string name="guide8_s8i3">8 to 12lbs/3.6 to 5.4kgs</string>
+    <string name="guide8_s8i3">Weight: 8 to 12lbs/3.6 to 5.4kgs</string>
     <string name="guide8_s8i4">2&#190; to 3hrs</string>
-    <string name="guide8_s8i5">12 to 14lbs or 5.4 to 6.5kgs</string>
+    <string name="guide8_s8i5">Weight: 12 to 14lbs or 5.4 to 6.5kgs</string>
     <string name="guide8_s8i6">3 to 3&#190;hrs</string>
-    <string name="guide8_s8i7">8 to 12lbs/3.6 to 5.4kgs</string>
+    <string name="guide8_s8i7">Weight: 8 to 12lbs/3.6 to 5.4kgs</string>
     <string name="guide8_s8i8">3&#190; to 4&#188;hrs</string>
-    <string name="guide8_s8i9">8 to 12lbs/3.6 to 5.4kgs</string>
+    <string name="guide8_s8i9">Weight: 8 to 12lbs/3.6 to 5.4kgs</string>
     <string name="guide8_s8i10">4&#188; to 4&#189;hrs</string>
 
     <!-- s9 -->
     <string name="guide8_s9i1">Duck (whole, unstuffed)</string>
     <string name="guide8_s9i2">160 to 170°C/325°F/Gas 3</string>
-    <string name="guide8_s9i3">4 to 5&#189;lbs/1.8 to 2.5kgs</string>
+    <string name="guide8_s9i3">Weight: 4 to 5&#189;lbs/1.8 to 2.5kgs</string>
     <string name="guide8_s9i4">2&#189; to 3hrs</string>
 
     <!-- GUIDE 9 -->

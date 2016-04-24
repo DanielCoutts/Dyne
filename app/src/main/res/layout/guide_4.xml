@@ -318,12 +318,28 @@
                         android:layout_below="@id/guide4_s6i1"
                         android:id="@+id/guide4_s6i2"/>
 
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i3"
-                        android:paddingTop="2dp"
-                        android:layout_below="@id/guide4_s6i2"
                         android:id="@+id/guide4_s6i3"/>
 
                     <TextView
@@ -390,12 +406,29 @@
                         android:layout_below="@id/guide4_s6i10"
                         android:id="@+id/guide4_s6i11"/>
 
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s6i12"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide4_s6i11"
                         android:id="@+id/guide4_s6i12"/>
 
                     <TextView
@@ -447,12 +480,28 @@
                         android:layout_below="@id/guide4_s7i1"
                         android:id="@+id/guide4_s7i2"/>
 
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide4_s7i3"
-                        android:paddingTop="2dp"
-                        android:layout_below="@id/guide4_s7i2"
                         android:id="@+id/guide4_s7i3"/>
 
                     <TextView
