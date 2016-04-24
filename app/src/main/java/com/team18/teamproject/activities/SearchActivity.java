@@ -1,7 +1,6 @@
 package com.team18.teamproject.activities;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,7 +13,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -142,11 +140,6 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     @Override
-    public View onCreateView(String name, Context context, AttributeSet attrs) {
-        return super.onCreateView(name, context, attrs);
-    }
-
-    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_search, menu);
         return true;
@@ -172,5 +165,12 @@ public class SearchActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("DEBUG", "works");
+        adapter.setRecipeList(recipes);
     }
 }
