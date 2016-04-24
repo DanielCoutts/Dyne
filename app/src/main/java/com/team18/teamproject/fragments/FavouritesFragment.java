@@ -17,12 +17,17 @@ import com.team18.teamproject.pojo.Recipe;
 import java.util.Arrays;
 import java.util.List;
 
-
+/**
+ * Loads in a list of favourites that are available offline and persistent.
+ */
 public class FavouritesFragment extends Fragment {
 
     private RecipeRVAdapter adapter;
     private RecyclerView recyclerView;
 
+    /**
+     * Empty public constructor.
+     */
     public FavouritesFragment() {
 
     }
@@ -36,14 +41,17 @@ public class FavouritesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_favourites, container, false);
 
+        // Set up RecyclerView.
         recyclerView = (RecyclerView) view.findViewById(R.id.favourites_rv);
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        // Set up adapter.
         adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
-        List<Recipe> favourites = Arrays.asList( Application.getFavourites().values().toArray(new Recipe[Application.getFavourites().size()]) );
+        // populate RV with list of favourites.
+        List<Recipe> favourites = Arrays.asList(Application.getFavourites().values().toArray(new Recipe[Application.getFavourites().size()]));
         adapter.setRecipeList(favourites);
 
         return view;
@@ -70,7 +78,9 @@ public class FavouritesFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        List<Recipe> favourites = Arrays.asList( Application.getFavourites().values().toArray(new Recipe[Application.getFavourites().size()]) );
+
+        // Refresh the favourites list.
+        List<Recipe> favourites = Arrays.asList(Application.getFavourites().values().toArray(new Recipe[Application.getFavourites().size()]));
         adapter.setRecipeList(favourites);
     }
 

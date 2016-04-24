@@ -14,14 +14,19 @@ import android.view.ViewGroup;
 
 import com.team18.teamproject.R;
 
-
+/**
+ * Fragment containing 3 tabs linked to a viewpager containing three fragments.
+ */
 public class HomeFragment extends Fragment {
 
-    TabLayout tabs;
-    ViewPager pager;
+    private TabLayout tabs;
+    private ViewPager pager;
 
+    /**
+     * Empty public constructor.
+     */
     public HomeFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
@@ -34,9 +39,11 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        // Set up ViewPager.
         pager = (ViewPager) view.findViewById(R.id.pager);
         pager.setAdapter(new CustomAdapter(getChildFragmentManager(), getActivity().getApplicationContext()));
 
+        // Set up TabLayout.
         tabs = (TabLayout) view.findViewById(R.id.home_tabs);
         tabs.setupWithViewPager(pager);
 
@@ -47,6 +54,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Listener for tabs.
         tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
             @Override
@@ -66,13 +74,14 @@ public class HomeFragment extends Fragment {
         });
     }
 
-    /*
-     * Advised to override this method in order to prevent views disappearing in nested fragments.
-     */
     @Override
     public void onSaveInstanceState(Bundle outState) {
+        // Empty override of onSaveInstanceState prevents views disappearing when using nested fragments.
     }
 
+    /**
+     * Custom FragmentPagerAdapter.
+     */
     private class CustomAdapter extends FragmentPagerAdapter {
 
         private String fragments[] = {"Featured", "Favourites", "Categories"};
@@ -83,7 +92,7 @@ public class HomeFragment extends Fragment {
 
         @Override
         public Fragment getItem(int position) {
-            switch(position) {
+            switch (position) {
                 case 0:
                     return new FeaturedFragment();
                 case 1:

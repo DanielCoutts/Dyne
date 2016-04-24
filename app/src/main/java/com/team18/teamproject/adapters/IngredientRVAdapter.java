@@ -58,6 +58,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
     public void setIngredientList(List<Ingredient> ingredients) {
         this.ingredients = ingredients;
         notifyDataSetChanged();
+        notifyItemRangeChanged(0, (ingredients.size() - 1));
     }
 
     @Override
@@ -94,6 +95,15 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
         super.onAttachedToRecyclerView(recyclerView);
     }
 
+    /**
+     * Formats ingredient data into a single string.
+     * Note: name cannot be null, if quantity is null, units must also be null.
+     *
+     * @param name     name of ingredient (Name cannot be null).
+     * @param quantity quantity of ingredient.
+     * @param units    units of ingredient (If quantity is null, units must also be null).
+     * @return
+     */
     private static String formatIngredient(String name, String quantity, String units) {
 
         if ((units.equals("null")) && (quantity.equals("null"))) {

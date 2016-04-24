@@ -14,9 +14,14 @@ import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.activities.GuideActivity;
 
-
+/**
+ * Scrolling list of tutorials.
+ */
 public class GuidesFragment extends Fragment {
 
+    /**
+     * Empty public constructor.
+     */
     public GuidesFragment() {
 
     }
@@ -31,6 +36,7 @@ public class GuidesFragment extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_guides, container, false);
 
         loadImages(view);
+
         setupListeners(view);
 
         return view;
@@ -41,8 +47,10 @@ public class GuidesFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
-    /*
-     * Resizing and loading images into ImageViews using the Picasso library.
+    /**
+     * Resize and load images into ImageViews.
+     *
+     * @param view Inflated layout view.
      */
     private void loadImages(View view) {
         loadImage(view, R.id.guide1_imageview, R.drawable.essential_baking);
@@ -62,13 +70,22 @@ public class GuidesFragment extends Fragment {
         loadImage(view, R.id.guide8_imageview, R.drawable.essential_roasting);
     }
 
+    /**
+     * Loads an image using the Picasso library.
+     *
+     * @param view        Inflated layout view.
+     * @param imageViewId ID of ImageView.
+     * @param drawable    ID of image.
+     */
     private void loadImage(View view, int imageViewId, int drawable) {
         ImageView imageView = (ImageView) view.findViewById(imageViewId);
         Picasso.with(view.getContext()).load(drawable).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(imageView);
     }
 
-    /*
-     * Setting up onClick listeners for the category cards.
+    /**
+     * Sets up onclick listeners for the category cards.
+     *
+     * @param view Inflated layout view.
      */
     private void setupListeners(View view) {
         CardView cv1 = (CardView) view.findViewById(R.id.guide1);
@@ -152,10 +169,14 @@ public class GuidesFragment extends Fragment {
         });
     }
 
-    private void launchGuide(int i) {
-        Application.setCurrentGuideId(i);
+    /**
+     * Launches the guide with the specified ID.
+     *
+     * @param id Guide identifier.
+     */
+    private void launchGuide(int id) {
+        Application.setCurrentGuideId(id);
         Intent intent = new Intent(getContext(), GuideActivity.class);
         startActivity(intent);
     }
-
 }

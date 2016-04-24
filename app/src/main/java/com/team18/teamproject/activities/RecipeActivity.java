@@ -12,7 +12,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.facebook.FacebookSdk;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.fragments.IngredientsFragment;
 import com.team18.teamproject.fragments.MethodFragment;
@@ -31,62 +30,77 @@ public class RecipeActivity extends AppCompatActivity {
      */
     private Toolbar toolbar;
 
+    /**
+     * The actionbar menu (containing favourite button).
+     */
     private Menu menu;
 
+    /**
+     * The recipe to be displayed.
+     */
     private Recipe recipe;
 
+    /**
+     * The Ingredients, Method, and Nutrition tabs.
+     */
     private TabLayout tabs;
+
+    /**
+     * The Viewpager containing the three fragments.
+     */
     private ViewPager pager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        FacebookSdk.sdkInitialize(getApplicationContext());
+
         setContentView(R.layout.activity_recipe);
 
+        // Initialise fields.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        tabs = (TabLayout) findViewById(R.id.recipe_tabs);
         pager = (ViewPager) findViewById(R.id.recipe_pager);
-
         recipe = Application.getCurrentRecipe();
 
+        // Set up toolbar.
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
+        // Set title of page to the name of the recipe.
         setTitle(recipe.getName());
 
+        // Set up pager and pager adapter.
         CustomAdapter adapter = new CustomAdapter(getSupportFragmentManager(), getApplicationContext());
         pager.setAdapter(adapter);
         pager.setOffscreenPageLimit(3);
 
-        tabs = (TabLayout) findViewById(R.id.recipe_tabs);
+        // Set up tabs.
         if (tabs != null) {
             tabs.setupWithViewPager(pager);
+
+            tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+
+                @Override
+                public void onTabSelected(TabLayout.Tab tab) {
+                    pager.setCurrentItem(tab.getPosition());
+                }
+
+                @Override
+                public void onTabUnselected(TabLayout.Tab tab) {
+                    pager.setCurrentItem(tab.getPosition());
+                }
+
+                @Override
+                public void onTabReselected(TabLayout.Tab tab) {
+                    pager.setCurrentItem(tab.getPosition());
+                }
+            });
         }
-
-        tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                pager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                pager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-                pager.setCurrentItem(tab.getPosition());
-            }
-        });
     }
 
     @Override
-    /*
-     * Adds the menu options
-     */
     public boolean onCreateOptionsMenu(Menu menu) {
         this.menu = menu;
         getMenuInflater().inflate(R.menu.menu_recipe, menu);
@@ -95,19 +109,18 @@ public class RecipeActivity extends AppCompatActivity {
     }
 
     @Override
-    /*
-     * Listener for the actionbar menu
-     */
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
         switch (id) {
-            // Back button in action bar has the same behaviour as the system back button
+            // Back button in action bar has the same behaviour as the system back button.
             case android.R.id.home:
                 onBackPressed();
                 return true;
 
             case R.id.action_favourite:
+
+                // Toggles favourite.
                 if (Application.getFavourites().keySet().contains(recipe.getId())) {
                     Application.getFavourites().remove(recipe.getId());
                     menu.getItem(0).setIcon(R.drawable.ic_menu_favourite_outline);
@@ -131,7 +144,7 @@ public class RecipeActivity extends AppCompatActivity {
         }
     }
 
-    /*
+    /**
      * Custom pager adapter that defines which fragments should be loaded into tabs.
      */
     private class CustomAdapter extends FragmentStatePagerAdapter {
@@ -170,6 +183,8 @@ public class RecipeActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+
+        // Save settings, favourites, and shopping list to shared preferences.
         Application.getsInstance().saveState();
     }
 }

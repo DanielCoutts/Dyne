@@ -80,13 +80,17 @@ public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHo
         viewHolder.cv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                // Set the current recipe tot the clicked item.
                 Application.setCurrentRecipe(currentRecipe);
 
+                // Starts a recipe activity that is populated with the current recipe's data.
                 Intent intent = new Intent(Application.getAppContext(), RecipeActivity.class);
                 context.startActivity(intent);
             }
         });
 
+        // Load in recipe image from web.
         Picasso.with(context).load(currentRecipe.getImageUrl()).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(viewHolder.image);
     }
 

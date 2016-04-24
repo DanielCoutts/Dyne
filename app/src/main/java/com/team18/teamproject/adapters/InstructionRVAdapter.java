@@ -46,7 +46,7 @@ public class InstructionRVAdapter extends RecyclerView.Adapter<InstructionRVAdap
     }
 
     /**
-     * Initialises recipe list with specified list object.
+     * Initialises instruction list with specified list object.
      *
      * @param instructions List of instructions to display.
      */

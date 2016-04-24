@@ -15,12 +15,12 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
+import com.team18.teamproject.adapters.RecipeRVAdapter;
+import com.team18.teamproject.extras.JsonParser;
 import com.team18.teamproject.extras.Urls;
 import com.team18.teamproject.network.CustomStringRequest;
-import com.team18.teamproject.extras.JsonParser;
-import com.team18.teamproject.pojo.Recipe;
-import com.team18.teamproject.adapters.RecipeRVAdapter;
 import com.team18.teamproject.network.VolleySingleton;
+import com.team18.teamproject.pojo.Recipe;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -29,18 +29,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+// TODO ALL OF THIS
 /**
- * Fragment that loads a scrolling list of all featured recipes.
+ * Fragment containing a scrollview that loads all recipes from the database.
  */
-public class FeaturedFragment extends Fragment {
+public class ShoppingListFragment extends Fragment {
 
-    /**
-     * Script URL
-     */
-    private final static String URL = Urls.GET_FEATURED;
+    private final static String URL = Urls.GET_RECIPES;
 
-    private VolleySingleton volleysingleton;
+    private VolleySingleton volleySingleton;
     private RequestQueue requestQueue;
     private RecipeRVAdapter adapter;
     private RecyclerView recyclerView;
@@ -48,31 +45,25 @@ public class FeaturedFragment extends Fragment {
     private List<Recipe> recipes = new ArrayList<>();
 
     /**
-     * Empty public constructor.
+     * Empty public constructor
      */
-    public FeaturedFragment() {
-
-    }
+    public ShoppingListFragment() {}
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Initialise Volley fields.
-        volleysingleton = VolleySingleton.getInstance();
-        requestQueue = volleysingleton.getRequestQueue();
+        volleySingleton = VolleySingleton.getInstance();
+        requestQueue = volleySingleton.getRequestQueue();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_featured, container, false);
+        View view = inflater.inflate(R.layout.fragment_all_recipes, container, false);
 
-        // Set up RecyclerView.
-        recyclerView = (RecyclerView) view.findViewById(R.id.featured_rv);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recipe_rv);
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        // Set up adapter with RecyclerView.
         adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
@@ -99,10 +90,6 @@ public class FeaturedFragment extends Fragment {
         }
     }
 
-    /**
-     * Sends a POST request for JSON data.
-     * Populates the recycler view or shows an error as a snackbar message.
-     */
     private void sendJsonRequest() {
         Map<String, String> params = new HashMap<>();
         params.put("Vegetarian", Application.boolToString(Application.isVegetarian()));
@@ -114,7 +101,6 @@ public class FeaturedFragment extends Fragment {
             @Override
             public void onResponse(String response) {
                 try {
-                    // Parse JSON and set list.
                     JSONArray array = new JSONArray(response);
                     recipes = JsonParser.parseJsonRecipeArray(array);
                     adapter.setRecipeList(recipes);
@@ -127,7 +113,6 @@ public class FeaturedFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                // Display an error snackbar message.
                 Application.connectionError(recyclerView);
             }
         });
@@ -138,7 +123,6 @@ public class FeaturedFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        // Refresh the content when the activity resumes.
         sendJsonRequest();
     }
 }

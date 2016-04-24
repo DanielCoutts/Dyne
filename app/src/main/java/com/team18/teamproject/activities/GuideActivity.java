@@ -22,23 +22,29 @@ public class GuideActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Set the layout based on current ID.
         setLayout(Application.getCurrentGuideId());
 
+        // Set up toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
-        setTitle(getString(R.string.guide1_title));
     }
 
+    /**
+     * sets the content view using on an id argument.
+     *
+     * @param id the id of the desired essential layout.
+     */
     private void setLayout(int id) {
         switch (id) {
             case 1:
                 setTitle(R.string.guide1_title);
                 setContentView(R.layout.guide_1);
                 return;
+            // TODO Uncomment these
 //            case 2:
 //                setTitle(R.string.guide2_title);
 //                setContentView(R.layout.guide_2);
@@ -82,9 +88,6 @@ public class GuideActivity extends AppCompatActivity {
     }
 
     @Override
-    /*
-     * Listener for the actionbar menu
-     */
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 

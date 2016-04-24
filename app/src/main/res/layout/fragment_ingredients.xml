@@ -4,81 +4,72 @@
     android:layout_height="match_parent"
     tools:context=".fragments.IngredientsFragment">
 
-    <!-- Main Content -->
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/ingredient_scrollview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/recipe_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recipe_image_height" />
+
 
         <LinearLayout
+            android:id="@+id/info_row"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginBottom="@dimen/tile_margin"
+            android:layout_marginTop="@dimen/tile_margin">
 
-            <ImageView
-                android:id="@+id/recipe_image"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/recipe_image_height" />
+            <TextView
+                android:id="@+id/serves"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/tile_margin"
+                android:layout_marginRight="@dimen/tile_margin"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="@dimen/recipe_tile_padding"
+                android:paddingTop="@dimen/recipe_tile_padding"
+                android:text="@string/serves"
+                android:textAlignment="center"
+                android:textColor="@color/recipe_info_tile" />
 
+            <TextView
+                android:id="@+id/cook_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="@dimen/recipe_tile_padding"
+                android:paddingTop="@dimen/recipe_tile_padding"
+                android:text="@string/cook_time"
+                android:textAlignment="center"
+                android:textColor="@color/recipe_info_tile" />
 
-            <LinearLayout
-                android:id="@+id/info_row"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/tile_margin"
-                android:layout_marginTop="@dimen/tile_margin">
-
-                <!-- Update @string/serves with data from database -->
-                <TextView
-                    android:id="@+id/serves"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/tile_margin"
-                    android:layout_marginRight="@dimen/tile_margin"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimary"
-                    android:paddingBottom="@dimen/recipe_tile_padding"
-                    android:paddingTop="@dimen/recipe_tile_padding"
-                    android:text="@string/serves"
-                    android:textAlignment="center"
-                    android:textColor="@color/recipe_info_tile" />
-
-                <TextView
-                    android:id="@+id/cook_time"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimary"
-                    android:paddingBottom="@dimen/recipe_tile_padding"
-                    android:paddingTop="@dimen/recipe_tile_padding"
-                    android:text="@string/cook_time"
-                    android:textAlignment="center"
-                    android:textColor="@color/recipe_info_tile" />
-
-                <TextView
-                    android:id="@+id/difficulty"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/tile_margin"
-                    android:layout_marginRight="@dimen/tile_margin"
-                    android:layout_weight="1"
-                    android:background="@color/colorPrimary"
-                    android:paddingBottom="@dimen/recipe_tile_padding"
-                    android:paddingTop="@dimen/recipe_tile_padding"
-                    android:text="@string/difficulty"
-                    android:textAlignment="center"
-                    android:textColor="@color/recipe_info_tile" />
-
-            </LinearLayout>
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/ingredient_rv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/ingredient_card_margins" />
+            <TextView
+                android:id="@+id/difficulty"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/tile_margin"
+                android:layout_marginRight="@dimen/tile_margin"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="@dimen/recipe_tile_padding"
+                android:paddingTop="@dimen/recipe_tile_padding"
+                android:text="@string/difficulty"
+                android:textAlignment="center"
+                android:textColor="@color/recipe_info_tile" />
 
         </LinearLayout>
 
-    </ScrollView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/ingredient_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
 
 </FrameLayout>

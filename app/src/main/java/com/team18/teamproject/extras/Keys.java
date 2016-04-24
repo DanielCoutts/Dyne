@@ -5,34 +5,34 @@ package com.team18.teamproject.extras;
  */
 public interface Keys {
     interface Recipes {
-        public static final String KEY_ID="RecipeID";
-        public static final String KEY_NAME="RName";
-        public static final String KEY_IMAGEURL="ImageURL";
-        public static final String KEY_SERVES="Serves";
-        public static final String KEY_CATEGORY="Category";
-        public static final String KEY_DIFFICULTY="Difficulty";
-        public static final String KEY_COOKTIME="CookTime";
+        String KEY_ID = "RecipeID";
+        String KEY_NAME = "RName";
+        String KEY_IMAGEURL = "ImageURL";
+        String KEY_SERVES = "Serves";
+        String KEY_CATEGORY = "Category";
+        String KEY_DIFFICULTY = "Difficulty";
+        String KEY_COOKTIME = "CookTime";
     }
 
     interface Ingredients {
-        public static final String KEY_NAME="IName";
-        public static final String KEY_UNITS="Units";
-        public static final String KEY_QUANTITY="Quantity";
+        String KEY_NAME = "IName";
+        String KEY_UNITS = "Units";
+        String KEY_QUANTITY = "Quantity";
     }
 
     interface Instructions {
-        public static final String KEY_STEP="Step";
+        String KEY_STEP = "Step";
     }
 
     interface Nutrition {
-        public static final String KEY_KCAL="KCal";
-        public static final String KEY_FAT="Fat";
-        public static final String KEY_SUGAR="Sugar";
-        public static final String KEY_PROTEIN="Protein";
-        public static final String KEY_CARBS="Carbohydrates";
+        String KEY_KCAL = "KCal";
+        String KEY_FAT = "Fat";
+        String KEY_SUGAR = "Sugar";
+        String KEY_PROTEIN = "Protein";
+        String KEY_CARBS = "Carbohydrates";
     }
 
     interface Essentials {
-        public static final String KEY_ID="EssentialID";
+        String KEY_ID = "EssentialID";
     }
 }

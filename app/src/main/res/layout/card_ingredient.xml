@@ -5,12 +5,14 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/ingredient_card_margins"
     android:layout_marginEnd="@dimen/ingredient_card_margins"
+    android:layout_marginTop="@dimen/ingredient_card_margins"
     android:layout_marginStart="@dimen/ingredient_card_margins"
     android:elevation="@dimen/cardview_default_elevation">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:padding="@dimen/card_padding">
 
         <TextView

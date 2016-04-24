@@ -113,7 +113,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id) {
 
             case R.id.action_search:
-                // TODO launch search activity
+                Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
+                startActivity(intent);
                 return true;
 
             default:
@@ -185,6 +186,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onStop() {
         super.onStop();
+
+        // Save settings, favourites, and shopping list to shared preferences.
         Application.getsInstance().saveState();
     }
 }

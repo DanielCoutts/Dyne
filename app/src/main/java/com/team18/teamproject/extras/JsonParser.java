@@ -1,7 +1,5 @@
 package com.team18.teamproject.extras;
 
-import android.util.Log;
-
 import com.team18.teamproject.pojo.Ingredient;
 import com.team18.teamproject.pojo.Recipe;
 
@@ -19,8 +17,6 @@ import static com.team18.teamproject.extras.Keys.*;
 
 /**
  * Class containing static functions for parsing different types of JSON data.
- *
- * Created by Daniel.
  */
 public class JsonParser {
 
@@ -47,6 +43,7 @@ public class JsonParser {
                     String category = currentRecipe.getString(Recipes.KEY_CATEGORY);
                     String difficulty = currentRecipe.getString(Recipes.KEY_DIFFICULTY);
                     String cookTime = currentRecipe.getString(Recipes.KEY_COOKTIME);
+                    // TODO Format cooktime more nicely.
 
                     recipes.add(new Recipe(id,
                             name,

@@ -36,20 +36,21 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Class to handle the function and initialising of the ingredients fragment for each recipe.
+ * Fragment That loads in information and a list of ingredients for the current recipe.
  */
-
 public class IngredientsFragment extends Fragment {
 
     private Recipe recipe;
 
+    /**
+     * Script URL
+     */
     private final static String URL = Urls.GET_INGREDIENTS;
 
     private VolleySingleton volleySingleton;
     private RequestQueue requestQueue;
     private IngredientRVAdapter adapter;
     private RecyclerView recyclerView;
-    private ScrollView scrollView;
 
     public IngredientsFragment() {
 
@@ -59,8 +60,8 @@ public class IngredientsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Initialise fields.
         recipe = Application.getCurrentRecipe();
-
         volleySingleton = VolleySingleton.getInstance();
         requestQueue = volleySingleton.getRequestQueue();
     }
@@ -69,31 +70,35 @@ public class IngredientsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ingredients, container, false);
 
+        // Initialise fields.
         ImageView image = (ImageView) view.findViewById(R.id.recipe_image);
+        TextView serves = (TextView) view.findViewById(R.id.serves);
+        TextView time = (TextView) view.findViewById(R.id.cook_time);
+        TextView difficulty = (TextView) view.findViewById(R.id.difficulty);
+        recyclerView = (RecyclerView) view.findViewById(R.id.ingredient_rv);
+
+        // Load in image with Picasso.
         Picasso.with(getContext()).load(recipe.getImageUrl()).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(image);
 
-        TextView serves = (TextView) view.findViewById(R.id.serves);
+        // Populate serving info.
         serves.setText("Serves " + recipe.getServes());
 
-        TextView time = (TextView) view.findViewById(R.id.cook_time);
+        // Populate cooking time.
         time.setText(recipe.getCookTime());
 
-        TextView difficulty = (TextView) view.findViewById(R.id.difficulty);
+        // Populate difficulty.
         difficulty.setText(recipe.getDifficulty());
 
-        recyclerView = (RecyclerView) view.findViewById(R.id.ingredient_rv);
+        // Set up RecyclerView
         recyclerView.setHasFixedSize(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()) {
-            @Override
-            public boolean canScrollVertically() {
-                return false;
-            }
-        });
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        // Set up adapter.
         adapter = new IngredientRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
-        // TODO Fix weird favourites scrolling bug
+        // Retrieves ingredients from favourites if they are available.
+        // Otherwise, request ingredients from database.
         if (Application.getFavourites().keySet().contains(recipe.getId())
                 && recipe.getIngredients().size() > 0) {
             adapter.setIngredientList(recipe.getIngredients());
@@ -101,21 +106,25 @@ public class IngredientsFragment extends Fragment {
             sendJsonRequest();
         }
 
-        scrollView = (ScrollView) view.findViewById(R.id.ingredient_scrollview);
-
         return view;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        // TODO Remove?
-        scrollView.smoothScrollTo(0,0);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        // Set minimum height for the RecyclerView
+        final View v = view;
+        ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
+        if (viewTreeObserver.isAlive()) {
+            viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                @Override
+                public void onGlobalLayout() {
+                    v.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                    recyclerView.setMinimumHeight(v.getHeight());
+                }
+            });
+        }
     }
 
     private void sendJsonRequest() {

@@ -29,11 +29,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 /**
- * Fragment containing a scrollview that loads all recipes from the database.
+ * Fragment that loads a scrolling list of all recipes from the database.
  */
 public class AllRecipesFragment extends Fragment {
 
+    /**
+     * Script URL
+     */
     private final static String URL = Urls.GET_RECIPES;
 
     private VolleySingleton volleySingleton;
@@ -44,13 +48,16 @@ public class AllRecipesFragment extends Fragment {
     private List<Recipe> recipes = new ArrayList<>();
 
     /**
-     * Empty public constructor
+     * Empty public constructor.
      */
-    public AllRecipesFragment() {}
+    public AllRecipesFragment() {
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Initialise Volley fields.
         volleySingleton = VolleySingleton.getInstance();
         requestQueue = volleySingleton.getRequestQueue();
     }
@@ -59,10 +66,12 @@ public class AllRecipesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_all_recipes, container, false);
 
+        // Set up RecyclerView.
         recyclerView = (RecyclerView) view.findViewById(R.id.recipe_rv);
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        // Set up adapter with RecyclerView.
         adapter = new RecipeRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
@@ -89,6 +98,10 @@ public class AllRecipesFragment extends Fragment {
         }
     }
 
+    /**
+     * Sends a POST request for JSON data.
+     * Populates the recycler view or shows an error as a snackbar message.
+     */
     private void sendJsonRequest() {
         Map<String, String> params = new HashMap<>();
         params.put("Vegetarian", Application.boolToString(Application.isVegetarian()));
@@ -100,6 +113,7 @@ public class AllRecipesFragment extends Fragment {
             @Override
             public void onResponse(String response) {
                 try {
+                    // Parse JSON and set list.
                     JSONArray array = new JSONArray(response);
                     recipes = JsonParser.parseJsonRecipeArray(array);
                     adapter.setRecipeList(recipes);
@@ -112,6 +126,7 @@ public class AllRecipesFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                // Display an error snackbar message.
                 Application.connectionError(recyclerView);
             }
         });
@@ -122,6 +137,7 @@ public class AllRecipesFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
+        // Refresh the content when the activity resumes.
         sendJsonRequest();
     }
 }

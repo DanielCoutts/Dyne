@@ -10,8 +10,14 @@ import android.widget.Switch;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 
+/**
+ * Displays three settings toggles and basic 'about' information.
+ */
 public class SettingsActivity extends AppCompatActivity {
 
+    /**
+     * The recipe activity toolbar. This contains a back button, a title and a favourite button.
+     */
     Toolbar toolbar;
 
     Switch vegetarian;
@@ -23,29 +29,35 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        // Initialise fields.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
-        setTitle("Settings");
-
         vegetarian = (Switch) findViewById(R.id.toggle_vegetarian);
         vegan = (Switch) findViewById(R.id.toggle_vegan);
         glutenFree = (Switch) findViewById(R.id.toggle_glutenFree);
 
+        // Set up toolbar.
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
+        setTitle("Settings");
+
+        // Set state of vegetarian toggle.
         if (Application.isVegetarian()) {
             vegetarian.setChecked(true);
         } else {
             vegetarian.setChecked(false);
         }
 
+        // Set state of vegetarian toggle.
         if (Application.isVegan()) {
             vegan.setChecked(true);
         } else {
             vegan.setChecked(false);
         }
 
+        // Set state of vegan toggle.
         if (Application.isGlutenFree()) {
             glutenFree.setChecked(true);
         } else {
@@ -57,9 +69,6 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     @Override
-    /*
-     * Listener for the actionbar menu
-     */
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
@@ -74,6 +83,9 @@ public class SettingsActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Set up listeners for toggles, so that they modify the global settings.
+     */
     private void setupListeners() {
         if (vegetarian != null) {
             vegetarian.setOnClickListener(new View.OnClickListener() {
@@ -118,6 +130,8 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
+
+        // Save settings, favourites, and shopping list to shared preferences.
         Application.getsInstance().saveState();
     }
 }

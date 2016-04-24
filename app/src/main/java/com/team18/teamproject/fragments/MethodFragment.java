@@ -26,6 +26,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.facebook.CallbackManager;
+import com.facebook.FacebookSdk;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
@@ -48,14 +49,17 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Class to handle the function and initialising of the method fragment for each recipe.
+ * Fragment that displays the method for each recipe and the facebook share button.
  */
-
 public class MethodFragment extends Fragment {
 
     private Recipe recipe;
 
+    /**
+     * Script URL
+     */
     private final static String URL = Urls.GET_INSTRUCTIONS;
+
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
     private VolleySingleton volleySingleton;
@@ -66,6 +70,9 @@ public class MethodFragment extends Fragment {
     CallbackManager callbackManager;
     ShareDialog shareDialog;
 
+    /**
+     * Empty public constructor.
+     */
     public MethodFragment() {
 
     }
@@ -73,6 +80,9 @@ public class MethodFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Initialise facebook SDK
+        FacebookSdk.sdkInitialize(Application.getAppContext());
 
         recipe = Application.getCurrentRecipe();
 

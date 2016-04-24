@@ -1,5 +1,6 @@
 package com.team18.teamproject.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
@@ -11,14 +12,16 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 import com.team18.teamproject.R;
+import com.team18.teamproject.activities.CategoryActivity;
 
 /**
- * Insert Comment Here
+ * Clickable list of category cards.
  */
-
 public class CategoriesFragment extends Fragment {
 
-
+    /**
+     * Empty public constructor.
+     */
     public CategoriesFragment() {
 
     }
@@ -32,9 +35,7 @@ public class CategoriesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_categories, container, false);
 
-        if (savedInstanceState == null) {
-            setupListeners(view);
-        }
+        setupListeners(view);
 
         loadImages(view);
 
@@ -47,8 +48,10 @@ public class CategoriesFragment extends Fragment {
 
     }
 
-    /*
-     * Resizing and loading images into ImageViews using the Picasso library.
+    /**
+     * Resize and load images into ImageViews.
+     *
+     * @param view Inflated layout view.
      */
     private void loadImages(View view) {
         loadImage(view, R.id.category_breakfast_imageview, R.drawable.cat_breakfast);
@@ -66,6 +69,13 @@ public class CategoriesFragment extends Fragment {
         loadImage(view, R.id.category_veg_imageview, R.drawable.cat_vegetarian);
     }
 
+    /**
+     * Loads an image using the Picasso library.
+     *
+     * @param view        Inflated layout view.
+     * @param imageViewId ID of ImageView.
+     * @param drawable    ID of image.
+     */
     private void loadImage(View view, int imageViewId, int drawable) {
         ImageView imageView = (ImageView) view.findViewById(imageViewId);
         Picasso.with(getContext()).load(drawable).placeholder(R.mipmap.ic_launcher).fit().centerCrop().into(imageView);
@@ -74,14 +84,16 @@ public class CategoriesFragment extends Fragment {
     /**
      * Sets up onclick listeners for the category cards.
      *
-     * @param view inflated fragment view.
+     * @param view Inflated layout view.
      */
     private void setupListeners(View view) {
         CardView breakfast = (CardView) view.findViewById(R.id.category_breakfast);
         breakfast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("CATEGORY", "Breakfast");
+                startActivity(intent);
             }
         });
 
@@ -89,7 +101,9 @@ public class CategoriesFragment extends Fragment {
         lunch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("CATEGORY", "Lunch");
+                startActivity(intent);
             }
         });
 
@@ -97,7 +111,9 @@ public class CategoriesFragment extends Fragment {
         starter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("CATEGORY", "Starter");
+                startActivity(intent);
             }
         });
 
@@ -105,7 +121,9 @@ public class CategoriesFragment extends Fragment {
         main.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("CATEGORY", "Main");
+                startActivity(intent);
             }
         });
 
@@ -113,7 +131,9 @@ public class CategoriesFragment extends Fragment {
         dessert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("CATEGORY", "Dessert");
+                startActivity(intent);
             }
         });
 
@@ -121,7 +141,9 @@ public class CategoriesFragment extends Fragment {
         drink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("CATEGORY", "Drinks");
+                startActivity(intent);
             }
         });
 
@@ -129,9 +151,10 @@ public class CategoriesFragment extends Fragment {
         veg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(getContext(), CategoryActivity.class);
+                intent.putExtra("CATEGORY", "Vegetarian");
+                startActivity(intent);
             }
         });
     }
-
 }
