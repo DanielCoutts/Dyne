@@ -69,18 +69,18 @@ public class GuideActivity extends AppCompatActivity {
                 setTitle(R.string.guide7_title);
                 setContentView(R.layout.guide_7);
                 return;
-//            case 8:
-//                setTitle(R.string.guide8_title);
-//                setContentView(R.layout.guide_8);
-//                return;
-//            case 9:
-//                setTitle(R.string.guide9_title);
-//                setContentView(R.layout.guide_9);
-//                return;
-//            case 10:
-//                setTitle(R.string.guide10_title);
-//                setContentView(R.layout.guide_10);
-//                return;
+            case 8:
+                setTitle(R.string.guide8_title);
+                setContentView(R.layout.guide_8);
+                return;
+            case 9:
+                setTitle(R.string.guide9_title);
+                setContentView(R.layout.guide_9);
+                return;
+            case 10:
+                setTitle(R.string.guide10_title);
+                setContentView(R.layout.guide_10);
+                return;
             default:
                 onBackPressed();
                 return;

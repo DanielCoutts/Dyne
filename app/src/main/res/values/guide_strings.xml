@@ -555,8 +555,63 @@ It is a necessary ingredient of curry powder, but it also gives the American-sty
 
     <!-- GUIDE 9 -->
     <string name="guide9_title">Using Knives Safely</string>
+    <string name="guide9_s1i1">Using knives can be accident-prone if you are not careful.
+
+Don’t rush or let your mind wander somewhere else – you want to keep your fingers intact.
+
+To help you avoid bloodshed, here are some safety rules to keep in mind when using knives:</string>
+    <string name="guide9_s2i1">Always use a cutting boards and don’t let it slide on the surface.</string>
+    <string name="guide9_s2i2">Using a cutting board with rubber feet will make it grip the surface better.
+
+You can also place something under it (like a kitchen towel) to prevent it from moving.</string>
+    <string name="guide9_s3i1">Keep your fingers clear of the blade.</string>
+    <string name="guide9_s3i2">While this may seem obvious, as students we don’t want to waste our food.
+
+So that quite thick slice of something you want to put on your sandwich is too thick.
+
+What do you do? Try and slice it.
+
+This puts your fingers dangerously close and it’s easy to slip by accident.
+
+Reconsider taking risks – is an extra tomato slice worth it?</string>
+    <string name="guide9_s4i1">Always slice away from your hand.</string>
+    <string name="guide9_s4i2">Unless there is no way around it (like when you are peeling an apple), never turn the blade toward your hand.
+
+Try to keep it turned the other way when slicing, chipping or mincing.</string>
+    <string name="guide9_s5i1">Keep your fingers curled under when slicing.</string>
+    <string name="guide9_s5i2">You shouldn’t move the knife away or towards food - instead, move the food towards it.
+
+If you keep your fingers curled and happen to misjudge the distance, you’ll likely hit a hard knuckle instead of your fingertip.</string>
 
     <!-- GUIDE 10 -->
     <string name="guide10_title">Working with Eggs</string>
+    <string name="guide10_s1i1">Eggs are widely used in recipes, especially baking.
+
+Unfortunately, we are only interested in what is inside the shell. Therefore, in order to get the good stuff out, you need a way to break the shell.
+
+Some recipes require separating the yolk from egg white as well – don’t worry, we’ve got you covered in both cases.</string>
+    <string name="guide10_s2i1">Breaking the egg:</string>
+    <string name="guide10_s2i2">1. Have a glass or a small bowl ready.
+
+Always break the eggs into a separate container before adding them to a recipe – if a shell piece falls in, you can take it out before it ends up in the pancakes.</string>
+    <string name="guide10_s2i3">2. Hold the egg in one hand.</string>
+    <string name="guide10_s2i4">3. Tap the egg gently on the side of the glass/bowl to break the shell.
+
+Be careful to not tap too hard or the egg will be full of shell pieces.</string>
+    <string name="guide10_s2i5">4. Put two thumbs inside the crack and carefully open the egg.
+
+The yolk and white should fall into the container. </string>
+    <string name="guide10_s3i1">Separating the egg:</string>
+    <string name="guide10_s3i2">You will see quite a few recipes that require separated yolks and egg whites. But don’t worry, it’s not as hard as it may seem.
+
+Just follow the instructions on how to separate an egg while leaving the yolk intact:</string>
+    <string name="guide10_s3i3">1. Prepare two small bowls or cups.</string>
+    <string name="guide10_s3i4">2. Hold the egg in one hand and tap it gently on the side of one of the bowls – just enough to crack the shell and break the membrane without damaging the yolk or shattering the shell.</string>
+    <string name="guide10_s3i5">3. Put two thumbs inside the crack and gentry pry the shell open.</string>
+    <string name="guide10_s3i6">4. Let most of the egg white fall into one of the bowls.</string>
+    <string name="guide10_s3i7">5. Carefully pass the yolk back and forth from one part of the shell to the other and release more white into the bowl each time.</string>
+    <string name="guide10_s3i8">6. When all the white is in the bowl/cup, put the yolk into the other one – don’t worry if it break at this point.
+
+Cover it and keep refrigerated if not using right away.</string>
 
 </resources>

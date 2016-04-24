@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Main ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:orientation="vertical">
+
+            <!--guide10_s1-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s1i1"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide10_s2-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s2i1"
+                        android:id="@+id/guide10_s2i1"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s2i2"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s2i2"
+                        android:layout_below="@id/guide10_s2i1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s2i3"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s2i3"
+                        android:layout_below="@id/guide10_s2i2"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s2i4"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s2i4"
+                        android:layout_below="@id/guide10_s2i3"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s2i5"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s2i5"
+                        android:layout_below="@id/guide10_s2i4"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--guide10_s3-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_spacing"
+                android:layout_marginEnd="@dimen/card_margins"
+                android:layout_marginStart="@dimen/card_margins"
+                android:layout_marginTop="@dimen/card_spacing"
+                android:elevation="@dimen/cardview_default_elevation">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/card_padding">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i1"
+                        android:id="@+id/guide10_s3i1"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i2"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s3i2"
+                        android:layout_below="@id/guide10_s3i1"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i3"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s3i3"
+                        android:layout_below="@id/guide10_s3i2"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i4"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s3i4"
+                        android:layout_below="@id/guide10_s3i3"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i5"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s3i5"
+                        android:layout_below="@id/guide10_s3i4"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i6"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s3i6"
+                        android:layout_below="@id/guide10_s3i5"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i7"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s3i7"
+                        android:layout_below="@id/guide10_s3i6"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guide10_s3i8"
+                        android:paddingTop="2dp"
+                        android:id="@+id/guide10_s3i8"
+                        android:layout_below="@id/guide10_s3i7"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
