@@ -270,8 +270,6 @@ public class MethodFragment extends Fragment {
             if (ShareDialog.canShow(SharePhotoContent.class)) {
                 sharePhoto(bitmap);
             }
-        } else {
-
         }
     }
 
