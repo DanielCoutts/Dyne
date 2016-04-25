@@ -161,7 +161,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide1_s4i2"
+                        android:text="@string/guide2_s4i2"
                         android:paddingTop="2dp"
                         android:layout_below="@id/guide2_s4i1"/>
                 </RelativeLayout>
