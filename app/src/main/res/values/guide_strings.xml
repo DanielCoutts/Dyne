@@ -554,7 +554,7 @@ It is a necessary ingredient of curry powder, but it also gives the American-sty
     <string name="guide8_title">Roasting Times and Temperatures</string>
     <string name="guide8_s1i1">General Tips:</string>
     <string name="guide8_s1i2">Position the oven shelves so that the meat is in the centre of the oven.</string>
-    <string name="guide8_s1i3">Let the meat rest for about 10 - 15 minutes after cooking to let it relax and make it easier to carve. </string>
+    <string name="guide8_s1i3">Let the meat rest for about 10-15 minutes after cooking to let it relax and make it easier to carve. </string>
     <string name="guide8_s1i4">When inserting a meat thermometer into a roast, don’t let the metal touch the bone because the bone is hotter than the meat.
 
 Try to insert the thermometer into the centre of the joint or at the thickest point.</string>
@@ -565,6 +565,7 @@ Some ovens are off by as much as 10 degrees, so it’s useful to invest in an ov
 
 Internal temperature for stuffing should be 74°C or 165°F.</string>
     <string name="guide8_s1i7">Internal temperature for poultry should be at least 74°C or 165°F in the thigh.</string>
+    <string name="guide8_s1i8">Internal temperature for pork should be at least 74°C or 165°F.</string>
 
     <!-- s2 -->
     <string name="guide8_s2i1">Boneless Rib Eye Roast</string>
@@ -650,7 +651,7 @@ Internal temperature for stuffing should be 74°C or 165°F.</string>
     <string name="guide8_s7i4">2 to 2&#188;hrs</string>
 
     <!-- s8 -->
-    <string name="guide8_s8i1">Whole turkey (thawed and unstuffed)</string>
+    <string name="guide8_s8i1">Whole Turkey (thawed and unstuffed)</string>
     <string name="guide8_s8i2">160°C to 170°C/325°F/Gas 3</string>
     <string name="guide8_s8i3">Weight: 8 to 12lbs/3.6 to 5.4kgs</string>
     <string name="guide8_s8i4">2&#190; to 3hrs</string>
@@ -667,7 +668,78 @@ Internal temperature for stuffing should be 74°C or 165°F.</string>
     <string name="guide8_s9i3">Weight: 4 to 5&#189;lbs/1.8 to 2.5kgs</string>
     <string name="guide8_s9i4">2&#189; to 3hrs</string>
 
-    <!-- GUIDE 9 -->
+    <!-- s10 -->
+    <string name="guide8_s10i1">Loin Roast (bone-in)</string>
+    <string name="guide8_s10i2">Oven Temp: 180°C/350°F/Gas 4</string>
+    <string name="guide8_s10i3">Weight: 3 to 5lbs/1.35 to 2.25kgs</string>
+    <string name="guide8_s10i4">20 minutes per 1lb/0.5kg</string>
+
+    <!-- s11 -->
+    <string name="guide8_s11i1">Boneless Pork Roast</string>
+    <string name="guide8_s11i2">Oven Temp: 180°C/350°F/Gas 4</string>
+    <string name="guide8_s11i3">Weight: 2 to 4lbs/0.9 to 1.8kgs</string>
+    <string name="guide8_s11i4">20 minutes per 1lb/0.5kg</string>
+
+    <!-- s12 -->
+    <string name="guide8_s12i1">Tenderloin</string>
+    <string name="guide8_s12i2">Oven Temp: 220 to 230°C/425 to 450°F/Gas 7 to 8</string>
+    <string name="guide8_s12i3">Weight: &#189; to 1&#189;lbs/0.2 to 0.7kgs</string>
+    <string name="guide8_s12i4">20 to 30 minutes</string>
+
+    <!-- s13 -->
+    <string name="guide8_s13i1">Crown Roast</string>
+    <string name="guide8_s13i2">Oven Temp: 180°C/350°F/Gas 4</string>
+    <string name="guide8_s13i3">Weight: 6 to 10lbs/2.7 to 4.5kgs</string>
+    <string name="guide8_s13i4">20 minutes per 1lb/0.5kg</string>
+
+    <!-- s14 -->
+    <string name="guide8_s14i1">Boneless Loin Chops</string>
+    <string name="guide8_s14i2">Oven Temp: 180°C/350°F/Gas 4</string>
+    <string name="guide8_s14i3">Weight: 1 inch/2.5cmm thick</string>
+    <string name="guide8_s14i4">12 to 16 minutes</string>
+
+    <!-- s15 -->
+    <string name="guide8_s15i1">Ribs</string>
+    <string name="guide8_s15i2">Oven Temp: 180°C/350°F/Gas 4</string>
+    <string name="guide8_s15i4">1&#189; to 2hrs till tender</string>
+
+    <!-- s16 -->
+    <string name="guide8_s16i1">Leg (Bone-in)</string>
+    <string name="guide8_s16i2">160°C to 170°C/325°F/Gas 3</string>
+    <string name="guide8_s16i3">5 to 7lbs/2.25 to 3.2kgs</string>
+    <string name="guide8_s16i4">Medium Rare:</string>
+    <string name="guide8_s16i5">15mins per 1lb</string>
+    <string name="guide8_s16i6">Medium:</string>
+    <string name="guide8_s16i7">20mins per 1lb</string>
+
+    <!-- s17 -->
+    <string name="guide8_s17i1">Boneless (rolled and tied)</string>
+    <string name="guide8_s17i2">160°C to 170°C/325°F/Gas 3</string>
+    <string name="guide8_s17i3">4 to 7lbs/1.8 to 3.2kgs</string>
+    <string name="guide8_s17i4">Medium Rare:</string>
+    <string name="guide8_s17i5">20mins per 1lb</string>
+    <string name="guide8_s17i6">Medium:</string>
+    <string name="guide8_s17i7">25mins per 1lb</string>
+
+    <!-- s18 -->
+    <string name="guide8_s18i1">Sirloin Roast (boneless)</string>
+    <string name="guide8_s18i2">160°C to 170°C/325°F/Gas 3</string>
+    <string name="guide8_s18i3">2lbs/0.9kgs</string>
+    <string name="guide8_s18i4">Medium Rare:</string>
+    <string name="guide8_s18i5">25mins per 1lb</string>
+    <string name="guide8_s18i6">Medium:</string>
+    <string name="guide8_s18i7">30mins per 1lb</string>
+
+    <!-- s19 -->
+    <string name="guide8_s19i1">Top Round Roast</string>
+    <string name="guide8_s19i2">160°C to 170°C/325°F/Gas 3</string>
+    <string name="guide8_s19i3">2lbs/0.9kgs</string>
+    <string name="guide8_s19i4">Medium Rare:</string>
+    <string name="guide8_s19i5">45mins per 1lb</string>
+    <string name="guide8_s19i6">Medium:</string>
+    <string name="guide8_s19i7">55mins per 1lb</string>
+
+        <!-- GUIDE 9 -->
     <string name="guide9_title">Using Knives Safely</string>
     <string name="guide9_s1i1">Using knives can be accident-prone if you are not careful.
 
@@ -689,7 +761,7 @@ This puts your fingers dangerously close and it’s easy to slip by accident.
 
 Reconsider taking risks – is an extra tomato slice worth it?</string>
     <string name="guide9_s4i1">Always slice away from your hand.</string>
-    <string name="guide9_s4i2">Unless there is no way around it (like when you are peeling an apple), never turn the blade toward your hand.
+    <string name="guide9_s4i2">Unless there is no way around it (like when you are peeling an apple), never turn the blade towards your hand.
 
 Try to keep it turned the other way when slicing, chipping or mincing.</string>
     <string name="guide9_s5i1">Keep your fingers curled under when slicing.</string>
@@ -724,7 +796,7 @@ Just follow the instructions on how to separate an egg while leaving the yolk in
     <string name="guide10_s3i5">3. Put two thumbs inside the crack and gentry pry the shell open.</string>
     <string name="guide10_s3i6">4. Let most of the egg white fall into one of the bowls.</string>
     <string name="guide10_s3i7">5. Carefully pass the yolk back and forth from one part of the shell to the other and release more white into the bowl each time.</string>
-    <string name="guide10_s3i8">6. When all the white is in the bowl/cup, put the yolk into the other one – don’t worry if it break at this point.
+    <string name="guide10_s3i8">6. When all the white is in the bowl/cup, put the yolk into the other one – don’t worry if it breaks at this point.
 
 Cover it and keep refrigerated if not using right away.</string>
 

@@ -71,6 +71,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide9_s2i1"
+                        android:textStyle="bold"
                         android:id="@+id/guide9_s2i1"
                         />
 

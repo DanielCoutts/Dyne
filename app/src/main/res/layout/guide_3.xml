@@ -114,7 +114,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s4i2"
+                        android:text="@string/guide3_s3i2"
                         android:paddingTop="2dp"
                         android:layout_below="@id/guide3_s3i1"/>
 
