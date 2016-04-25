@@ -18,6 +18,7 @@ import com.squareup.picasso.Picasso;
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
 import com.team18.teamproject.fragments.AllRecipesFragment;
+import com.team18.teamproject.fragments.GlossaryFragment;
 import com.team18.teamproject.fragments.GuidesFragment;
 import com.team18.teamproject.fragments.HomeFragment;
 import com.team18.teamproject.fragments.MapFragment;
@@ -154,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_glossary:
+                setMainFragment(new GlossaryFragment());
                 setTitle("Glossary");
                 break;
 

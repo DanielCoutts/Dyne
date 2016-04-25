@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Definitions from Wikipedia -->
+
+    <string name="bread_pan">Bread Pan</string>
+    <string name="bread_pan_def">A bread pan, also called a loaf pan, is a kitchen utensil in the form of a container in which bread is baked. Its function is to shape bread while it is rising during baking.</string>
+
+    <string name="can_opener">Tin/Can Opener</string>
+    <string name="can_opener_def">A tin/can opener is a device used to open tin cans.</string>
+
+    <string name="chef_knife">Chef\'s Knife</string>
+    <string name="chef_knife_def">A chef\'s knife, also known as a cook\'s knife, is a cutting tool used in food preparation. The chef\'s knife was originally designed primarily to slice and disjoint large cuts of beef. Today it is the primary general-utility knife for most western cooks.</string>
+
+    <string name="corkscrew">Corkscrew</string>
+    <string name="corkscrew_def">A corkscrew is a tool for drawing corks from wine bottles. In its traditional form, a corkscrew simply consists of a pointed metallic helix (often called the "worm") attached to a handle, which the user screws into the cork and pulls to extract it. More recent styles of corkscrew incorporate various systems of levers that further increase the amount of force that can be applied outwards upon the cork, making easier the extraction of difficult corks.</string>
+
+    <string name="garlic_press">Garlic Press</string>
+    <string name="garlic_press_def">A garlic press is a kitchen utensil to crush garlic cloves efficiently by forcing them through a grid of small holes, usually with some type of piston.</string>
+
+    <string name="grater">Grater</string>
+    <string name="grater_def">A grater is a kitchen utensil used to grate foods into fine pieces. It was invented in the 1540s, originally to grate cheese.</string>
+
+    <string name="kitchen_shears">Kitchen Shears</string>
+    <string name="kitchen_shears_def">Used for food preparation, but often used for a variety of other purposes. In modern times, kitchen scissors are usually made from stainless steel for food hygiene and oxidization-resistance reasons.</string>
+
+    <string name="ladle">Ladle</string>
+    <string name="ladle_def">A ladle is a type of serving spoon used for soup, stew, or other foods. Although designs vary, a typical ladle has a long handle.</string>
+
+    <string name="locking_tongs">Locking Tongs</string>
+    <string name="locking_tongs_def">Locking tongs are a tool used to grip and lift objects, of which there are many forms adapted to their specific use.</string>
+
+    <string name="measuring_cup">Measuring Cup/Jug</string>
+    <string name="measuring_cup_def">A measuring cup or measuring jug is a kitchen utensil used primarily to measure the volume of liquid or bulk solid cooking ingredients such as flour and sugar, especially for volumes from about 50 mL upwards.</string>
+
+    <string name="measuring_spoon">Measuring Spoon</string>
+    <string name="measuring_spoon_def">A measuring spoon is a spoon used to measure an amount of an ingredient, either liquid or dry, when cooking. Measuring spoons may be made of plastic, metal, and other materials. They are available in many sizes, including teaspoon and tablespoon.</string>
+
+    <string name="microplane_grater">Microplane Grater</string>
+    <string name="microplane_grater_def">Microplane graters are used for the grating of various food items, such as nutmeg and cheese, and also as zesters for citrus fruit.</string>
+
+    <string name="muffin_tin">Muffin Tin</string>
+    <string name="muffin_tin_def">A muffin tin is a mold in which muffins or cupcakes are baked.</string>
+
+    <string name="paring_knife">Paring Knife</string>
+    <string name="paring_knife_def">A paring knife is a small knife with a plain edge blade that is ideal for peeling and other small or intricate work. It is designed to be an all-purpose knife, similar to a chef\'s knife, except smaller.</string>
+
+    <string name="pepper_mill">Pepper Mill</string>
+    <string name="pepper_mill_def">A handheld device for grinding peppercorns.</string>
+
+    <string name="potato_masher">Potato Masher</string>
+    <string name="potato_masher_def">A potato masher is a food preparation utensil used to crush soft food for such dishes as mashed potatoes.</string>
+
+    <string name="salad_spinner">Salad Spinner</string>
+    <string name="salad_spinner_def">A salad spinner, also known as a "salad tosser", is a kitchen tool used to wash and remove excess water from salad greens. It uses centrifugal force to separate the water from the leaves. This is necessary in order to keep the greens from going limp and enable salad dressing and oil to stick to the leaves.</string>
+
+    <string name="saucepan">Saucepan</string>
+    <string name="saucepan_def">A saucepan is a deep metal cooking pan with a handle and a lid.</string>
+
+    <string name="serrated_bread_knife">Serrated Bread Knife</string>
+    <string name="serrated_bread_knife_def">Bread knives are used for cutting bread and are one of many kitchen knives used by chefs. The serrated blades are able to cut soft bread without crushing it.</string>
+
+    <string name="skillet">Skillet</string>
+    <string name="skillet_def">A skillet, or frying pan, is a flat-bottomed pan used for frying, searing, and browning foods.</string>
+
+    <string name="slotted_spoon">Slotted Spoon</string>
+    <string name="slotted_spoon_def">A slotted spoon is an implement used in food preparation. The term can be used to describe any spoon with slots, holes or other openings in the bowl of the spoon which let liquid pass through while preserving the larger solids on top.</string>
+
+    <string name="spatula">Spatula</string>
+    <string name="spatula_def">A spatula is a cooking implement with a flat, blunt blade. It is used to pick up, mix, and spread things.</string>
+
+    <string name="stock_pot">Stock Pot</string>
+    <string name="stock_pot_def">A stock pot is a wide pot with a flat bottom, straight sides, a wide opening to the full diameter of the pot, two handles on the sides, and a lid with a handle on top. It is often used for cooking stock or broth.</string>
+
+    <string name="vegetable_peeler">Vegetable Peeler</string>
+    <string name="vegetable_peeler_def">A vegetable peeler is a kitchen tool consisting of a slotted metal blade attached to a handle that is used to remove the outer skin or peel of certain vegetables, often potatoes and carrots.</string>
+
+    <string name="whisk">Whisk</string>
+    <string name="whisk_def">A whisk is a cooking utensil to blend ingredients, or to incorporate air into a mixture, in a process known as whisking or whipping. Most whisks consist of a long, narrow handle with a series of wire loops joined at the end.</string>
+
+    <string name="wikipedia">All definitions were sourced from Wikipedia.</string>
+
+</resources>
