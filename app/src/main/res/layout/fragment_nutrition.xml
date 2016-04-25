@@ -1,95 +1,96 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    tools:context=".fragments.NutritionFragment">
+    android:layout_height="wrap_content">
 
-    <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/chart"
-        android:layout_width="@dimen/pie_chart_diameter"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/activity_vertical_margin" />
-
-    <TextView
-        android:id="@+id/carbs"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:background="@color/colorPrimaryDark"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="@string/carbs"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF" />
+        android:orientation="vertical"
+        tools:context=".fragments.NutritionFragment">
 
-    <TextView
-        android:id="@+id/protein"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:background="@color/colorDivider"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="@string/protein"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF" />
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart"
+            android:layout_width="@dimen/pie_chart_diameter"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_vertical_margin" />
 
-    <TextView
-        android:id="@+id/fat"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:background="@color/colorPieChart"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="@string/fat"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/carbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/carbs"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/sugar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="75dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:background="@color/colorTextSecondary"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="@string/sugar"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/protein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorDivider"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/protein"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/calories"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:background="@color/colorPrimary"
-        android:paddingBottom="12dp"
-        android:paddingTop="10dp"
-        android:text="@string/calories"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF" />
+        <TextView
+            android:id="@+id/fat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPieChart"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/fat"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/sugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorTextSecondary"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/sugar"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="12dp"
+            android:paddingTop="10dp"
+            android:text="@string/calories"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
