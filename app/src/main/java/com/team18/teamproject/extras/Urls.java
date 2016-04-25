@@ -2,6 +2,8 @@ package com.team18.teamproject.extras;
 
 /**
  * Interface containing script URLs.
+ *
+ * Created by Daniel.
  */
 public interface Urls {
 

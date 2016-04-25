@@ -35,8 +35,8 @@ import java.util.Map;
 /**
  * Fragment That loads in information and a list of ingredients for the current recipe.
  *
- * Created by Alex
- *
+ * Created by Alex.
+ * Modified by Daniel.
  */
 public class IngredientsFragment extends Fragment {
 

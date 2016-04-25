@@ -8,7 +8,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Daniel on 14/04/2016.
+ * Custom Volley StringRequest subclass that takes POST parameters in the constructor.
+ *
+ * Created by Daniel.
  */
 public class CustomStringRequest extends StringRequest {
 

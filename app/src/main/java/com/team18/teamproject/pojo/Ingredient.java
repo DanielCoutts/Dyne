@@ -3,7 +3,9 @@ package com.team18.teamproject.pojo;
 import java.io.Serializable;
 
 /**
- * Created by Daniel on 21/04/2016.
+ * Class representation of an Ingredient.
+ *
+ * Created by Daniel.
  */
 public class Ingredient implements Serializable {
 
@@ -27,5 +29,15 @@ public class Ingredient implements Serializable {
 
     public String getQuantity() {
         return quantity;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }

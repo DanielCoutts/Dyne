@@ -6,7 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by Daniel on 30/03/2016.
+ * Class representation of an ingredient.
+ *
+ * Created by Daniel.
  */
 public class Recipe implements Serializable {
 

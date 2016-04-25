@@ -32,7 +32,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Loads in all recipes of the desired activity
+ * Loads in all recipes of the desired category.
+ *
+ * Created by Daniel.
  */
 public class CategoryActivity extends AppCompatActivity {
 

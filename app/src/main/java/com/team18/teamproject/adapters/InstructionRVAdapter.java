@@ -15,6 +15,8 @@ import java.util.Locale;
 
 /**
  * Custom RecyclerView Adapter.
+ *
+ * Created by Daniel.
  */
 public class InstructionRVAdapter extends RecyclerView.Adapter<InstructionRVAdapter.viewHolderInstruction> {
 

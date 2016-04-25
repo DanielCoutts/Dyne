@@ -31,6 +31,8 @@ import java.util.Map;
 
 /**
  * Fragment that loads a scrolling list of all recipes from the database.
+ *
+ * Created by Daniel.
  */
 public class AllRecipesFragment extends Fragment {
 

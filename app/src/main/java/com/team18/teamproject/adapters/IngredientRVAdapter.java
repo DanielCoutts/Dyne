@@ -19,6 +19,8 @@ import java.util.List;
 
 /**
  * Custom RecyclerView Adapter.
+ *
+ * Created by Daniel.
  */
 public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapter.viewHolderIngredient> {
 
@@ -94,7 +96,6 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
 
     /**
      * Formats ingredient data into a single string.
-     * Note: name cannot be null, if quantity is null, units must also be null.
      *
      * @param name     name of ingredient (Name cannot be null).
      * @param quantity quantity of ingredient.

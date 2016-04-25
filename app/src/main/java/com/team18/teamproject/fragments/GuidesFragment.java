@@ -16,6 +16,8 @@ import com.team18.teamproject.activities.GuideActivity;
 
 /**
  * Scrolling list of tutorials.
+ *
+ * Created by Daniel.
  */
 public class GuidesFragment extends Fragment {
 

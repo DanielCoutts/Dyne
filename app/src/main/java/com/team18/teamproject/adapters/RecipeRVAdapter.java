@@ -21,6 +21,8 @@ import java.util.List;
 
 /**
  * Custom RecyclerView Adapter.
+ *
+ * Created by Daniel.
  */
 public class RecipeRVAdapter extends RecyclerView.Adapter<RecipeRVAdapter.viewHolderRecipe> {
 

@@ -11,6 +11,8 @@ import com.team18.teamproject.R;
 
 /**
  * Fragment that displays glossary terms on cards.
+ *
+ * Created by Daniel.
  */
 public class GlossaryFragment extends Fragment {
 

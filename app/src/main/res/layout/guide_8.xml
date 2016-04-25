@@ -23,9 +23,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/card_spacing"
+            android:orientation="vertical"
             android:paddingBottom="@dimen/card_spacing"
-            android:orientation="vertical">
+            android:paddingTop="@dimen/card_spacing">
 
             <!--Guide8_s1-->
             <android.support.v7.widget.CardView
@@ -43,74 +43,67 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s1i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s1i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s1i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s1i2"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s1i2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s1i1"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s1i2" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s1i3"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s1i3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s1i2"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s1i4"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s1i3" />
+
+                    <TextView
                         android:id="@+id/guide8_s1i4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s1i3"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s1i4" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s1i5"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s1i5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s1i4"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s1i5" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s1i6"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s1i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s1i5"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s1i6" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s1i7"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s1i7"
-                        android:layout_below="@id/guide8_s1i6"
-                        />
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s1i8"
+                        android:layout_below="@id/guide8_s1i6"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s1i7" />
+
+                    <TextView
                         android:id="@+id/guide8_s1i8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s1i7"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s1i8" />
 
                 </RelativeLayout>
 
@@ -132,169 +125,155 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s2i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s2i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s2i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s2i2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i1"
-                        />
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i2" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i3"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s2i3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i2"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i4"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s2i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s2i4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i3"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i4" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s2i5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i4"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i5" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i6"
-                        android:paddingTop="2dp"
-                        android:paddingStart="10dp"
                         android:id="@+id/guide8_s2i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i5"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i6" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i7"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s2i7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i6"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i7" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i8"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s2i8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i7"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i9"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s2i8"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s2i9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i8"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i9" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i10"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s2i10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i9"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i10" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i11"
-                        android:paddingTop="2dp"
-                        android:paddingStart="10dp"
                         android:id="@+id/guide8_s2i11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i10"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i11" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i12"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s2i12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i11"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i12" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i13"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s2i13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i12"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i14"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s2i13"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s2i14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i13"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i15"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s2i15"
-                        android:layout_below="@id/guide8_s2i14"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i16"
-                        android:paddingTop="2dp"
                         android:paddingStart="10dp"
-                        android:id="@+id/guide8_s2i16"
-                        android:layout_below="@id/guide8_s2i15"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i14" />
 
                     <TextView
+                        android:id="@+id/guide8_s2i15"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s2i17"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s2i14"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i15" />
+
+                    <TextView
+                        android:id="@+id/guide8_s2i16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s2i15"
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i16" />
+
+                    <TextView
                         android:id="@+id/guide8_s2i17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s2i16"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s2i17" />
 
                 </RelativeLayout>
 
@@ -316,169 +295,155 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s3i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s3i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s3i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s3i2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i1"
-                        />
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i2" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i3"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s3i3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i2"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i4"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s3i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s3i4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i3"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i4" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s3i5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i4"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i5" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i6"
-                        android:paddingTop="2dp"
-                        android:paddingStart="10dp"
                         android:id="@+id/guide8_s3i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i5"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i6" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i7"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s3i7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i6"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i7" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i8"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s3i8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i7"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i9"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s3i8"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s3i9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i8"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i9" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i10"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s3i10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i9"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i10" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i11"
-                        android:paddingTop="2dp"
-                        android:paddingStart="10dp"
                         android:id="@+id/guide8_s3i11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i10"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i11" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i12"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s3i12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i11"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i12" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i13"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s3i13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i12"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i14"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s3i13"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s3i14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i13"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i15"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s3i15"
-                        android:layout_below="@id/guide8_s3i14"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i16"
-                        android:paddingTop="2dp"
                         android:paddingStart="10dp"
-                        android:id="@+id/guide8_s3i16"
-                        android:layout_below="@id/guide8_s3i15"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i14" />
 
                     <TextView
+                        android:id="@+id/guide8_s3i15"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s3i17"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s3i14"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i15" />
+
+                    <TextView
+                        android:id="@+id/guide8_s3i16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s3i15"
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i16" />
+
+                    <TextView
                         android:id="@+id/guide8_s3i17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s3i16"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s3i17" />
 
                 </RelativeLayout>
 
@@ -500,119 +465,109 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s4i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s4i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s4i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s4i2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i1"
-                        />
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i2" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i3"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s4i3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i2"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i4"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s4i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s4i4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i3"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i4" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s4i5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i4"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i5" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i6"
-                        android:paddingTop="2dp"
-                        android:paddingStart="10dp"
                         android:id="@+id/guide8_s4i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i5"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i6" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i7"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s4i7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i6"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i7" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i8"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s4i8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i7"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i9"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s4i8"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s4i9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i8"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i10"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s4i10"
-                        android:layout_below="@id/guide8_s4i9"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i11"
-                        android:paddingTop="2dp"
                         android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i9" />
+
+                    <TextView
+                        android:id="@+id/guide8_s4i10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s4i9"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i10" />
+
+                    <TextView
                         android:id="@+id/guide8_s4i11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s4i10"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i11" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s4i12"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:layout_below="@id/guide8_s4i11"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s4i12" />
 
                 </RelativeLayout>
 
@@ -634,169 +589,155 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s5i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s5i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s5i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s5i2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i1"
-                        />
+                        android:paddingStart="5dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i2" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i3"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s5i3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i2"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i4"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s5i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s5i4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i3"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i4" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s5i5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i4"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i5" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i6"
-                        android:paddingTop="2dp"
-                        android:paddingStart="10dp"
                         android:id="@+id/guide8_s5i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i5"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i6" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i7"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s5i7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i6"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i7" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i8"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s5i8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i7"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i9"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s5i8"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s5i9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i8"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i9" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i10"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s5i10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i9"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i10" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i11"
-                        android:paddingTop="2dp"
-                        android:paddingStart="10dp"
                         android:id="@+id/guide8_s5i11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i10"
-                        />
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i11" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i12"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
                         android:id="@+id/guide8_s5i12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i11"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i12" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i13"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
                         android:id="@+id/guide8_s5i13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i12"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i14"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s5i13"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s5i14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i13"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i15"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s5i15"
-                        android:layout_below="@id/guide8_s5i14"
-                        />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i16"
-                        android:paddingTop="2dp"
                         android:paddingStart="10dp"
-                        android:id="@+id/guide8_s5i16"
-                        android:layout_below="@id/guide8_s5i15"
-                        />
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i14" />
 
                     <TextView
+                        android:id="@+id/guide8_s5i15"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s5i17"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s5i14"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i15" />
+
+                    <TextView
+                        android:id="@+id/guide8_s5i16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s5i15"
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i16" />
+
+                    <TextView
                         android:id="@+id/guide8_s5i17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_below="@id/guide8_s5i16"
-                        />
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s5i17" />
 
                 </RelativeLayout>
 
@@ -818,39 +759,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s6i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s6i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s6i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s6i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s6i2"
-                        android:layout_below="@id/guide8_s6i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s6i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s6i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s6i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s6i3"
-                        android:layout_below="@id/guide8_s6i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s6i4"
+                        android:layout_below="@id/guide8_s6i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s6i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s6i4"
-                        android:layout_below="@id/guide8_s6i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s6i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s6i4" />
 
                 </RelativeLayout>
 
@@ -872,39 +812,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s7i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s7i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s7i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s7i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s7i2"
-                        android:layout_below="@id/guide8_s7i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s7i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s7i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s7i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s7i3"
-                        android:layout_below="@id/guide8_s7i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s7i4"
+                        android:layout_below="@id/guide8_s7i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s7i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s7i4"
-                        android:layout_below="@id/guide8_s7i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s7i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s7i4" />
 
                 </RelativeLayout>
 
@@ -926,93 +865,92 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s8i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s8i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s8i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s8i2"
-                        android:layout_below="@id/guide8_s8i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s8i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s8i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s8i3"
-                        android:layout_below="@id/guide8_s8i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i4"
+                        android:layout_below="@id/guide8_s8i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s8i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s8i4"
-                        android:layout_below="@id/guide8_s8i3"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i5"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s8i3"
+                        android:paddingStart="15dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s8i4" />
+
+                    <TextView
                         android:id="@+id/guide8_s8i5"
-                        android:layout_below="@id/guide8_s8i4"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i6"
+                        android:layout_below="@id/guide8_s8i4"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s8i5"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s8i6"
-                        android:layout_below="@id/guide8_s8i5"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i7"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s8i5"
+                        android:paddingStart="15dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s8i6" />
+
+                    <TextView
                         android:id="@+id/guide8_s8i7"
-                        android:layout_below="@id/guide8_s8i6"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i8"
+                        android:layout_below="@id/guide8_s8i6"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s8i7"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s8i8"
-                        android:layout_below="@id/guide8_s8i7"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i9"
-                        android:textStyle="italic"
-                        android:paddingTop="2dp"
-                        android:id="@+id/guide8_s8i9"
-                        android:layout_below="@id/guide8_s8i8"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s8i10"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s8i7"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s8i8" />
+
+                    <TextView
+                        android:id="@+id/guide8_s8i9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s8i8"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s8i9"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s8i10"
-                        android:layout_below="@id/guide8_s8i9"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s8i9"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s8i10" />
 
                 </RelativeLayout>
 
@@ -1034,39 +972,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s9i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s9i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s9i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s9i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s9i2"
-                        android:layout_below="@id/guide8_s9i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s9i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s9i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s9i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s9i3"
-                        android:layout_below="@id/guide8_s9i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s9i4"
+                        android:layout_below="@id/guide8_s9i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s9i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s9i4"
-                        android:layout_below="@id/guide8_s9i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s9i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s9i4" />
 
                 </RelativeLayout>
 
@@ -1088,39 +1025,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s10i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s10i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s10i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s10i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s10i2"
-                        android:layout_below="@id/guide8_s10i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s10i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s10i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s10i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s10i3"
-                        android:layout_below="@id/guide8_s10i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s10i4"
+                        android:layout_below="@id/guide8_s10i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s10i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s10i4"
-                        android:layout_below="@id/guide8_s10i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s10i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s10i4" />
 
                 </RelativeLayout>
 
@@ -1142,39 +1078,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s11i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s11i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s11i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s11i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s11i2"
-                        android:layout_below="@id/guide8_s11i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s10i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s11i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s11i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s11i3"
-                        android:layout_below="@id/guide8_s11i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s11i4"
+                        android:layout_below="@id/guide8_s11i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s10i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s11i4"
-                        android:layout_below="@id/guide8_s11i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s11i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s11i4" />
 
                 </RelativeLayout>
 
@@ -1196,39 +1131,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s12i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s12i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s12i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s12i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s12i2"
-                        android:layout_below="@id/guide8_s12i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s12i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s12i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s12i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s12i3"
-                        android:layout_below="@id/guide8_s12i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s12i4"
+                        android:layout_below="@id/guide8_s12i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s12i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s12i4"
-                        android:layout_below="@id/guide8_s12i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s12i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s12i4" />
 
                 </RelativeLayout>
 
@@ -1250,39 +1184,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s13i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s13i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s13i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s13i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s13i2"
-                        android:layout_below="@id/guide8_s13i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s13i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s13i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s13i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s13i3"
-                        android:layout_below="@id/guide8_s13i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s13i4"
+                        android:layout_below="@id/guide8_s13i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s13i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s13i4"
-                        android:layout_below="@id/guide8_s13i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s13i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s13i4" />
 
                 </RelativeLayout>
 
@@ -1304,39 +1237,38 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s14i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s14i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s14i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s14i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s14i2"
-                        android:layout_below="@id/guide8_s14i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s10i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s14i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s14i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s14i3"
-                        android:layout_below="@id/guide8_s14i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s14i4"
+                        android:layout_below="@id/guide8_s14i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s10i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s14i4"
-                        android:layout_below="@id/guide8_s14i3"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s14i3"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s14i4" />
 
                 </RelativeLayout>
 
@@ -1358,30 +1290,29 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s15i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s15i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s15i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s15i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s15i2"
-                        android:layout_below="@id/guide8_s15i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s15i4"
+                        android:layout_below="@id/guide8_s15i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
-                        android:paddingStart="15dp"
+                        android:text="@string/guide8_s15i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s15i4"
-                        android:layout_below="@id/guide8_s15i2"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s15i2"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s15i4" />
 
                 </RelativeLayout>
 
@@ -1403,66 +1334,65 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s16i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s16i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s16i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s16i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s16i2"
-                        android:layout_below="@id/guide8_s16i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s16i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s16i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s16i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s16i3"
-                        android:layout_below="@id/guide8_s16i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s16i4"
+                        android:layout_below="@id/guide8_s16i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s16i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s16i4"
-                        android:layout_below="@id/guide8_s16i3"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s16i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s16i5"
-                        android:layout_below="@id/guide8_s16i4"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s16i6"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s16i3"
                         android:paddingStart="10dp"
-                        android:id="@+id/guide8_s16i6"
-                        android:layout_below="@id/guide8_s16i5"/>
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s16i4" />
 
                     <TextView
+                        android:id="@+id/guide8_s16i5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s16i7"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s16i4"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s16i5" />
+
+                    <TextView
+                        android:id="@+id/guide8_s16i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s16i5"
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s16i6" />
+
+                    <TextView
                         android:id="@+id/guide8_s16i7"
-                        android:layout_below="@id/guide8_s16i6"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s16i6"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s16i7" />
 
                 </RelativeLayout>
 
@@ -1484,66 +1414,65 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s17i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s17i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s17i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s17i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s17i2"
-                        android:layout_below="@id/guide8_s17i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s17i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s17i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s17i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s17i3"
-                        android:layout_below="@id/guide8_s17i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s17i4"
+                        android:layout_below="@id/guide8_s17i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s17i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s17i4"
-                        android:layout_below="@id/guide8_s17i3"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s17i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s17i5"
-                        android:layout_below="@id/guide8_s17i4"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s17i6"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s17i3"
                         android:paddingStart="10dp"
-                        android:id="@+id/guide8_s17i6"
-                        android:layout_below="@id/guide8_s17i5"/>
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s17i4" />
 
                     <TextView
+                        android:id="@+id/guide8_s17i5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s17i7"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s17i4"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s17i5" />
+
+                    <TextView
+                        android:id="@+id/guide8_s17i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s17i5"
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s17i6" />
+
+                    <TextView
                         android:id="@+id/guide8_s17i7"
-                        android:layout_below="@id/guide8_s17i6"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s17i6"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s17i7" />
 
                 </RelativeLayout>
 
@@ -1565,66 +1494,65 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s18i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s18i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s18i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s18i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s18i2"
-                        android:layout_below="@id/guide8_s18i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s18i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s18i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s18i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s18i3"
-                        android:layout_below="@id/guide8_s18i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s18i4"
+                        android:layout_below="@id/guide8_s18i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s18i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s18i4"
-                        android:layout_below="@id/guide8_s18i3"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s18i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s18i5"
-                        android:layout_below="@id/guide8_s18i4"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s18i6"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s18i3"
                         android:paddingStart="10dp"
-                        android:id="@+id/guide8_s18i6"
-                        android:layout_below="@id/guide8_s18i5"/>
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s18i4" />
 
                     <TextView
+                        android:id="@+id/guide8_s18i5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s18i7"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s18i4"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s18i5" />
+
+                    <TextView
+                        android:id="@+id/guide8_s18i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s18i5"
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s18i6" />
+
+                    <TextView
                         android:id="@+id/guide8_s18i7"
-                        android:layout_below="@id/guide8_s18i6"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s18i6"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s18i7" />
 
                 </RelativeLayout>
 
@@ -1646,66 +1574,65 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide8_s19i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide8_s19i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide8_s19i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s19i2"
-                        android:paddingTop="2dp"
-                        android:paddingStart="5dp"
                         android:id="@+id/guide8_s19i2"
-                        android:layout_below="@id/guide8_s19i1"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s19i3"
-                        android:textStyle="italic"
+                        android:layout_below="@id/guide8_s19i1"
+                        android:paddingStart="5dp"
                         android:paddingTop="2dp"
+                        android:text="@string/guide8_s19i2" />
+
+                    <TextView
                         android:id="@+id/guide8_s19i3"
-                        android:layout_below="@id/guide8_s19i2"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s19i4"
+                        android:layout_below="@id/guide8_s19i2"
                         android:paddingTop="2dp"
-                        android:paddingStart="10dp"
+                        android:text="@string/guide8_s19i3"
+                        android:textStyle="italic" />
+
+                    <TextView
                         android:id="@+id/guide8_s19i4"
-                        android:layout_below="@id/guide8_s19i3"/>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s19i5"
-                        android:paddingTop="2dp"
-                        android:paddingStart="15dp"
-                        android:id="@+id/guide8_s19i5"
-                        android:layout_below="@id/guide8_s19i4"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/guide8_s19i6"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s19i3"
                         android:paddingStart="10dp"
-                        android:id="@+id/guide8_s19i6"
-                        android:layout_below="@id/guide8_s19i5"/>
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s19i4" />
 
                     <TextView
+                        android:id="@+id/guide8_s19i5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide8_s19i7"
-                        android:paddingTop="2dp"
+                        android:layout_below="@id/guide8_s19i4"
                         android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s19i5" />
+
+                    <TextView
+                        android:id="@+id/guide8_s19i6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s19i5"
+                        android:paddingStart="10dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s19i6" />
+
+                    <TextView
                         android:id="@+id/guide8_s19i7"
-                        android:layout_below="@id/guide8_s19i6"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/guide8_s19i6"
+                        android:paddingStart="15dp"
+                        android:paddingTop="2dp"
+                        android:text="@string/guide8_s19i7" />
 
                 </RelativeLayout>
 

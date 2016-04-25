@@ -5,8 +5,9 @@ import com.android.volley.toolbox.Volley;
 import com.team18.teamproject.Application;
 
 /**
- * Created by Daniel on 02/04/2016.
+ * Volley singleton pattern used for networking.
  *
+ * Created by Daniel.
  */
 public class VolleySingleton {
 

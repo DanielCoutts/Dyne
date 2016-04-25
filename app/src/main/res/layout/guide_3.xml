@@ -23,9 +23,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/card_spacing"
+            android:orientation="vertical"
             android:paddingBottom="@dimen/card_spacing"
-            android:orientation="vertical">
+            android:paddingTop="@dimen/card_spacing">
 
             <!--guide3_s1-->
             <android.support.v7.widget.CardView
@@ -43,12 +43,11 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s1i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s1i1"
                         android:paddingTop="2dp"
-                        android:id="@+id/guide3_s1i1"
-                        />
+                        android:text="@string/guide3_s1i1" />
 
                 </RelativeLayout>
 
@@ -70,19 +69,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s2i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s2i1"
-                        android:id="@+id/guide3_s2i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s2i2"
+                        android:layout_below="@id/guide3_s2i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s2i1"/>
+                        android:text="@string/guide3_s2i2" />
 
                 </RelativeLayout>
 
@@ -104,19 +102,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s3i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s3i1"
-                        android:id="@+id/guide3_s3i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s3i2"
+                        android:layout_below="@id/guide3_s3i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s3i1"/>
+                        android:text="@string/guide3_s3i2" />
 
                 </RelativeLayout>
 
@@ -138,19 +135,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s4i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s4i1"
-                        android:id="@+id/guide3_s4i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s4i2"
+                        android:layout_below="@id/guide3_s4i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s4i1"/>
+                        android:text="@string/guide3_s4i2" />
 
                 </RelativeLayout>
 
@@ -172,19 +168,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s5i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s5i1"
-                        android:id="@+id/guide3_s5i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s5i2"
+                        android:layout_below="@id/guide3_s5i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s5i1"/>
+                        android:text="@string/guide3_s5i2" />
 
                 </RelativeLayout>
 
@@ -206,19 +201,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s6i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s6i1"
-                        android:id="@+id/guide3_s6i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s6i2"
+                        android:layout_below="@id/guide3_s6i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s6i1"/>
+                        android:text="@string/guide3_s6i2" />
 
                 </RelativeLayout>
 
@@ -240,19 +234,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s7i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s7i1"
-                        android:id="@+id/guide3_s7i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s7i2"
+                        android:layout_below="@id/guide3_s7i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s7i1"/>
+                        android:text="@string/guide3_s7i2" />
 
                 </RelativeLayout>
 
@@ -274,19 +267,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s8i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s8i1"
-                        android:id="@+id/guide3_s8i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s8i2"
+                        android:layout_below="@id/guide3_s8i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s8i1"/>
+                        android:text="@string/guide3_s8i2" />
 
                 </RelativeLayout>
 
@@ -308,19 +300,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s9i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s9i1"
-                        android:id="@+id/guide3_s9i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s9i2"
+                        android:layout_below="@id/guide3_s9i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s9i1"/>
+                        android:text="@string/guide3_s9i2" />
 
                 </RelativeLayout>
 
@@ -342,19 +333,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s10i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s10i1"
-                        android:id="@+id/guide3_s10i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s10i2"
+                        android:layout_below="@id/guide3_s10i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s10i1"/>
+                        android:text="@string/guide3_s10i2" />
 
                 </RelativeLayout>
 
@@ -376,19 +366,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s11i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s11i1"
-                        android:id="@+id/guide3_s11i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s11i2"
+                        android:layout_below="@id/guide3_s11i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s11i1"/>
+                        android:text="@string/guide3_s11i2" />
 
                 </RelativeLayout>
 
@@ -410,19 +399,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s12i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s12i1"
-                        android:id="@+id/guide3_s12i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s12i2"
+                        android:layout_below="@id/guide3_s12i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s12i1"/>
+                        android:text="@string/guide3_s12i2" />
 
                 </RelativeLayout>
 
@@ -444,19 +432,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s13i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s13i1"
-                        android:id="@+id/guide3_s13i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s13i2"
+                        android:layout_below="@id/guide3_s13i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s13i1"/>
+                        android:text="@string/guide3_s13i2" />
 
                 </RelativeLayout>
 
@@ -478,19 +465,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s14i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s14i1"
-                        android:id="@+id/guide3_s14i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s14i2"
+                        android:layout_below="@id/guide3_s14i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s14i1"/>
+                        android:text="@string/guide3_s14i2" />
 
                 </RelativeLayout>
 
@@ -512,19 +498,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s15i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s15i1"
-                        android:id="@+id/guide3_s15i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s15i2"
+                        android:layout_below="@id/guide3_s15i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s15i1"/>
+                        android:text="@string/guide3_s15i2" />
 
                 </RelativeLayout>
 
@@ -546,19 +531,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s16i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s16i1"
-                        android:id="@+id/guide3_s16i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s16i2"
+                        android:layout_below="@id/guide3_s16i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s16i1"/>
+                        android:text="@string/guide3_s16i2" />
 
                 </RelativeLayout>
 
@@ -580,19 +564,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s17i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s17i1"
-                        android:id="@+id/guide3_s17i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s17i2"
+                        android:layout_below="@id/guide3_s17i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s17i1"/>
+                        android:text="@string/guide3_s17i2" />
 
                 </RelativeLayout>
 
@@ -614,19 +597,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s18i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s18i1"
-                        android:id="@+id/guide3_s18i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s18i2"
+                        android:layout_below="@id/guide3_s18i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s18i1"/>
+                        android:text="@string/guide3_s18i2" />
 
                 </RelativeLayout>
 
@@ -648,19 +630,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s19i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s19i1"
-                        android:id="@+id/guide3_s19i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s19i2"
+                        android:layout_below="@id/guide3_s19i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s19i1"/>
+                        android:text="@string/guide3_s19i2" />
 
                 </RelativeLayout>
 
@@ -682,19 +663,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s20i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s20i1"
-                        android:id="@+id/guide3_s20i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s20i2"
+                        android:layout_below="@id/guide3_s20i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s20i1"/>
+                        android:text="@string/guide3_s20i2" />
 
                 </RelativeLayout>
 
@@ -716,19 +696,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s21i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s21i1"
-                        android:id="@+id/guide3_s21i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s21i2"
+                        android:layout_below="@id/guide3_s21i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s21i1"/>
+                        android:text="@string/guide3_s21i2" />
 
                 </RelativeLayout>
 
@@ -750,19 +729,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s22i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s22i1"
-                        android:id="@+id/guide3_s22i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s22i2"
+                        android:layout_below="@id/guide3_s22i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s22i1"/>
+                        android:text="@string/guide3_s22i2" />
 
                 </RelativeLayout>
 
@@ -784,19 +762,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s23i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s23i1"
-                        android:id="@+id/guide3_s23i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s23i2"
+                        android:layout_below="@id/guide3_s23i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s23i1"/>
+                        android:text="@string/guide3_s23i2" />
 
                 </RelativeLayout>
 
@@ -818,19 +795,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s24i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s24i1"
-                        android:id="@+id/guide3_s24i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s24i2"
+                        android:layout_below="@id/guide3_s24i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s24i1"/>
+                        android:text="@string/guide3_s24i2" />
 
                 </RelativeLayout>
 
@@ -852,19 +828,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s25i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s25i1"
-                        android:id="@+id/guide3_s25i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s25i2"
+                        android:layout_below="@id/guide3_s25i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s25i1"/>
+                        android:text="@string/guide3_s25i2" />
 
                 </RelativeLayout>
 
@@ -886,19 +861,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s26i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s26i1"
-                        android:id="@+id/guide3_s26i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s26i2"
+                        android:layout_below="@id/guide3_s26i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s26i1"/>
+                        android:text="@string/guide3_s26i2" />
 
                 </RelativeLayout>
 
@@ -920,19 +894,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide3_s27i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide3_s27i1"
-                        android:id="@+id/guide3_s27i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide3_s27i2"
+                        android:layout_below="@id/guide3_s27i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide3_s27i1"/>
+                        android:text="@string/guide3_s27i2" />
 
                 </RelativeLayout>
 

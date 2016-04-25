@@ -18,6 +18,8 @@ import java.util.List;
 
 /**
  * Loads in a list of favourites that are available offline and persistent.
+ *
+ * Created by Daniel.
  */
 public class FavouritesFragment extends Fragment {
 

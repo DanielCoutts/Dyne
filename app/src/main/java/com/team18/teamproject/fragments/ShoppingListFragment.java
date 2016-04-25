@@ -32,6 +32,8 @@ import java.util.List;
 import java.util.Map;
 /**
  * Fragment containing a scrollview that loads the user's shopping list.
+ *
+ * Created by Daniel.
  */
 public class ShoppingListFragment extends Fragment {
 
@@ -52,13 +54,16 @@ public class ShoppingListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_shopping_list, container, false);
 
+        // Set up RecyclerView.
         recyclerView = (RecyclerView) view.findViewById(R.id.shopping_rv);
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        // Set up adapter with RecyclerView.
         adapter = new ShoppingListRVAdapter(getContext());
         recyclerView.setAdapter(adapter);
 
+        // Set ingredients list.
         adapter.setIngredientList(Application.getShoppingList());
 
         return view;

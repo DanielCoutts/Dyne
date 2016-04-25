@@ -46,8 +46,8 @@ import java.util.Map;
 /**
  * Fragment that displays the method for each recipe and the facebook share button.
  *
- * Created by Alex
- * Modified by Daniel
+ * Facebook sharing function created by Alex.
+ * Layout and RecyclerView created by Daniel.
  */
 public class MethodFragment extends Fragment {
 
@@ -196,10 +196,22 @@ public class MethodFragment extends Fragment {
         });
     }
 
+    /**
+     *  Returns true if camera is available.
+     *
+     * @param context Fragment context.
+     * @return true if camera is available, false otherwise.
+     */
     private static boolean isCameraAvailable(Context context) {
         return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY);
     }
 
+    /**
+     * Returns true if online.
+     *
+     * @param context Fragment context.
+     * @return true if online.
+     */
     private boolean isOnline(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
@@ -207,7 +219,7 @@ public class MethodFragment extends Fragment {
     }
 
     /**
-     * Test if another app is install on the device.
+     * Test if another app is installed on the device.
      *
      * @param packageName Name of the package being tested for.
      */
@@ -222,7 +234,7 @@ public class MethodFragment extends Fragment {
     }
 
     /**
-     * Build intent for camera application and start camera activity.
+     * Builds intent for camera application and start camera activity.
      */
     private void takePhoto() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -233,7 +245,7 @@ public class MethodFragment extends Fragment {
     }
 
     /**
-     * Build a Facebook SharePhotoContent to share on Facebook.
+     * Builds a Facebook SharePhotoContent to share on Facebook.
      *
      * @param bitmap Photo returned by camera activity
      */

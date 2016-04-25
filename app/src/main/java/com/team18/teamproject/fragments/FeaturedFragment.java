@@ -31,6 +31,8 @@ import java.util.Map;
 
 /**
  * Fragment that loads a scrolling list of all featured recipes.
+ *
+ * Created by Daniel.
  */
 public class FeaturedFragment extends Fragment {
 

@@ -3,10 +3,10 @@
     android:id="@+id/recipe_cardview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_spacing"
     android:layout_marginEnd="@dimen/card_margins"
     android:layout_marginStart="@dimen/card_margins"
     android:layout_marginTop="@dimen/card_spacing"
-    android:layout_marginBottom="@dimen/card_spacing"
     android:elevation="@dimen/cardview_default_elevation"
     android:foreground="?android:attr/selectableItemBackground">
 
@@ -30,7 +30,6 @@
                 android:id="@+id/card_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Recipe"
                 android:textSize="@dimen/large_card_text"
                 android:textStyle="bold" />
 
@@ -44,7 +43,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
-                    android:text="-- Minutes"
                     android:textSize="@dimen/small_card_text" />
 
                 <TextView
@@ -53,7 +51,6 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentTop="true"
-                    android:text="Difficulty"
                     android:textSize="@dimen/small_card_text" />
             </RelativeLayout>
         </LinearLayout>

@@ -19,6 +19,8 @@ import java.util.List;
 
 /**
  * Custom RecyclerView Adapter.
+ *
+ * Created by Daniel.
  */
 public class ShoppingListRVAdapter extends RecyclerView.Adapter<ShoppingListRVAdapter.viewHolderIngredient> {
 
@@ -48,7 +50,7 @@ public class ShoppingListRVAdapter extends RecyclerView.Adapter<ShoppingListRVAd
     }
 
     /**
-     * Initialises recipe list with specified list object.
+     * Initialises ingredient list with specified list object.
      *
      * @param ingredients List of ingredients to set.
      */
@@ -102,7 +104,7 @@ public class ShoppingListRVAdapter extends RecyclerView.Adapter<ShoppingListRVAd
      * @param name     name of ingredient (Name cannot be null).
      * @param quantity quantity of ingredient.
      * @param units    units of ingredient (If quantity is null, units must also be null).
-     * @return string of formatted ingredients.
+     * @return A string of formatted ingredients.
      */
     private static String formatIngredient(String name, String quantity, String units) {
 

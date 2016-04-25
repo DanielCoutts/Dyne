@@ -10,6 +10,9 @@ import com.team18.teamproject.R;
 
 /**
  * The guide activity uses a different xml file depending on the selected guide.
+ *
+ * Java implemented by Daniel.
+ * All layouts created by Alex.
  */
 public class GuideActivity extends AppCompatActivity {
 

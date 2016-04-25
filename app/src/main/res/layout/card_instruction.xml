@@ -24,8 +24,8 @@
             android:layout_marginEnd="@dimen/instruction_number_right_margin"
             android:background="@drawable/circle"
             android:gravity="center"
-            android:textSize="@dimen/step_card_number"
-            android:textColor="@color/step_num_text"/>
+            android:textColor="@color/step_num_text"
+            android:textSize="@dimen/step_card_number" />
 
         <TextView
             android:id="@+id/card_instruction"

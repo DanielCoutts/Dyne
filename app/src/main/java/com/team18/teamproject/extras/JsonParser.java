@@ -22,6 +22,8 @@ import static com.team18.teamproject.extras.Keys.Recipes;
 
 /**
  * Class containing static functions for parsing different types of JSON data.
+ *
+ * Created by Daniel.
  */
 public class JsonParser {
 
@@ -165,6 +167,7 @@ public class JsonParser {
         return nutrition;
     }
 
+    /* Below parsing method is not used in final submission. Left in for future expandability. */
     /**
      * Converts JSON array of essential objects into a List of essential Strings.
      *

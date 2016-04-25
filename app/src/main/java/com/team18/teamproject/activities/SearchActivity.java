@@ -32,6 +32,8 @@ import java.util.Map;
 
 /**
  * Allows the user to search for a recipe.
+ *
+ * Created by Daniel.
  */
 public class SearchActivity extends AppCompatActivity {
 
@@ -86,6 +88,7 @@ public class SearchActivity extends AppCompatActivity {
         adapter = new RecipeRVAdapter(this);
         recyclerView.setAdapter(adapter);
 
+        // Ensures correct data is displayed on rotation.
         sendJsonRequest(searchText);
         searchBar.setText(searchText);
     }

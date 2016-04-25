@@ -15,7 +15,10 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * Created by Daniel on 03/04/2016.
+ * Application subclass used to get Application context, store global fields,
+ * and save and restore data from shared preferences.
+ *
+ * Created by Daniel.
  */
 public class Application extends android.app.Application {
 
@@ -35,10 +38,13 @@ public class Application extends android.app.Application {
     private static boolean glutenFree = false;
 
     /**
-     * Globally accessible map of favourite recipes to be cached.
+     * Globally accessible map of favourite recipes to be saved to shared preferences.
      */
     private static Map<Integer, Recipe> favourites = new TreeMap<>();
 
+    /**
+     * Globally accessible shopping list of ingredients to be saved to shared preferences.
+     */
     private static List<Ingredient> shoppingList = new ArrayList<>();
 
     private static Recipe currentRecipe;
@@ -71,14 +77,30 @@ public class Application extends android.app.Application {
         return sInstance.getApplicationContext();
     }
 
+    /**
+     * Displays an error snackbar message.
+     *
+     * @param view View in which to display snackbar message.
+     */
     public static void connectionError(View view) {
         Snackbar.make(view, "Connection Error", Snackbar.LENGTH_LONG).setAction("Action", null).show();
     }
 
+    /**
+     * Displays an error snackbar message.
+     *
+     * @param view View in which to display snackbar message.
+     */
     public static void responseError(View view) {
         Snackbar.make(view, "Cannot Fetch Recipes", Snackbar.LENGTH_LONG).setAction("Action", null).show();
     }
 
+    /**
+     * Converts a boolean to a string of "1" or "0".
+     *
+     * @param bool Input boolean.
+     * @return "1" or "0" string.
+     */
     public static String boolToString(Boolean bool) {
         if (bool) {
             return "1";
@@ -135,6 +157,9 @@ public class Application extends android.app.Application {
         Application.glutenFree = glutenFree;
     }
 
+    /**
+     * Saves data to shared preferences.
+     */
     public void saveState() {
         Gson gson = new Gson();
         MyWrapper wrapper = new MyWrapper(vegetarian, vegan, glutenFree, favourites, shoppingList);
@@ -142,6 +167,10 @@ public class Application extends android.app.Application {
         PreferenceManager.getDefaultSharedPreferences(getAppContext()).edit().putString("STATE", serialized).commit();
     }
 
+
+    /**
+     * Wrapper class for storing data to be saved.
+     */
     public class MyWrapper {
 
         private boolean vegetarian = false;

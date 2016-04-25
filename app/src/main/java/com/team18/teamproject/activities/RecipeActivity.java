@@ -22,6 +22,9 @@ import com.team18.teamproject.pojo.Recipe;
 /**
  * The recipe activity contains three tabs: ingredients, method, and nutrition.
  * Data is different based on the selected recipe, so it is loaded in when the activity is launched.
+ *
+ * Created by Alex.
+ * Modified by Daniel.
  */
 public class RecipeActivity extends AppCompatActivity {
 

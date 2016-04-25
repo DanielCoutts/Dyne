@@ -27,6 +27,8 @@ import com.team18.teamproject.fragments.ShoppingListFragment;
 /**
  * The main activity contains a navigation drawer with a fragment in the main body of the page.
  * Selecting items from the navigation drawer swaps out the main fragment with the desired section.
+ *
+ * Created by Daniel.
  */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -91,8 +93,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     /**
      * Change the main display area to a given page (fragment).
-     *
-     * Created by Daniel.
      *
      * @param fragment fragment to load into the main display area.
      */

@@ -16,6 +16,8 @@ import com.team18.teamproject.R;
 
 /**
  * Fragment containing 3 tabs linked to a viewpager containing three fragments.
+ *
+ * Created by Daniel.
  */
 public class HomeFragment extends Fragment {
 

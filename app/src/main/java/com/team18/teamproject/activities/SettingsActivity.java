@@ -12,6 +12,9 @@ import com.team18.teamproject.R;
 
 /**
  * Displays three settings toggles and basic 'about' information.
+ *
+ * Created by Daniel.
+ * 'About' section written by Ariela and modified by Daniel.
  */
 public class SettingsActivity extends AppCompatActivity {
 

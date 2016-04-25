@@ -23,9 +23,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="@dimen/card_spacing"
+            android:orientation="vertical"
             android:paddingBottom="@dimen/card_spacing"
-            android:orientation="vertical">
+            android:paddingTop="@dimen/card_spacing">
 
             <!--guide9_s1-->
             <android.support.v7.widget.CardView
@@ -45,8 +45,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide9_s1i1"
-                        />
+                        android:text="@string/guide9_s1i1" />
 
                 </RelativeLayout>
 
@@ -68,19 +67,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide9_s2i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide9_s2i1"
-                        android:textStyle="bold"
-                        android:id="@+id/guide9_s2i1"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide9_s2i2"
+                        android:layout_below="@id/guide9_s2i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide9_s2i1"/>
+                        android:text="@string/guide9_s2i2" />
 
                 </RelativeLayout>
 
@@ -102,19 +100,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide9_s3i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide9_s3i1"
-                        android:id="@+id/guide9_s3i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide9_s3i2"
+                        android:layout_below="@id/guide9_s3i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide9_s3i1"/>
+                        android:text="@string/guide9_s3i2" />
 
                 </RelativeLayout>
 
@@ -136,19 +133,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide9_s4i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide9_s4i1"
-                        android:id="@+id/guide9_s4i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide9_s4i2"
+                        android:layout_below="@id/guide9_s4i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide9_s4i1"/>
+                        android:text="@string/guide9_s4i2" />
 
                 </RelativeLayout>
 
@@ -170,19 +166,18 @@
                     android:padding="@dimen/card_padding">
 
                     <TextView
+                        android:id="@+id/guide9_s5i1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/guide9_s5i1"
-                        android:id="@+id/guide9_s5i1"
-                        android:textStyle="bold"
-                        />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide9_s5i2"
+                        android:layout_below="@id/guide9_s5i1"
                         android:paddingTop="2dp"
-                        android:layout_below="@id/guide9_s5i1"/>
+                        android:text="@string/guide9_s5i2" />
 
                 </RelativeLayout>
 

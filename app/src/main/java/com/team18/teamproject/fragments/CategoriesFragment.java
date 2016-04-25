@@ -15,6 +15,8 @@ import com.team18.teamproject.activities.CategoryActivity;
 
 /**
  * Clickable list of category cards.
+ *
+ * Created by Daniel.
  */
 public class CategoriesFragment extends Fragment {
 

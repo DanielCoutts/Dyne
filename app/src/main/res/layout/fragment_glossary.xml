@@ -1,796 +1,790 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.team18.teamproject.fragments.GlossaryFragment">
 
-    <!-- Main ScrollView -->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/card_spacing"
+        android:paddingTop="@dimen/card_spacing">
 
-        <LinearLayout
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/card_spacing"
-            android:paddingTop="@dimen/card_spacing">
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bread_pan"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/bread_pan_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/bread_pan"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/bread_pan_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/can_opener"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/can_opener_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/can_opener"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/can_opener_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chef_knife"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/chef_knife_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/chef_knife"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/chef_knife_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/corkscrew"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/corkscrew_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/corkscrew"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/corkscrew_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/garlic_press"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/garlic_press_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/garlic_press"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/garlic_press_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/grater"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/grater_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/grater"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/grater_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kitchen_shears"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/kitchen_shears_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/kitchen_shears"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/kitchen_shears_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ladle"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/ladle_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/ladle"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/ladle_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locking_tongs"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/locking_tongs_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/locking_tongs"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/locking_tongs_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/measuring_cup"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/measuring_cup_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/measuring_cup"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/measuring_cup_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/measuring_spoon"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/measuring_spoon_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/measuring_spoon"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/measuring_spoon_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/microplane_grater"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/microplane_grater_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/microplane_grater"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/microplane_grater_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/muffin_tin"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/muffin_tin_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/muffin_tin"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/muffin_tin_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paring_knife"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/paring_knife_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/paring_knife"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/paring_knife_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pepper_mill"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/pepper_mill_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/pepper_mill"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/pepper_mill_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/potato_masher"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/potato_masher_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/potato_masher"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/potato_masher_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salad_spinner"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/salad_spinner_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/salad_spinner"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/salad_spinner_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saucepan"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/saucepan_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/saucepan"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/saucepan_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/serrated_bread_knife"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/serrated_bread_knife_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/serrated_bread_knife"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/serrated_bread_knife_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skillet"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/skillet_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/skillet"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/skillet_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slotted_spoon"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/slotted_spoon_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/slotted_spoon"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/slotted_spoon_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spatula"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/spatula_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/spatula"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/spatula_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_pot"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/stock_pot_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/stock_pot"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/stock_pot_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vegetable_peeler"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/vegetable_peeler_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/vegetable_peeler"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/vegetable_peeler_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whisk"
+                    android:textStyle="bold" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:paddingTop="2dp"
+                    android:text="@string/whisk_def" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/whisk"
-                        android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:paddingTop="2dp"
-                        android:text="@string/whisk_def" />
-                </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_spacing"
+            android:layout_marginEnd="@dimen/card_margins"
+            android:layout_marginStart="@dimen/card_margins"
+            android:layout_marginTop="@dimen/card_spacing"
+            android:elevation="@dimen/cardview_default_elevation">
 
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/card_spacing"
-                android:layout_marginEnd="@dimen/card_margins"
-                android:layout_marginStart="@dimen/card_margins"
-                android:layout_marginTop="@dimen/card_spacing"
-                android:elevation="@dimen/cardview_default_elevation">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
 
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="@dimen/card_padding">
+                    android:layout_height="wrap_content"
+                    android:text="@string/wikipedia"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/wikipedia"
-                        android:textStyle="bold" />
-                </LinearLayout>
+        </android.support.v7.widget.CardView>
 
-            </android.support.v7.widget.CardView>
+    </LinearLayout>
 
-        </LinearLayout>
-    </ScrollView>
-
-</FrameLayout>
+</ScrollView>
