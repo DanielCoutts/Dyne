@@ -44,7 +44,6 @@ public class GuideActivity extends AppCompatActivity {
                 setTitle(R.string.guide1_title);
                 setContentView(R.layout.guide_1);
                 return;
-            // TODO Uncomment these
             case 2:
                 setTitle(R.string.guide2_title);
                 setContentView(R.layout.guide_2);

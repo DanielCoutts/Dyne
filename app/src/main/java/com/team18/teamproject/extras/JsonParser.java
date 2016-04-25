@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -47,7 +48,16 @@ public class JsonParser {
                     String category = currentRecipe.getString(Recipes.KEY_CATEGORY);
                     String difficulty = currentRecipe.getString(Recipes.KEY_DIFFICULTY);
                     String cookTime = currentRecipe.getString(Recipes.KEY_COOKTIME);
-                    // TODO Format cooktime more nicely.
+
+                    // Format times nicely.
+                    String time[] = cookTime.split(":", 3);
+                    if (time[0].equals("00")) {
+                        cookTime = time[1] + " mins";
+                    } else if (time[1].equals("00")) {
+                        cookTime = time[0] + " hrs";
+                    } else {
+                        cookTime = time[0] + " hrs " + time[1] + " mins";
+                    }
 
                     recipes.add(new Recipe(id,
                             name,

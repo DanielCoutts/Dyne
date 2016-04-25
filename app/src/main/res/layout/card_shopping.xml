@@ -21,18 +21,18 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/card_add_ingredient"
+            android:layout_toStartOf="@+id/card_remove_ingredient"
             android:textSize="@dimen/medium_card_text" />
 
         <ImageView
-            android:id="@+id/card_add_ingredient"
+            android:id="@+id/card_remove_ingredient"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:clickable="true"
-            android:background="?android:attr/selectableItemBackground"
-            android:src="@drawable/ic_add_to_list" />
+            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/ic_delete" />
 
     </RelativeLayout>
 

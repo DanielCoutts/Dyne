@@ -22,6 +22,7 @@ import com.team18.teamproject.fragments.GlossaryFragment;
 import com.team18.teamproject.fragments.GuidesFragment;
 import com.team18.teamproject.fragments.HomeFragment;
 import com.team18.teamproject.fragments.MapFragment;
+import com.team18.teamproject.fragments.ShoppingListFragment;
 
 /**
  * The main activity contains a navigation drawer with a fragment in the main body of the page.
@@ -146,6 +147,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_shopping_list:
+                setMainFragment(new ShoppingListFragment());
                 setTitle("Shopping List");
                 break;
 

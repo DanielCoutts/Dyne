@@ -18,7 +18,7 @@ import java.util.List;
 /**
  * Custom RecyclerView Adapter.
  */
-public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapter.viewHolderIngredient> {
+public class ShoppingListRVAdapter extends RecyclerView.Adapter<ShoppingListRVAdapter.viewHolderIngredient> {
 
     /**
      * List of ingredients to display in the RecyclerView.
@@ -40,7 +40,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
      *
      * @param context context of the parent.
      */
-    public IngredientRVAdapter(Context context) {
+    public ShoppingListRVAdapter(Context context) {
         this.context = context;
         layoutInflater = LayoutInflater.from(context);
     }
@@ -62,13 +62,14 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
 
     @Override
     public viewHolderIngredient onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = layoutInflater.inflate(R.layout.card_ingredient, viewGroup, false);
+        View view = layoutInflater.inflate(R.layout.card_shopping, viewGroup, false);
         return new viewHolderIngredient(view);
     }
 
     @Override
     public void onBindViewHolder(viewHolderIngredient viewHolder, int i) {
         final Ingredient currentIngredient = ingredients.get(i);
+        final int index = i;
 
         String name = currentIngredient.getName();
         String quantity = currentIngredient.getQuantity();
@@ -76,10 +77,13 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
 
         viewHolder.textView.setText(formatIngredient(name, quantity, units));
 
-        viewHolder.addIcon.setOnClickListener(new View.OnClickListener() {
+        viewHolder.removeIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Application.getShoppingList().add(currentIngredient);
+                if (index < Application.getShoppingList().size()) {
+                    Application.getShoppingList().remove(index);
+                    notifyItemRemoved(index);
+                }
             }
         });
     }
@@ -115,7 +119,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
     public static class viewHolderIngredient extends RecyclerView.ViewHolder {
 
         TextView textView;
-        ImageView addIcon;
+        ImageView removeIcon;
 
         /**
          * Constructor that initialises fields.
@@ -125,7 +129,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
         public viewHolderIngredient(View itemView) {
             super(itemView);
             textView = (TextView) itemView.findViewById(R.id.card_ingredient);
-            addIcon = (ImageView) itemView.findViewById(R.id.card_add_ingredient);
+            removeIcon = (ImageView) itemView.findViewById(R.id.card_remove_ingredient);
         }
     }
 }

@@ -58,8 +58,8 @@ public class Application extends android.app.Application {
             vegetarian = wrapper.isVegetarian();
             vegan = wrapper.isVegan();
             glutenFree = wrapper.isGlutenFree();
-            favourites = wrapper.getFavourites();
-            shoppingList = wrapper.getShoppingList();
+            if (wrapper.getFavourites() != null) favourites = wrapper.getFavourites();
+            if (wrapper.getShoppingList() != null) shoppingList = wrapper.getShoppingList();
         }
     }
 
