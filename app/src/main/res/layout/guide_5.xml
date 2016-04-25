@@ -167,7 +167,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide5_s4i1"
+                        android:text="@string/guide5_s4i2"
                         android:paddingTop="2dp"
                         android:id="@+id/guide5_s4i2"
                         android:layout_below="@id/guide5_s4i1"
@@ -211,7 +211,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide5_s5i1"
+                        android:text="@string/guide5_s5i2"
                         android:paddingTop="2dp"
                         android:id="@+id/guide5_s5i2"
                         android:layout_below="@id/guide5_s5i1"
@@ -220,7 +220,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/guide5_s5i2"
+                        android:text="@string/guide5_s5i3"
                         android:paddingTop="2dp"
                         android:layout_below="@id/guide5_s5i2"
                         />
