@@ -10,6 +10,7 @@
     <dimen name="card_margins">16dp</dimen>
     <dimen name="instruction_number_right_margin">12dp</dimen>
     <dimen name="card_stepcircle_diameter">35dp</dimen>
+    <dimen name="card_ingredientcircle_diameter">45dp</dimen>
     <dimen name="large_card_text">24sp</dimen>
     <dimen name="medium_card_text">16sp</dimen>
     <dimen name="small_card_text">14sp</dimen>
@@ -29,5 +30,6 @@
     <dimen name="about_div_spacing">16dp</dimen>
     <dimen name="about_para_spacing">8dp</dimen>
     <dimen name="about_size">20sp</dimen>
+    <dimen name="ingredient_button_spacing">5dp</dimen>
 
 </resources>

@@ -26,18 +26,19 @@
 
         <FrameLayout
             android:id="@+id/card_remove_ingredient"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/card_ingredientcircle_diameter"
+            android:layout_height="@dimen/card_ingredientcircle_diameter"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/ingredient_button_spacing"
             android:background="@drawable/circle"
+            android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:clickable="true"
                 android:src="@drawable/ic_delete" />
         </FrameLayout>
 

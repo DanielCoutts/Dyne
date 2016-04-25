@@ -5,8 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/ingredient_card_margins"
     android:layout_marginEnd="@dimen/ingredient_card_margins"
-    android:layout_marginTop="@dimen/ingredient_card_margins"
     android:layout_marginStart="@dimen/ingredient_card_margins"
+    android:layout_marginTop="@dimen/ingredient_card_margins"
     android:elevation="@dimen/cardview_default_elevation">
 
     <RelativeLayout
@@ -24,15 +24,23 @@
             android:layout_toStartOf="@+id/card_add_ingredient"
             android:textSize="@dimen/medium_card_text" />
 
-        <ImageView
+        <FrameLayout
             android:id="@+id/card_add_ingredient"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/card_ingredientcircle_diameter"
+            android:layout_height="@dimen/card_ingredientcircle_diameter"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/ingredient_button_spacing"
+            android:background="@drawable/circle"
             android:clickable="true"
-            android:background="?android:attr/selectableItemBackground"
-            android:src="@drawable/ic_add_to_list" />
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add_to_list" />
+        </FrameLayout>
 
     </RelativeLayout>
 

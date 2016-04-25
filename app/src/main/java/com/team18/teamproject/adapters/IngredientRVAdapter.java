@@ -5,8 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
@@ -80,6 +82,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
             @Override
             public void onClick(View v) {
                 Application.getShoppingList().add(currentIngredient);
+                Toast.makeText(Application.getAppContext(), "Item added", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -96,7 +99,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
      * @param name     name of ingredient (Name cannot be null).
      * @param quantity quantity of ingredient.
      * @param units    units of ingredient (If quantity is null, units must also be null).
-     * @return
+     * @return A string of formatted ingredients.
      */
     private static String formatIngredient(String name, String quantity, String units) {
 
@@ -115,7 +118,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
     public static class viewHolderIngredient extends RecyclerView.ViewHolder {
 
         TextView textView;
-        ImageView addIcon;
+        FrameLayout addIcon;
 
         /**
          * Constructor that initialises fields.
@@ -125,7 +128,7 @@ public class IngredientRVAdapter extends RecyclerView.Adapter<IngredientRVAdapte
         public viewHolderIngredient(View itemView) {
             super(itemView);
             textView = (TextView) itemView.findViewById(R.id.card_ingredient);
-            addIcon = (ImageView) itemView.findViewById(R.id.card_add_ingredient);
+            addIcon = (FrameLayout) itemView.findViewById(R.id.card_add_ingredient);
         }
     }
 }
