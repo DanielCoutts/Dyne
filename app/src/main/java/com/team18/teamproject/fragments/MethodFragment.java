@@ -45,6 +45,9 @@ import java.util.Map;
 
 /**
  * Fragment that displays the method for each recipe and the facebook share button.
+ *
+ * Created by Alex
+ * Modified by Daniel
  */
 public class MethodFragment extends Fragment {
 

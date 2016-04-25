@@ -35,6 +35,9 @@ import java.util.Map;
 
 /**
  * Fragment that shows nutritional information for the current recipe.
+ *
+ * Created by Alex
+ * Modified by Daniel
  */
 public class NutritionFragment extends Fragment {
 

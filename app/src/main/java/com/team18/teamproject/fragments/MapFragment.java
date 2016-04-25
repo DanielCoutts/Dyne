@@ -22,6 +22,9 @@ import com.team18.teamproject.R;
 /**
  * Class to handle and initialise the map fragment with an integrated map to display various
  * eateries to the user and link to google maps app if they want directions.
+ *
+ * Created by Alex
+ *
  */
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
