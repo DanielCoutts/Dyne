@@ -5,8 +5,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.team18.teamproject.Application;
 import com.team18.teamproject.R;
@@ -80,10 +82,10 @@ public class ShoppingListRVAdapter extends RecyclerView.Adapter<ShoppingListRVAd
         viewHolder.removeIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (index < Application.getShoppingList().size()) {
-                    Application.getShoppingList().remove(index);
-                    notifyItemRemoved(index);
-                }
+                Application.getShoppingList().remove(currentIngredient);
+                notifyItemRemoved(index);
+                notifyItemRangeChanged(0, (Application.getShoppingList().size() - 1) );
+                Toast.makeText(Application.getAppContext(), "Item removed", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -119,7 +121,7 @@ public class ShoppingListRVAdapter extends RecyclerView.Adapter<ShoppingListRVAd
     public static class viewHolderIngredient extends RecyclerView.ViewHolder {
 
         TextView textView;
-        ImageView removeIcon;
+        FrameLayout removeIcon;
 
         /**
          * Constructor that initialises fields.
@@ -129,7 +131,7 @@ public class ShoppingListRVAdapter extends RecyclerView.Adapter<ShoppingListRVAd
         public viewHolderIngredient(View itemView) {
             super(itemView);
             textView = (TextView) itemView.findViewById(R.id.card_ingredient);
-            removeIcon = (ImageView) itemView.findViewById(R.id.card_remove_ingredient);
+            removeIcon = (FrameLayout) itemView.findViewById(R.id.card_remove_ingredient);
         }
     }
 }

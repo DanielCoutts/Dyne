@@ -22,7 +22,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginEnd="@dimen/instruction_number_right_margin"
-            android:background="@drawable/step_circle"
+            android:background="@drawable/circle"
             android:gravity="center"
             android:textSize="@dimen/step_card_number"
             android:textColor="@color/step_num_text"/>
