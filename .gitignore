@@ -1,6 +1,7 @@
+keys.xml
+
 
 # Created by https://www.gitignore.io/api/android,gradle,intellij
-
 ### Android ###
 # Built application files
 *.apk
